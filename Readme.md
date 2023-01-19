@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Анна Рябцева](https://up.htmlacademy.ru/htmlcss/36/user/2320775).
-* Наставник: [Дмитрий Устинов](https://htmlacademy.ru/profile/ustinov-dmitriy).
+* Наставник: [Михаил Данюшин](https://htmlacademy.ru/profile/id225742).
 
 ---
 
