@@ -54,46 +54,82 @@
             <a class="breadcrumbs-link">Гостиницы</a>
           </li>
         </ul>
-      <form class="catalog-select" action="https://echo.htmlacademy.ru/" method="get">
-      <fieldset class="catalog-select-box">
-        <legend class="catalog-select-title">Инфраструктура</legend>
-          <ul class="catalof-select-list">
-            <li class="catalog-select-item">
-              <label class="select">
-                <input class="select-input" type="checkbox" name="pool" checked>Бассейн</label>
-            </li>
-            <li class="catalog-select-item">
-              <label class="select">
-                <input class="select-input" type="checkbox" name="parking" checked>Парковка</label>
-            </li>
-            <li class="catalog-select-item">
-               <label class="select">
-                <input class="select-input" type="checkbox" name="wi-fi">Wi-Fi</label>
-            </li>
-          </ul>
-      </fieldset>
-      <fieldset class="catalog-select-box">
-        <legend class="catalog-select-title">Тип жилья:</legend>
-          <ul class="catalof-select-list">
-            <li class="catalog-select-item">
-              <label class="select">
-                <input class="select-input" type="radio" name="hotel" value="shaving-supplies">Гостиница</label>
-            </li>
-            <li class="catalog-select-item">
-              <label class="select">
-                <input class="select-input" type="radio" name="prodact-group" value="motel" checked>Мотель</label>
-            </li>
-            <li class="catalog-select-item">
-              <label class="select">
-                <input class="select-input" type="radio" name="prodact-group" value="apartments">Апартаменты</label>
-            </li>
-          </ul>
-        </fieldset>
+        <form class="catalog-select" action="https://echo.htmlacademy.ru/" method="get">
+          <fieldset class="catalog-select-box">
+            <legend class="catalog-select-title">Инфраструктура</legend>
+              <ul class="catalof-select-list">
+                <li class="catalog-select-item">
+                  <label class="select">
+                    <input class="select-input" type="checkbox" name="pool" checked>Бассейн</label>
+                </li>
+                <li class="catalog-select-item">
+                  <label class="select">
+                    <input class="select-input" type="checkbox" name="parking" checked>Парковка</label>
+                </li>
+                <li class="catalog-select-item">
+                  <label class="select">
+                    <input class="select-input" type="checkbox" name="wi-fi">Wi-Fi</label>
+                </li>
+              </ul>
+          </fieldset>
+          <fieldset class="catalog-select-box">
+            <legend class="catalog-select-title">Тип жилья:</legend>
+              <ul class="catalof-select-list">
+                <li class="catalog-select-item">
+                  <label class="select">
+                    <input class="select-input" type="radio" name="hotel" value="shaving-supplies">Гостиница</label>
+                </li>
+                <li class="catalog-select-item">
+                  <label class="select">
+                    <input class="select-input" type="radio" name="prodact-group" value="motel" checked>Мотель</label>
+                </li>
+                <li class="catalog-select-item">
+                  <label class="select">
+                    <input class="select-input" type="radio" name="prodact-group" value="apartments">Апартаменты</label>
+                </li>
+              </ul>
+          </fieldset>
+        </form>
+        <form class="catalog-price" action="https://echo.htmlacademy.ru/" method="get">
+          <fieldset class="catalog-price-box">
+            <legend class="catalog-price-title">Стоимость, ₽:</legend>
+              <label for="price-min">от<input type="text" value="0" id="price-min"></label>
+              <label for="price-max">до<input type="text" value="9000" id="price-max"></label>
+          </fieldset>
+            <button class="button" type="submit">Применить</button>
+            <button class="button" type="reset">Сбросить</button>
+        </form>
+      </section>
+      <section class="find-hotels">
+        <h2 class="find-hotels-title">Найдено гостиниц: 38</h2>
+        <form class="find-hotels-select" action="https://echo.htmlacademy.ru/" method="post">
+            <select class="select-control" aria-label="Сортировка">
+                <option value="cheap">Сначала дешевые</option>
+            </select>
+            <button class="visually-hidden" type="submit">Выбрать гостиницы</button>
+        </form>
+        <a class="button button-light" href="#" >
+          <span class="visually-hidden">Показать список</span>
+        </a>
+        <a class="button" href="#" >
+          <span class="visually-hidden">Показать элемент с описанием'</span>
+        </a>
+        <a class="button" href="#" >
+          <span class="visually-hidden">Показать карточки</span>
+        </a>
 
-
-
-
-
+        <ul class="hotel-list">
+          <li class="hotel-item">
+            <a class="hotel-item-link" href="#" >
+                <img class="hotel-item-image" src="" alt="" >
+                <h3 class="hotel-item-title">Amara Resort & Spa</h3>
+            </a>
+                <p class="hotel-item-type">Гостиница</p>
+                <span class="hotel-item-price">От 4000 ₽</span>
+            <a class="hotel-item-about-button button" href="#">Подробнее</a>
+            <a class="hotel-item-selected-button button" href="#">В избранное</a>
+            <span class="hotel-item-rating">Рейтинг: 8,5</span>
+          </li>
 
 
 
