@@ -6,8 +6,9 @@
 }
 
 .newsletter {
-  background-image: url("/images/background-2.jpg");
+  background-image: url("/images/background-1.jpg");
   background-size: no-repeat;
+  display: flex;
   width: 1200px;
   height: 414.86px;
 }
