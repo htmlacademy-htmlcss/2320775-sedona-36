@@ -6,15 +6,14 @@
 }
 
 .newsletter {
-  background-image: url("/images/background-1.jpg");
+  background-image: url("/images/footer-background.jpg");
   background-size: no-repeat;
-  display: flex;
   width: 1200px;
   height: 414.86px;
 }
 
 .main-catalog {
-  background-image: url("/images/background-2.jpg");
+  background-image: url("/images/catalog-background.jpg");
   background-size: no-repeat;
   width: 1200px;
   height: 412px;
