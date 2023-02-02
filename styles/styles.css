@@ -19,12 +19,12 @@ body {
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
-  color: black;
+  color: #000000;;
   background-color: #FFFFFF;
 }
 
 .page-header {
-  color: black;
+  color: #000000;;
   background-color: #FFFFFF;
 }
 
@@ -37,7 +37,6 @@ body {
 }
 
 .button {
-  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -68,19 +67,21 @@ body {
   font-size: 22px;
   line-height: 26px;
   text-align: center;
+  color: #333333;
 }
 
 .advantages-description, .advantages-description-2 {
   background-color: #82B3D3;
 }
 
-.advantages-description, .advantages-description-2 h3 {
+.advantages-description h3, .advantages-description-2 h3 {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
   text-align: center;
   text-transform: uppercase;
   color: #FFFFFF;
+
 }
 
 .advantages-description, .advantages-description-2 p {
@@ -107,10 +108,16 @@ body {
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
+  color: #333333;
 }
 
-.advantages-list li:first-child, li:last-child {
+.advantages-list li:first-child {
   background: rgba(131, 179, 211, 0.12);
+}
+
+.advantages-list li:last-child {
+  background: rgba(131, 179, 211, 0.12);
+
 }
 
 .advantages-list li:nth-child(2) {
@@ -118,6 +125,72 @@ body {
 
 }
 
+.services-offer h2 {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+
+}
+
+.services-offer p {
+font-weight: 400;
+font-size: 22px;
+line-height: 26px;
+text-align: center;
+color: #333333;
+
+}
+
+.services-advantages-item {
+  list-style-type: none;
+  text-align: center;
+}
+
+.services-advantages-item .services-advantages-name {
+font-weight: 700;
+font-size: 24px;
+line-height: 28px;
+text-transform: uppercase;
+
+}
+
+.services-advantages-item .services-advantages-review {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: #333333;
+
+}
+
+.services-advantages-list li:first-child {
+  background: rgba(131, 179, 211, 0.12);
+}
+
+.services-advantages-list li:last-child {
+  background: rgba(131, 179, 211, 0.12);
+}
+
+.services-order h2 {
+
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+
+}
+
+.services-order p {
+font-weight: 400;
+font-size: 22px;
+line-height: 26px;
+text-align: center;
+color: #333333;
+
+}
 
 
 .newsletter {
@@ -125,6 +198,50 @@ body {
   background-size: no-repeat;
   width: 1200px;
   height: 414.86px;
+  color: #FFFFFF;
+}
+
+.newsletter-email h2 {
+font-weight: 700;
+font-size: 30px;
+line-height: 36px;
+text-transform: uppercase;
+text-align: center;
+
+}
+
+.newsletter-email p {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+
+}
+
+.button.newsletter-button {
+  background: #82B3D3;
+}
+
+
+.footer-page {
+  color: #000000;
+  background: white;
+}
+
+.footer-social-item {
+  list-style-type: none;
+
+}
+
+.footer-address-phone-contact {
+font-weight: 400;
+font-size: 40px;
+line-height: 40px;
+font-style: normal;
+color: #000000;
+text-transform: uppercase;
+text-decoration: none;
+
 }
 
 .main-catalog {
