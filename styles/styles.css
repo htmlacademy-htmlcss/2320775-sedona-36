@@ -270,11 +270,10 @@ text-decoration: none;
 .main-catalog {
   width: 1200px;
   height: 412px;
-  background-image: url("/../images/catalog-background.jpg");
+  background-image: url("../images/catalog-background.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
   color: #FFFFFF;
-  background-color: #82B3D3;
   display: flex;  /*временно, что б было видно на макете*/
 }
 
