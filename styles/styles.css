@@ -268,12 +268,12 @@ text-decoration: none;
 
 /*КАТАЛОГ*/
 .main-catalog {
+  color: #FFFFFF;
+  background-color: #82B3D3;
+  background-image: url("../images/catalog-background.jpg");
   width: 1200px;
   height: 412px;
-  background-image: url("../images/catalog-background.jpg");
   background-repeat: no-repeat;
-  background-size: 100% auto;
-  color: #FFFFFF;
   display: flex;  /*временно, что б было видно на макете*/
 }
 
