@@ -54,7 +54,7 @@ body {
 }
 
 .page-hero-logo {
-  background-image: url("/../images/hero-background.jpg");
+  background-image: url("../images/hero-background.jpg");
   background-size: no-repeat;
   width: 1200px;
   height: 485px;
@@ -214,7 +214,7 @@ color: #333333;
 }
 
 .newsletter {
-  background-image: url("/../images/footer-background.jpg");
+  background-image: url("../images/footer-background.jpg");
   background-size: no-repeat;
   width: 1200px;
   height: 414.86px;
@@ -268,13 +268,12 @@ text-decoration: none;
 
 /*КАТАЛОГ*/
 .main-catalog {
-  width: 1200px;
-  height: 412px;
-  background-image: url("/../images/catalog-background.jpg");
-  background-repeat: no-repeat;
-  background-size: 100% auto;
   color: #FFFFFF;
   background-color: #82B3D3;
+  background-image: url("../images/catalog-background.jpg");
+  width: 1200px;
+  height: 412px;
+  background-repeat: no-repeat;
   display: flex;  /*временно, что б было видно на макете*/
 }
 
