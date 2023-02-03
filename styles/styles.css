@@ -84,6 +84,27 @@ body {
 
 }
 
+/* Попытка внедрить палочку между h3 и p
+h3:after {
+  content: "";
+  width: 60px;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.3);
+  display: block;
+  position: relative;
+
+  либо обернуть картинку в див и прицепить ее к диву
+  .abv:before {
+    content: "";
+    width: 60px;
+    height: 2px;
+    background: rgba(255, 255, 255, 0.3);
+    display: block;
+    position: absolute;
+    bottom: 0; (не работает почему то)
+    */
+
+
 .advantages-description, .advantages-description-2 p {
   font-weight: 400;
   font-size: 18px;
@@ -115,13 +136,12 @@ body {
   background: rgba(131, 179, 211, 0.12);
 }
 
-.advantages-list li:last-child {
-  background: rgba(131, 179, 211, 0.12);
-
-}
-
 .advantages-list li:nth-child(2) {
   background: rgba(131, 179, 211, 0.2);
+
+}
+.advantages-list li:last-child {
+  background: rgba(131, 179, 211, 0.12);
 
 }
 
@@ -231,6 +251,11 @@ text-align: center;
 
 }
 
+.footer-social-item .button {
+  background-color: rgba(5, 5, 5, 0);
+
+}
+
 .footer-address-phone-contact {
 font-weight: 400;
 font-size: 40px;
@@ -242,9 +267,205 @@ text-decoration: none;
 
 }
 
+/* Catalog */
+
 .main-catalog {
-  background-image: url("/images/catalog-background.jpg");
-  background-size: no-repeat;
   width: 1200px;
   height: 412px;
+  background-image: url("/images/catalog-background.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  color: #FFFFFF;
+  background-color: #82B3D3;
+  display: flex;  /*временно, что б было видно на макете*/
+}
+
+.main-catalog-title {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 78px;
+
+}
+
+.catalof-select-list {
+  list-style-type: none;
+}
+
+.breadcrumbs {
+font-weight: 400;
+font-size: 16px;
+line-height: 21px;
+list-style-type: none;
+
+}
+
+.catalog-select-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: capitalize;
+}
+
+.catalog-select-item {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+
+}
+
+.catalog-price-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: capitalize;
+
+}
+
+.button.button-apply {
+font-weight: 700;
+font-size: 16px;
+line-height: 20px;
+text-align: center;
+text-transform: uppercase;
+color: #FFFFFF;
+background: #82B3D3;
+
+}
+
+.button.button-reset {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background: rgba(5, 5, 5, 0);
+  border: 0;
+
+}
+
+.find-hotels-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+
+}
+
+.select-control {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+
+}
+
+.hotel-list {
+  list-style-type: none;
+
+}
+
+.hotel-item-link {
+  text-decoration: none;
+
+}
+
+.hotel-item-title {
+font-weight: 700;
+font-size: 24px;
+line-height: 28px;
+color: #000000;
+
+}
+
+.hotel-item-type {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+
+}
+
+.hotel-item-price {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: right;
+  color: #333333;
+
+}
+
+.hotel-item-select-button {
+  background: #82B3D3;
+
+}
+
+.hotel-item-selected-button {
+  background: #7DB54F;
+
+}
+
+.hotel-item-rating {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #333333;
+
+}
+
+.newsletter-email h2 {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+
+}
+
+.newsletter-email p {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  color: #333333;
+
+}
+
+.button.newsletter-button {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-transform: uppercase;
+  border: 0;
+
+}
+
+/*Футер каталога*/
+
+.footer-page {
+  color: #000000;
+  background: white;
+}
+
+.footer-address-social-item {
+  list-style-type: none;
+
+}
+
+.footer-address-social-item .button {
+  background-color: rgba(5, 5, 5, 0);
+
+}
+
+.footer-address-phone-contact {
+font-weight: 400;
+font-size: 40px;
+line-height: 40px;
+font-style: normal;
+color: #000000;
+text-transform: uppercase;
+text-decoration: none;
+text-align: center;
+
 }
