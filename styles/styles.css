@@ -28,6 +28,11 @@ body {
   background-color: #FFFFFF;
 }
 
+.navigation-item {
+  list-style-type: none;
+}
+
+
 .navigation-link {
   text-decoration: none;
   text-align: center;
@@ -36,6 +41,7 @@ body {
   line-height: 24px;
 }
 
+/*ВСЕ КОРИЧНЕВЫЕ КНОПКИ*/
 .button {
   font-weight: 700;
   font-size: 16px;
@@ -70,6 +76,7 @@ body {
   color: #333333;
 }
 
+/*ПРЕИМУЩЕСТВА*/
 .advantages-description, .advantages-description-2 {
   background-color: #82B3D3;
 }
@@ -81,7 +88,6 @@ body {
   text-align: center;
   text-transform: uppercase;
   color: #FFFFFF;
-
 }
 
 /* Попытка внедрить палочку между h3 и p
@@ -132,26 +138,26 @@ h3:after {
   color: #333333;
 }
 
+/*НАСЛЕДОВАНИЕ ФОНОВ ДЛЯ БЛОКОВ*/
 .advantages-list li:first-child {
   background: rgba(131, 179, 211, 0.12);
 }
 
 .advantages-list li:nth-child(2) {
   background: rgba(131, 179, 211, 0.2);
-
 }
+
 .advantages-list li:last-child {
   background: rgba(131, 179, 211, 0.12);
-
 }
 
+/*УСЛУГИ*/
 .services-offer h2 {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   text-align: center;
   text-transform: uppercase;
-
 }
 
 .services-offer p {
@@ -160,7 +166,6 @@ font-size: 22px;
 line-height: 26px;
 text-align: center;
 color: #333333;
-
 }
 
 .services-advantages-item {
@@ -173,7 +178,6 @@ font-weight: 700;
 font-size: 24px;
 line-height: 28px;
 text-transform: uppercase;
-
 }
 
 .services-advantages-item .services-advantages-review {
@@ -182,7 +186,6 @@ text-transform: uppercase;
   line-height: 21px;
   text-align: center;
   color: #333333;
-
 }
 
 .services-advantages-list li:first-child {
@@ -193,13 +196,13 @@ text-transform: uppercase;
   background: rgba(131, 179, 211, 0.12);
 }
 
+/*ЗАИНТЕРЕСОВАЛИСЬ?*/
 .services-order h2 {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   text-align: center;
   text-transform: uppercase;
-
 }
 
 .services-order p {
@@ -208,7 +211,6 @@ font-size: 22px;
 line-height: 26px;
 text-align: center;
 color: #333333;
-
 }
 
 .newsletter {
@@ -219,28 +221,26 @@ color: #333333;
   color: #FFFFFF;
 }
 
-.newsletter-email h2 {
+.newsletter-sign-up h2 {
 font-weight: 700;
 font-size: 30px;
 line-height: 36px;
 text-transform: uppercase;
 text-align: center;
-
 }
 
-.newsletter-email p {
+.newsletter-sign-up p {
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
   text-align: center;
-
 }
 
 .button.newsletter-button {
   background: #82B3D3;
 }
 
-
+/*ПОДВАЛ*/
 .footer-page {
   color: #000000;
   background: white;
@@ -248,14 +248,14 @@ text-align: center;
 
 .footer-social-item {
   list-style-type: none;
-
 }
 
+/*ПРОЗРАЧНЫЕ КНОПКИ СОЦСЕТЕЙ*/
 .footer-social-item .button {
   background-color: rgba(5, 5, 5, 0);
-
 }
 
+/*ТЕЛЕФОН*/
 .footer-address-phone-contact {
 font-weight: 400;
 font-size: 40px;
@@ -264,11 +264,9 @@ font-style: normal;
 color: #000000;
 text-transform: uppercase;
 text-decoration: none;
-
 }
 
-/* Catalog */
-
+/*КАТАЛОГ*/
 .main-catalog {
   width: 1200px;
   height: 412px;
@@ -284,19 +282,18 @@ text-decoration: none;
   font-weight: 700;
   font-size: 60px;
   line-height: 78px;
-
 }
 
-.catalof-select-list {
+.catalog-select-list, .catalog-select-box {
   list-style-type: none;
 }
 
+/*ХЛЕБНЫЕ КРОШКИ*/
 .breadcrumbs {
 font-weight: 400;
 font-size: 16px;
 line-height: 21px;
 list-style-type: none;
-
 }
 
 .catalog-select-title {
@@ -310,7 +307,6 @@ list-style-type: none;
   font-weight: 400;
   font-size: 18px;
   line-height: 23px;
-
 }
 
 .catalog-price-title {
@@ -320,7 +316,7 @@ list-style-type: none;
   text-transform: capitalize;
 
 }
-
+/*КНОПКИ ПРИМЕНИТЬ-СБРОСИТЬ*/
 .button.button-apply {
 font-weight: 700;
 font-size: 16px;
@@ -329,7 +325,6 @@ text-align: center;
 text-transform: uppercase;
 color: #FFFFFF;
 background: #82B3D3;
-
 }
 
 .button.button-reset {
@@ -341,7 +336,6 @@ background: #82B3D3;
   color: #FFFFFF;
   background: rgba(5, 5, 5, 0);
   border: 0;
-
 }
 
 .find-hotels-title {
@@ -349,33 +343,36 @@ background: #82B3D3;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
-
 }
 
+/*Боковые кнопки вида, временное отключение наследуемого стиля*/
+.button.button-light {
+  background: rgba(5, 5, 5, 0);
+  color: #000000;
+}
+
+/*СНАЧАЛА ДЕШЕВЫЕ*/
 .select-control {
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   color: #333333;
-
 }
 
 .hotel-list {
   list-style-type: none;
-
 }
 
 .hotel-item-link {
   text-decoration: none;
-
 }
 
+/*НАЗВАНИЯ ОТЕЛЕЙ*/
 .hotel-item-title {
 font-weight: 700;
 font-size: 24px;
 line-height: 28px;
 color: #000000;
-
 }
 
 .hotel-item-type {
@@ -383,7 +380,6 @@ color: #000000;
   font-size: 18px;
   line-height: 21px;
   color: #333333;
-
 }
 
 .hotel-item-price {
@@ -392,19 +388,17 @@ color: #000000;
   line-height: 21px;
   text-align: right;
   color: #333333;
-
 }
 
 .hotel-item-select-button {
   background: #82B3D3;
-
 }
 
 .hotel-item-selected-button {
   background: #7DB54F;
-
 }
 
+/*РЕЙТИНГ*/
 .hotel-item-rating {
   font-weight: 400;
   font-size: 16px;
@@ -412,24 +406,23 @@ color: #000000;
   text-align: center;
   text-transform: uppercase;
   color: #333333;
-
 }
 
-.newsletter-email h2 {
+/*СЕКЦИЯ ПОДПИСКИ НА РАССЫЛКУ*/
+.newsletter-email-catalog h2 {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
+  text-align: center;
   text-transform: uppercase;
-
 }
 
-.newsletter-email p {
+.newsletter-email-catalog p {
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
   text-align: center;
   color: #333333;
-
 }
 
 .button.newsletter-button {
@@ -438,11 +431,9 @@ color: #000000;
   line-height: 36px;
   text-transform: uppercase;
   border: 0;
-
 }
 
-/*Футер каталога*/
-
+/*ПОДВАЛ КАТАЛОГА*/
 .footer-page {
   color: #000000;
   background: white;
@@ -450,12 +441,10 @@ color: #000000;
 
 .footer-address-social-item {
   list-style-type: none;
-
 }
 
 .footer-address-social-item .button {
   background-color: rgba(5, 5, 5, 0);
-
 }
 
 .footer-address-phone-contact {
@@ -467,5 +456,4 @@ color: #000000;
 text-transform: uppercase;
 text-decoration: none;
 text-align: center;
-
 }
