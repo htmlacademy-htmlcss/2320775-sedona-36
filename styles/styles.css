@@ -58,8 +58,10 @@ body {
   width: 1200px;
   height: 485px;
   position: relative;
+  text-align: center;
 }
 
+/*ЛЕСЕНКА*/
 .page-hero-logo::after {
   content: "";
   display: block;
@@ -68,8 +70,7 @@ body {
   background-image: url("../images/hero-vector.svg");
   position: absolute;
   background-repeat: no-repeat;
-  background-position: bottom 0%;
-
+  bottom: 0;
 }
 
 .main-page-title h2 {
