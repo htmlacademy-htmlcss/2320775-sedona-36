@@ -50,17 +50,17 @@ body {
   text-transform: uppercase;
   color: #FFFFFF;
   background-color: #756157;
+  border-radius: 4px;
 }
 
 .page-hero-logo {
   background-image: url("../images/hero-background.jpg");
   background-repeat: no-repeat;
-  background-color: #754f4f98;
+  background-color: #82B3D3;
   width: 1200px;
   height: 485px;
   position: relative;
   text-align: center;
-
 }
 
 /*ЛЕСЕНКА*/
@@ -180,12 +180,13 @@ color: #333333;
 
 .services-advantages-item:first-child:before {
   content: "";
-  display: block;
   background-image: url("../images/icons/housing.svg");
+  display: block;
   width: 100%;
   height: 72px;
   background-repeat: no-repeat;
   position: absolute;
+
 }
 
 .services-advantages-item:nth-child(2)::before {
@@ -196,6 +197,7 @@ color: #333333;
   height: 70px;
   background-repeat: no-repeat;
   position: absolute;
+
 }
 
 .services-advantages-item:last-child::before {
