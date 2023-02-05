@@ -55,10 +55,12 @@ body {
 .page-hero-logo {
   background-image: url("../images/hero-background.jpg");
   background-repeat: no-repeat;
+  background-color: #754f4f98;
   width: 1200px;
   height: 485px;
   position: relative;
   text-align: center;
+
 }
 
 /*ЛЕСЕНКА*/
@@ -111,16 +113,6 @@ h3:after {
   background: rgba(255, 255, 255, 0.3);
   display: block;
   position: relative;
-
-  либо обернуть картинку в див и прицепить палочку к диву
-  .abv:before {
-    content: "";
-    width: 60px;
-    height: 2px;
-    background: rgba(255, 255, 255, 0.3);
-    display: block;
-    position: absolute;
-    bottom: 0; (не работает почему то)
     */
 
 
@@ -184,6 +176,36 @@ color: #333333;
 .services-advantages-item {
   list-style-type: none;
   text-align: center;
+}
+
+.services-advantages-item:first-child:before {
+  content: "";
+  display: block;
+  background-image: url("../images/icons/housing.svg");
+  width: 100%;
+  height: 72px;
+  background-repeat: no-repeat;
+  position: absolute;
+}
+
+.services-advantages-item:nth-child(2)::before {
+  content: "";
+  display: block;
+  background-image: url("../images/icons/food.svg");
+  width: 100%;
+  height: 70px;
+  background-repeat: no-repeat;
+  position: absolute;
+}
+
+.services-advantages-item:last-child::before {
+  content: "";
+  display: block;
+  background-image: url("../images/icons/souvenir.svg");
+  width: 100%;
+  height: 76px;
+  background-repeat: no-repeat;
+  position: absolute;
 }
 
 .services-advantages-item .services-advantages-name {
