@@ -327,8 +327,8 @@ h3:after {
   width: 1200px;
   height: 412px;
   background-repeat: no-repeat;
-  display: flex;
-  /*временно, что б было видно на макете*/
+  display: flex;  /*временно, что б было видно на макете*/
+  background-size: cover;
 }
 
 .main-catalog-title {
