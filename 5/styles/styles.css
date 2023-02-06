@@ -32,7 +32,6 @@ body {
   list-style-type: none;
 }
 
-
 .navigation-link {
   text-decoration: none;
   text-align: center;
@@ -51,13 +50,29 @@ body {
   text-transform: uppercase;
   color: #FFFFFF;
   background-color: #756157;
+  border-radius: 4px;
 }
 
 .page-hero-logo {
   background-image: url("../images/hero-background.jpg");
-  background-size: no-repeat;
+  background-repeat: no-repeat;
+  background-color: #82B3D3;
   width: 1200px;
   height: 485px;
+  position: relative;
+  text-align: center;
+}
+
+/*ЛЕСЕНКА*/
+.page-hero-logo::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 57px;
+  background-image: url("../images/hero-vector.svg");
+  position: absolute;
+  background-repeat: no-repeat;
+  bottom: 0;
 }
 
 .main-page-title h2 {
@@ -98,16 +113,6 @@ h3:after {
   background: rgba(255, 255, 255, 0.3);
   display: block;
   position: relative;
-
-  либо обернуть картинку в див и прицепить ее к диву
-  .abv:before {
-    content: "";
-    width: 60px;
-    height: 2px;
-    background: rgba(255, 255, 255, 0.3);
-    display: block;
-    position: absolute;
-    bottom: 0; (не работает почему то)
     */
 
 
@@ -171,6 +176,38 @@ color: #333333;
 .services-advantages-item {
   list-style-type: none;
   text-align: center;
+}
+
+.services-advantages-item:first-child:before {
+  content: "";
+  background-image: url("../images/icons/housing.svg");
+  display: block;
+  width: 100%;
+  height: 72px;
+  background-repeat: no-repeat;
+  position: absolute;
+
+}
+
+.services-advantages-item:nth-child(2)::before {
+  content: "";
+  display: block;
+  background-image: url("../images/icons/food.svg");
+  width: 100%;
+  height: 70px;
+  background-repeat: no-repeat;
+  position: absolute;
+
+}
+
+.services-advantages-item:last-child::before {
+  content: "";
+  display: block;
+  background-image: url("../images/icons/souvenir.svg");
+  width: 100%;
+  height: 76px;
+  background-repeat: no-repeat;
+  position: absolute;
 }
 
 .services-advantages-item .services-advantages-name {
