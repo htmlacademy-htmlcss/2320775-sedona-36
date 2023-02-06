@@ -19,7 +19,8 @@ body {
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
-  color: #000000;;
+  color: #000000;
+  ;
   background-color: #FFFFFF;
 }
 
@@ -36,16 +37,10 @@ body {
   overflow: hidden;
 }
 
-
 .page-header {
   color: #000000;
   background-color: #FFFFFF;
 
-}
-
-.navigation-link {
-  color: #000000;
-  text-decoration: none;
 }
 
 .navigation-item {
@@ -58,6 +53,7 @@ body {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
+  color: #000000;
 }
 
 /*ВСЕ КОРИЧНЕВЫЕ КНОПКИ*/
@@ -92,7 +88,7 @@ body {
   background-image: url("../images/hero-vector.svg");
   position: absolute;
   background-repeat: no-repeat;
-  bottom: 0;
+  bottom: -1px;
 }
 
 .main-page-title h2 {
@@ -112,11 +108,13 @@ body {
 }
 
 /*ПРЕИМУЩЕСТВА*/
-.advantages-description, .advantages-description-2 {
+.advantages-description,
+.advantages-description-2 {
   background-color: #82B3D3;
 }
 
-.advantages-description h3, .advantages-description-2 h3 {
+.advantages-description h3,
+.advantages-description-2 h3 {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -136,7 +134,8 @@ h3:after {
     */
 
 
-.advantages-description, .advantages-description-2 p {
+.advantages-description,
+.advantages-description-2 p {
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
@@ -186,11 +185,11 @@ h3:after {
 }
 
 .services-offer p {
-font-weight: 400;
-font-size: 22px;
-line-height: 26px;
-text-align: center;
-color: #333333;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  color: #333333;
 }
 
 .services-advantages-item {
@@ -206,7 +205,6 @@ color: #333333;
   height: 72px;
   background-repeat: no-repeat;
   position: absolute;
-
 }
 
 .services-advantages-item:nth-child(2)::before {
@@ -217,7 +215,6 @@ color: #333333;
   height: 70px;
   background-repeat: no-repeat;
   position: absolute;
-
 }
 
 .services-advantages-item:last-child::before {
@@ -231,10 +228,10 @@ color: #333333;
 }
 
 .services-advantages-item .services-advantages-name {
-font-weight: 700;
-font-size: 24px;
-line-height: 28px;
-text-transform: uppercase;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
 }
 
 .services-advantages-item .services-advantages-review {
@@ -263,11 +260,11 @@ text-transform: uppercase;
 }
 
 .services-order p {
-font-weight: 400;
-font-size: 22px;
-line-height: 26px;
-text-align: center;
-color: #333333;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  color: #333333;
 }
 
 .newsletter {
@@ -279,11 +276,11 @@ color: #333333;
 }
 
 .newsletter-sign-up h2 {
-font-weight: 700;
-font-size: 30px;
-line-height: 36px;
-text-transform: uppercase;
-text-align: center;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 .newsletter-sign-up p {
@@ -314,13 +311,13 @@ text-align: center;
 
 /*ТЕЛЕФОН*/
 .footer-address-phone-contact {
-font-weight: 400;
-font-size: 40px;
-line-height: 40px;
-font-style: normal;
-color: #000000;
-text-transform: uppercase;
-text-decoration: none;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  font-style: normal;
+  color: #000000;
+  text-transform: uppercase;
+  text-decoration: none;
 }
 
 /*КАТАЛОГ*/
@@ -331,7 +328,8 @@ text-decoration: none;
   width: 1200px;
   height: 412px;
   background-repeat: no-repeat;
-  display: flex;  /*временно, что б было видно на макете*/
+  display: flex;
+  /*временно, что б было видно на макете*/
 }
 
 .main-catalog-title {
@@ -340,16 +338,20 @@ text-decoration: none;
   line-height: 78px;
 }
 
-.catalog-select-list, .catalog-select-box {
+.catalog-select-list,
+.catalog-select-box,
+.breadcrumbs-link {
   list-style-type: none;
+  text-decoration: none;
+  color: #FFFFFF;
 }
 
 /*ХЛЕБНЫЕ КРОШКИ*/
 .breadcrumbs {
-font-weight: 400;
-font-size: 16px;
-line-height: 21px;
-list-style-type: none;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  list-style-type: none;
 }
 
 .catalog-select-title {
@@ -372,15 +374,16 @@ list-style-type: none;
   text-transform: capitalize;
 
 }
+
 /*КНОПКИ ПРИМЕНИТЬ-СБРОСИТЬ*/
 .button.button-apply {
-font-weight: 700;
-font-size: 16px;
-line-height: 20px;
-text-align: center;
-text-transform: uppercase;
-color: #FFFFFF;
-background: #82B3D3;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background: #82B3D3;
 }
 
 .button.button-reset {
@@ -425,10 +428,10 @@ background: #82B3D3;
 
 /*НАЗВАНИЯ ОТЕЛЕЙ*/
 .hotel-item-title {
-font-weight: 700;
-font-size: 24px;
-line-height: 28px;
-color: #000000;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
 }
 
 .hotel-item-type {
@@ -504,12 +507,12 @@ color: #000000;
 }
 
 .footer-address-phone-contact {
-font-weight: 400;
-font-size: 40px;
-line-height: 40px;
-font-style: normal;
-color: #000000;
-text-transform: uppercase;
-text-decoration: none;
-text-align: center;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  font-style: normal;
+  color: #000000;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
 }
