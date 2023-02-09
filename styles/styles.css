@@ -41,6 +41,7 @@ body {
 /*НОРМАЛИЗАЦИЯ ТЕГА IMG*/
 img {
   max-width: 100%;
+  display: block;
   height: auto;
   overflow: hidden;
   user-select: none;
@@ -83,10 +84,10 @@ img {
 }
 
 .navigation-user {
-width: 268px;
-padding: 0;
-margin: 0;
-margin-left: auto;
+  width: 268px;
+  padding: 0;
+  margin: 0;
+  margin-left: auto;
 }
 
 .navigation-link {
@@ -170,6 +171,12 @@ margin-left: auto;
 }
 
 /*ПРЕИМУЩЕСТВА*/
+.advantages-flex, .advantages-flex-2 {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
 .advantages-list {
   margin: 0;
   padding: 0;
@@ -342,7 +349,6 @@ h3:after {
 }
 
 /*ЗАИНТЕРЕСОВАЛИСЬ?*/
-
 .services-order {
   width: 592px;
   text-align: center;
@@ -366,6 +372,12 @@ h3:after {
   color: #333333;
 }
 
+.newsletter-flex {
+  text-align: center;
+  margin: 0 auto;
+  padding: 96px 258px 104px 258px;
+}
+
 .newsletter {
   background-image: url("../images/footer-background.jpg");
   background-size: no-repeat;
@@ -374,24 +386,19 @@ h3:after {
   color: #FFFFFF;
 }
 
-.newsletter-sign-up {
-  margin: 0 auto;
-
-}
-
 .newsletter-sign-up h2 {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
-  text-align: center;
+
 }
 
 .newsletter-sign-up p {
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
-  text-align: center;
+
 }
 
 .button.newsletter-button {
