@@ -101,6 +101,7 @@ margin: 0 auto;
   font-size: 20px;
   line-height: 24px;
   color: #000000;
+
 }
 
 /*ВСЕ КОРИЧНЕВЫЕ КНОПКИ*/
@@ -116,9 +117,20 @@ margin: 0 auto;
   border-radius: 4px;
 }
 
+.main-wrapper {
+  flex-grow: 1;
+
+  }
+
 .page-wrapper {
   width: 1200px;
   margin: 0 auto;
+}
+
+.main-logo {
+  display: block;
+  margin: 0 auto;
+
 }
 
 .page-hero-logo {
@@ -141,11 +153,6 @@ margin: 0 auto;
   position: absolute;
   background-repeat: no-repeat;
   bottom: -1px;
-}
-
-.main-wrapper {
-flex-grow: 1;
-
 }
 
 .main-page-title h2 {
@@ -190,6 +197,14 @@ h3:after {
   position: relative;
     */
 
+.advantages-list {
+margin: 0;
+padding: 0;
+display: flex;
+justify-content: space-between;
+text-align: center;
+
+}
 
 .advantages-description,
 .advantages-description-2 p {
@@ -202,7 +217,6 @@ h3:after {
 
 .advantages-item {
   list-style-type: none;
-  text-align: center;
 }
 
 .advantages-item .advantages-name {
