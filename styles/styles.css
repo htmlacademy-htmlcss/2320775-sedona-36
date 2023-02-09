@@ -14,6 +14,11 @@
   font-display: swap;
 }
 
+html {
+height: 100%;
+
+}
+
 body {
   font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 400;
@@ -22,24 +27,22 @@ body {
   color: #000000;
   background-color: #FFFFFF;
   position: relative;
-  width: 100%;
-  min-height: 100%;
+  margin: 0;
   display: flex;
   flex-direction: column;
-  margin: 0;
+  width: 100%;
+  min-height: 100%;
 }
 
 /*НОРМАЛИЗАЦИЯ ТЕГА IMG*/
 img {
-  display: block;
   max-width: 100%;
   height: auto;
   overflow: hidden;
   user-select: none;
-  object-fit: cover;
+  object-fit: contain;
   object-position: center;
 }
-
 
 .visually-hidden {
   position: absolute;
@@ -59,8 +62,20 @@ img {
   background-color: #FFFFFF;
 }
 
+.navigation {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+
 .navigation-item {
   list-style-type: none;
+}
+
+.navigation-list {
+margin: 0;
+padding: 0;
+
 }
 
 .navigation-link {
@@ -105,6 +120,11 @@ img {
   position: absolute;
   background-repeat: no-repeat;
   bottom: -1px;
+}
+
+.main-wrapper {
+flex-grow: 1;
+
 }
 
 .main-page-title h2 {
