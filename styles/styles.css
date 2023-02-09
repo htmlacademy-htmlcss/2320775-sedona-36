@@ -14,10 +14,10 @@
   font-display: swap;
 }
 
-/*Временная подсветка*/
+/* Временная подсветка
 div, ul {
   outline: 3px solid red
-}
+} */
 
 
 html {
@@ -69,7 +69,7 @@ img {
 
 .navigation {
   display: flex;
-  width: 1200px;
+  width: 1060px;
   margin: 0 auto;
 }
 
@@ -391,14 +391,12 @@ h3:after {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
-
 }
 
 .newsletter-sign-up p {
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
-
 }
 
 .button.newsletter-button {
@@ -407,6 +405,14 @@ h3:after {
 }
 
 /*ПОДВАЛ*/
+
+.footer-page-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 1060px;
+  margin: 0 auto;
+}
+
 .footer-page {
   color: #000000;
   background: white;
@@ -414,6 +420,7 @@ h3:after {
 
 .footer-social-item {
   list-style-type: none;
+  display: inline;
 }
 
 /*ПРОЗРАЧНЫЕ КНОПКИ СОЦСЕТЕЙ*/
