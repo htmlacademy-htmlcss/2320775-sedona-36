@@ -16,7 +16,6 @@
 
 html {
 height: 100%;
-
 }
 
 body {
@@ -59,39 +58,27 @@ img {
 .page-header {
   color: #000000;
   background-color: #FFFFFF;
-  display: flex;
-  width: 1200px;
-  margin: 0 auto;
 }
 
 .navigation {
   display: flex;
   width: 1200px;
   margin: 0 auto;
+  }
 
+.navigation-list {
+  margin: 0;
+  padding: 0;
+  width: 339px;
 }
 
 .navigation-item {
   list-style-type: none;
 }
 
-.navigation-list {
-margin: 0;
-padding: 0;
-width: 339px;
-
-}
-
 .navigation-user {
 width: 268px;
 margin-left: auto;
-
-}
-
-.navigation-logo {
-width: 140px;
-margin: 0 auto;
-
 }
 
 .navigation-link {
@@ -101,7 +88,6 @@ margin: 0 auto;
   font-size: 20px;
   line-height: 24px;
   color: #000000;
-
 }
 
 /*ВСЕ КОРИЧНЕВЫЕ КНОПКИ*/
@@ -119,8 +105,7 @@ margin: 0 auto;
 
 .main-wrapper {
   flex-grow: 1;
-
-  }
+}
 
 .page-wrapper {
   width: 1200px;
@@ -130,7 +115,6 @@ margin: 0 auto;
 .main-logo {
   display: block;
   margin: 0 auto;
-
 }
 
 .page-hero-logo {
@@ -140,7 +124,6 @@ margin: 0 auto;
   width: 1200px;
   height: 485px;
   position: relative;
-  text-align: center;
 }
 
 /*ЛЕСЕНКА*/
@@ -153,6 +136,13 @@ margin: 0 auto;
   position: absolute;
   background-repeat: no-repeat;
   bottom: -1px;
+}
+
+.main-page-title {
+  margin: 0;
+  width: 620px;
+  text-align: center;
+  padding: 69px 247.5px;
 }
 
 .main-page-title h2 {
@@ -172,9 +162,24 @@ margin: 0 auto;
 }
 
 /*ПРЕИМУЩЕСТВА*/
+.advantages-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  width: 1200px;
+  justify-content: center;
+}
+
+.advantages-item {
+  width: 400px;
+  list-style-type: none;
+  text-align: center;
+}
+
 .advantages-description,
 .advantages-description-2 {
   background-color: #82B3D3;
+  width: 400px;
 }
 
 .advantages-description h3,
@@ -197,15 +202,6 @@ h3:after {
   position: relative;
     */
 
-.advantages-list {
-margin: 0;
-padding: 0;
-display: flex;
-justify-content: space-between;
-text-align: center;
-
-}
-
 .advantages-description,
 .advantages-description-2 p {
   font-weight: 400;
@@ -217,6 +213,7 @@ text-align: center;
 
 .advantages-item {
   list-style-type: none;
+  width: 400px;
 }
 
 .advantages-item .advantages-name {
@@ -247,6 +244,13 @@ text-align: center;
 }
 
 /*УСЛУГИ*/
+.services-offer {
+  margin: 0 auto;
+  width: 505px;
+  text-align: center;
+  padding: 64px 347.5px;
+}
+
 .services-offer h2 {
   font-weight: 700;
   font-size: 30px;
@@ -263,9 +267,17 @@ text-align: center;
   color: #333333;
 }
 
+.services-advantages-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-content: center;
+}
+
 .services-advantages-item {
   list-style-type: none;
   text-align: center;
+  width: 400px;
 }
 
 .services-advantages-item:first-child:before {
@@ -322,6 +334,14 @@ text-align: center;
 }
 
 /*ЗАИНТЕРЕСОВАЛИСЬ?*/
+
+.services-order {
+  width: 592px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 96px 304px;
+}
+
 .services-order h2 {
   font-weight: 700;
   font-size: 30px;
@@ -346,6 +366,11 @@ text-align: center;
   color: #FFFFFF;
 }
 
+.newsletter-sign-up {
+  margin: 0 auto;
+
+}
+
 .newsletter-sign-up h2 {
   font-weight: 700;
   font-size: 30px;
@@ -363,6 +388,7 @@ text-align: center;
 
 .button.newsletter-button {
   background: #82B3D3;
+
 }
 
 /*ПОДВАЛ*/
