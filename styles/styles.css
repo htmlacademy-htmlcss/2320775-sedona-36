@@ -30,7 +30,6 @@ body {
   margin: 0;
   display: flex;
   flex-direction: column;
-  width: 100%;
   min-height: 100%;
 }
 
@@ -60,12 +59,16 @@ img {
 .page-header {
   color: #000000;
   background-color: #FFFFFF;
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
 }
 
 .navigation {
   display: flex;
   width: 1200px;
   margin: 0 auto;
+
 }
 
 .navigation-item {
@@ -75,6 +78,19 @@ img {
 .navigation-list {
 margin: 0;
 padding: 0;
+width: 339px;
+
+}
+
+.navigation-user {
+width: 268px;
+margin-left: auto;
+
+}
+
+.navigation-logo {
+width: 140px;
+margin: 0 auto;
 
 }
 
@@ -98,6 +114,11 @@ padding: 0;
   color: #FFFFFF;
   background-color: #756157;
   border-radius: 4px;
+}
+
+.page-wrapper {
+  width: 1200px;
+  margin: 0 auto;
 }
 
 .page-hero-logo {
