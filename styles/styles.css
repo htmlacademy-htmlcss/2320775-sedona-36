@@ -525,6 +525,7 @@ h3:after {
   justify-content: space-between;
   margin: 0 auto;
   width: 1060px;
+  margin: 50px 70px 40px 70px;
 }
 
 .find-hotels-title {
@@ -532,6 +533,8 @@ h3:after {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
+  padding: 6.5px;
+  margin: 0;
 }
 
 /*Боковые кнопки вида, временное отключение наследуемого стиля*/
@@ -546,7 +549,9 @@ h3:after {
   font-size: 18px;
   line-height: 21px;
   color: #333333;
-  box-sizing: border-box;
+  width: 292px;
+  height: 49px;
+
 }
 
 .hotel-list {
@@ -566,6 +571,7 @@ h3:after {
   font-size: 24px;
   line-height: 28px;
   color: #000000;
+
 }
 
 .hotel-item-type {
