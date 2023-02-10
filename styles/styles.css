@@ -508,7 +508,10 @@ b:after  {
 
 .catalog-select {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 1060px;
+  margin: 0 auto;
 
 }
 
