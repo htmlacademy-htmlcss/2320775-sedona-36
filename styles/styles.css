@@ -198,6 +198,7 @@ img {
   width: 400px;
 }
 
+
 .advantages-description h3,
 .advantages-description-2 h3 {
   font-weight: 700;
@@ -207,10 +208,13 @@ img {
   text-transform: uppercase;
   color: #FFFFFF;
   margin-top: 102px;
-  margin-bottom: 62px;
+  width: 175px;
+  margin-left: 112.5px;
+  margin-bottom: 0;
+
 }
 
-/* Попытка внедрить палочку между h3 и p
+/* Попытка внедрить палочку между h3 и p */
 h3:after {
   content: "";
   width: 60px;
@@ -218,7 +222,10 @@ h3:after {
   background: rgba(255, 255, 255, 0.3);
   display: block;
   position: relative;
-    */
+  margin-top: 30px;
+  margin-left: 57.5px;
+
+}
 
 .advantages-description,
 .advantages-description-2 p {
