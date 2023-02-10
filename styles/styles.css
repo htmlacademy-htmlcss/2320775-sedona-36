@@ -518,6 +518,15 @@ h3:after {
   border: 0;
 }
 
+/*НАЙДЕНО ГОСТИНИЦ*/
+.find-hotels-search {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 1060px;
+}
+
 .find-hotels-title {
   font-weight: 700;
   font-size: 30px;
@@ -537,10 +546,14 @@ h3:after {
   font-size: 18px;
   line-height: 21px;
   color: #333333;
+  box-sizing: border-box;
 }
 
 .hotel-list {
   list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  width: 1060px;
 }
 
 .hotel-item-link {
