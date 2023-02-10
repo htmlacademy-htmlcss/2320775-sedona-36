@@ -14,10 +14,10 @@
   font-display: swap;
 }
 
- Временная подсветка
+/* Временная подсветка
 div, ul, li {
   outline: 1px solid red
-}
+} */
 
 html {
 height: 100%;
