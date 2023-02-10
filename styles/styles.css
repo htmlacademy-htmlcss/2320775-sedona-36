@@ -493,7 +493,6 @@ h3:after {
   font-size: 20px;
   line-height: 24px;
   text-transform: capitalize;
-
 }
 
 /*КНОПКИ ПРИМЕНИТЬ-СБРОСИТЬ*/
@@ -559,6 +558,7 @@ h3:after {
   display: flex;
   flex-direction: column;
   width: 1060px;
+  margin: 0 auto;
 }
 
 .hotel-item-link {

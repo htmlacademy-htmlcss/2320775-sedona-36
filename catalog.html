@@ -55,7 +55,7 @@
         </ul>
       </nav>
     </header>
-    <main>
+    <main class="main-wrapper">
       <div class="page-wrapper">
         <section class="main-wrapper main-catalog">
           <h1 class="main-catalog-title">Гостиницы Седоны</h1>
@@ -218,17 +218,19 @@
         </section>
         <section class="footer-newsletter-catalog">
           <h2 class="visually-hidden">Форма для подписки на рассылку</h2>
-          <div class="newsletter-email-catalog">
-            <h2>Подпишитесь на рассылку</h2>
-            <p>Только полезная информация и никакого спама,<br>
-              честное бойскаутское!</p>
+          <div class="newsletter-flex">
+            <div class="newsletter-sign-up">
+              <h2>Подпишитесь на рассылку</h2>
+              <p>Только полезная информация и никакого спама,<br>
+                честное бойскаутское!</p>
+            </div>
+            <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
+              <label for="newsletter-email">E-mail</label>
+              <input class="field" type="email" name="newsletter-email" id="newsletter-email" placeholder="Ваш e-mail"
+                required>
+              <button class="button newsletter-button" type="submit">Подписаться</button>
+            </form>
           </div>
-          <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-            <label for="newsletter-email">E-mail</label>
-            <input class="field" type="email" name="newsletter-email" id="newsletter-email" placeholder="Ваш e-mail"
-              required>
-            <button class="button newsletter-button" type="submit">Подписаться</button>
-          </form>
         </section>
       </div>
     </main>
