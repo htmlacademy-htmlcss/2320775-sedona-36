@@ -412,6 +412,7 @@ h3:after {
   display: flex;
   flex-direction: row;
   width: 1060px;
+  margin: 0 auto;
 
 }
 
