@@ -155,6 +155,7 @@ img {
 }
 
 .main-page-title h2 {
+  white-space: pre-line;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -163,11 +164,13 @@ img {
 }
 
 .main-page-title p {
+  white-space: pre-line;
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
   text-align: center;
   color: #333333;
+  width: 651px;
 }
 
 /*ПРЕИМУЩЕСТВА*/
@@ -210,7 +213,6 @@ img {
   margin-top: 102px;
   width: 175px;
   margin-left: 112.5px;
-
 }
 
 /* Попытка # 890812321 внедрить палочку между h3 и p */
@@ -225,14 +227,14 @@ h3:after {
   margin-left: 57.5px;
 }
 
-.advantages-description,
+.advantages-description p,
 .advantages-description-2 p {
+  white-space: pre-line;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   text-align: center;
   color: #FFFFFF;
-
 }
 
 .advantages-item {
@@ -240,7 +242,8 @@ h3:after {
   width: 400px;
 }
 
-.advantages-item .advantages-name {
+.advantages-item .advantages-name,
+.services-advantages-item .services-advantages-name {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -259,21 +262,20 @@ b:after  {
   position: relative;
   margin-top: 30px;
   margin-left: 85px;
-
 }
 
 .advantages-item b {
   white-space: pre-line;
 }
 
-.advantages-item .advantages-review {
+.advantages-item .advantages-review,
+.services-advantages-item .services-advantages-review {
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   color: #333333;
   margin-top: 30px;
 }
-
 
 /*НАСЛЕДОВАНИЕ ФОНОВ ДЛЯ БЛОКОВ*/
 .advantages-list li:first-child {
@@ -361,14 +363,17 @@ b:after  {
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .services-advantages-item .services-advantages-review {
+  white-space: pre-line;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   text-align: center;
   color: #333333;
+  width: 230px;
 }
 
 .services-advantages-list li:first-child {
@@ -432,17 +437,14 @@ b:after  {
 
 .button.newsletter-button {
   background: #82B3D3;
-
 }
 
 /*ПОДВАЛ*/
-
 .footer-page-wrapper {
   display: flex;
   flex-direction: row;
   width: 1060px;
   margin: 0 auto;
-
 }
 
 .footer-page {
@@ -552,7 +554,6 @@ b:after  {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 0 auto;
   width: 1060px;
   margin: 50px 70px 40px 70px;
 }
@@ -580,7 +581,6 @@ b:after  {
   color: #333333;
   width: 292px;
   height: 49px;
-
 }
 
 .hotel-list {
@@ -601,7 +601,6 @@ b:after  {
   font-size: 24px;
   line-height: 28px;
   color: #000000;
-
 }
 
 .hotel-item-type {
