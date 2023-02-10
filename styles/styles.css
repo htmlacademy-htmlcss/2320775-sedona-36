@@ -294,6 +294,7 @@ h3:after {
   list-style-type: none;
   text-align: center;
   width: 400px;
+  padding: 183px 85px 81px 85px;
 }
 
 .services-advantages-item:first-child:before {
