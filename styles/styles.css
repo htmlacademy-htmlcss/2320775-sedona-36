@@ -439,7 +439,7 @@ b:after  {
   background: #82B3D3;
 }
 
-/*ПОДВАЛ*/
+/*ПОДВАЛ ИНДЕКСА*/
 .footer-page-wrapper {
   display: flex;
   flex-direction: row;
@@ -481,7 +481,6 @@ b:after  {
   width: 1200px;
   height: 412px;
   background-repeat: no-repeat;
-  display: flex;  /*временно, что б было видно на макете*/
   background-size: cover;
 }
 
@@ -505,6 +504,12 @@ b:after  {
   font-size: 16px;
   line-height: 21px;
   list-style-type: none;
+}
+
+.catalog-select {
+  display: flex;
+  justify-content: space-around;
+
 }
 
 .catalog-select-title {
