@@ -16,9 +16,8 @@
 
  Временная подсветка
 div, ul, li {
-  outline: 3px solid red
+  outline: 1px solid red
 }
-
 
 html {
 height: 100%;
@@ -190,6 +189,7 @@ img {
   width: 400px;
   list-style-type: none;
   text-align: center;
+  padding: 112.5px 85px;
 }
 
 .advantages-description,
@@ -294,6 +294,7 @@ h3:after {
   list-style-type: none;
   text-align: center;
   width: 400px;
+  padding: 183px 85px 81px 85px;
 }
 
 .services-advantages-item:first-child:before {
@@ -492,7 +493,6 @@ h3:after {
   font-size: 20px;
   line-height: 24px;
   text-transform: capitalize;
-
 }
 
 /*КНОПКИ ПРИМЕНИТЬ-СБРОСИТЬ*/
@@ -517,11 +517,23 @@ h3:after {
   border: 0;
 }
 
+/*НАЙДЕНО ГОСТИНИЦ*/
+.find-hotels-search {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 1060px;
+  margin: 50px 70px 40px 70px;
+}
+
 .find-hotels-title {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
+  padding: 6.5px;
+  margin: 0;
 }
 
 /*Боковые кнопки вида, временное отключение наследуемого стиля*/
@@ -536,10 +548,17 @@ h3:after {
   font-size: 18px;
   line-height: 21px;
   color: #333333;
+  width: 292px;
+  height: 49px;
+
 }
 
 .hotel-list {
   list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  width: 1060px;
+  margin: 0 auto;
 }
 
 .hotel-item-link {
@@ -552,6 +571,7 @@ h3:after {
   font-size: 24px;
   line-height: 28px;
   color: #000000;
+
 }
 
 .hotel-item-type {
