@@ -16,7 +16,7 @@
 
  Временная подсветка
 div, ul, li {
-  outline: 3px solid red
+  outline: 1px solid red
 }
 
 html {
