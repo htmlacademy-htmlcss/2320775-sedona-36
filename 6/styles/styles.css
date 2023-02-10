@@ -200,15 +200,20 @@ img {
 
 .advantages-description h3,
 .advantages-description-2 h3 {
+  white-space: pre-line;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
   text-align: center;
   text-transform: uppercase;
   color: #FFFFFF;
+  margin-top: 102px;
+  width: 175px;
+  margin-left: 112.5px;
+
 }
 
-/* Попытка внедрить палочку между h3 и p
+/* Попытка # 890812321 внедрить палочку между h3 и p */
 h3:after {
   content: "";
   width: 60px;
@@ -216,7 +221,9 @@ h3:after {
   background: rgba(255, 255, 255, 0.3);
   display: block;
   position: relative;
-    */
+  margin-top: 30px;
+  margin-left: 57.5px;
+}
 
 .advantages-description,
 .advantages-description-2 p {
@@ -225,6 +232,7 @@ h3:after {
   line-height: 21px;
   text-align: center;
   color: #FFFFFF;
+
 }
 
 .advantages-item {
@@ -237,6 +245,25 @@ h3:after {
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
+  width: 175px;
+  height: 56px;
+  margin-bottom: 0;
+}
+
+b:after  {
+  content: "";
+  width: 60px;
+  height: 2px;
+  background: rgba(0, 0, 0, 0.3);
+  display: block;
+  position: relative;
+  margin-top: 30px;
+  margin-left: 85px;
+
+}
+
+.advantages-item b {
+  white-space: pre-line;
 }
 
 .advantages-item .advantages-review {
@@ -244,7 +271,9 @@ h3:after {
   font-size: 18px;
   line-height: 21px;
   color: #333333;
+  margin-top: 30px;
 }
+
 
 /*НАСЛЕДОВАНИЕ ФОНОВ ДЛЯ БЛОКОВ*/
 .advantages-list li:first-child {
@@ -412,6 +441,7 @@ h3:after {
   display: flex;
   flex-direction: row;
   width: 1060px;
+  margin: 0 auto;
 
 }
 
