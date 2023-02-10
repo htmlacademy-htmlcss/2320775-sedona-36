@@ -19,7 +19,6 @@ div, ul, li {
   outline: 3px solid red
 }
 
-
 html {
 height: 100%;
 }
@@ -190,6 +189,7 @@ img {
   width: 400px;
   list-style-type: none;
   text-align: center;
+  padding: 112.5px 85px;
 }
 
 .advantages-description,
