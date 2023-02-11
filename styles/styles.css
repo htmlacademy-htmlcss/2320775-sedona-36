@@ -14,10 +14,10 @@
   font-display: swap;
 }
 
-/* Временная подсветка
+/* Временная подсветка*/
 div, ul, li {
   outline: 1px solid red
-} */
+}
 
 html {
 height: 100%;
@@ -70,6 +70,7 @@ img {
   display: flex;
   width: 1060px;
   margin: 0 auto;
+  align-items: center;
 }
 
 .navigation-list {
