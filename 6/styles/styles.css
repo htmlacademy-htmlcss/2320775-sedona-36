@@ -488,6 +488,7 @@ b:after  {
   width: 100%;
   background-repeat: no-repeat;
   background-size: 100% auto;
+  min-height: 412px;
 }
 
 .main-catalog-title {
@@ -519,7 +520,6 @@ b:after  {
   align-items: flex-start;
   width: 1060px;
   margin: 0 auto;
-
 }
 
 .catalog-select-title {
@@ -650,6 +650,14 @@ b:after  {
   text-transform: uppercase;
   color: #333333;
 }
+
+.pagination {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-evenly;
+  margin: 0 auto;
+}
+
 
 /*СЕКЦИЯ ПОДПИСКИ НА РАССЫЛКУ*/
 .newsletter-email-catalog h2 {
