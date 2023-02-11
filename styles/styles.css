@@ -394,7 +394,6 @@ b:after  {
 
 /*ЗАИНТЕРЕСОВАЛИСЬ?*/
 .services-order {
-  width: 592px;
   text-align: center;
   margin: 0 auto;
   padding: 96px 304px;
@@ -451,13 +450,13 @@ b:after  {
   color: #000000;
   background: white;
 }
+
 .footer-address {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 25px 0;
   width: 100%;
-
 }
 
 .footer-social-item {
@@ -486,16 +485,16 @@ b:after  {
   color: #FFFFFF;
   background-color: #82B3D3;
   background-image: url("../images/catalog-background.jpg");
-  width: 1200px;
-  height: 412px;
+  width: 100%;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% auto;
 }
 
 .main-catalog-title {
   font-weight: 700;
   font-size: 60px;
   line-height: 78px;
+  margin: 0;
 }
 
 .catalog-select-list,
@@ -603,8 +602,8 @@ b:after  {
   list-style-type: none;
   display: flex;
   flex-direction: column;
-  width: 1060px;
-  margin: 0 auto;
+  margin: 0;
+  padding: 40px 70px;
 }
 
 .hotel-item-link {
@@ -685,6 +684,7 @@ b:after  {
 
 .footer-address-social-item {
   list-style-type: none;
+  display: inline;
 }
 
 .footer-address-social-item .button {
@@ -699,5 +699,5 @@ b:after  {
   color: #000000;
   text-transform: uppercase;
   text-decoration: none;
-  text-align: center;
+
 }
