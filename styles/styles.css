@@ -29,7 +29,7 @@ body {
   font-size: 18px;
   line-height: 21px;
   color: #000000;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   position: relative;
   margin: 0;
   display: flex;
@@ -59,6 +59,12 @@ img {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.page-wprapper {
+  width: 1200px;
+  margin: 0 auto;
+
 }
 
 .page-header {
@@ -150,7 +156,6 @@ img {
 
 .main-page-title {
   margin: 0 auto;
-  width: 620px;
   text-align: center;
   padding: 69px 247.5px;
 }
@@ -441,16 +446,17 @@ b:after  {
 }
 
 /*ПОДВАЛ ИНДЕКСА*/
-.footer-page-wrapper {
-  display: flex;
-  flex-direction: row;
-  width: 1060px;
-  margin: 0 auto;
-}
-
 .footer-page {
   color: #000000;
   background: white;
+}
+.footer-address {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 0;
+  width: 100%;
+
 }
 
 .footer-social-item {
