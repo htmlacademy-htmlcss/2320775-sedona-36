@@ -64,7 +64,6 @@ img {
 .page-wprapper {
   width: 1200px;
   margin: 0 auto;
-
 }
 
 .page-header {
@@ -74,13 +73,16 @@ img {
 
 .navigation {
   display: flex;
-  width: 1060px;
   margin: 0 auto;
   align-items: center;
 }
 
+.navigation-logo {
+  margin-left: 70px;
+  margin-right: 30px;
+}
+
 .navigation-list {
-  width: 339px;
   margin: 0;
   padding: 0;
 }
@@ -91,10 +93,10 @@ img {
 }
 
 .navigation-user {
-  width: 268px;
   padding: 0;
   margin: 0;
   margin-left: auto;
+  margin-right: 70px;
 }
 
 .navigation-link {
@@ -423,8 +425,7 @@ b:after  {
 .newsletter {
   background-image: url("../images/footer-background.jpg");
   background-size: no-repeat;
-  width: 1200px;
-  height: 414.86px;
+  width: 100%;
   color: #FFFFFF;
 }
 
