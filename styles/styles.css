@@ -62,9 +62,9 @@ img {
 }
 
 .page-container {
-  width: 1200px;
+  width: 1280px;
   margin: 0 auto;
-
+  padding: 0 40px;
 }
 
 .page-header {
@@ -127,7 +127,6 @@ img {
 }
 
 .page-wrapper {
-  width: 1200px;
   margin: 0 auto;
 }
 
