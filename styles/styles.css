@@ -61,10 +61,9 @@ img {
   overflow: hidden;
 }
 
-.page-wprapper {
+.page-container {
   width: 1200px;
   margin: 0 auto;
-  padding: 0 40px;
 
 }
 
@@ -194,12 +193,10 @@ img {
   margin: 0;
   padding: 0;
   display: flex;
-  width: 1200px;
   justify-content: center;
 }
 
 .advantages-item {
-  width: 400px;
   list-style-type: none;
   text-align: center;
   padding: 112.5px 85px;
@@ -334,7 +331,6 @@ b:after  {
 .services-advantages-item {
   list-style-type: none;
   text-align: center;
-  width: 400px;
   padding: 183px 85px 81px 85px;
 }
 
