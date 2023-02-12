@@ -14,11 +14,11 @@
   font-display: swap;
 }
 
-/* Временная подсветка
+/* Временная подсветка*/
 div, ul, li {
   outline: 1px solid red
 }
-*/
+
 html {
 height: 100%;
 }
@@ -64,6 +64,8 @@ img {
 .page-wprapper {
   width: 1200px;
   margin: 0 auto;
+  padding: 0 40px;
+
 }
 
 .page-header {
@@ -457,6 +459,10 @@ b:after  {
   justify-content: space-between;
   padding: 25px 0;
   width: 100%;
+}
+
+.footer-address-social-list {
+  padding: 0;
 }
 
 .footer-social-item {
