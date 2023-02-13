@@ -70,6 +70,11 @@ img {
   background-color: #F2F2F2;
 }
 
+.shadow {
+  box-shadow: -5px 0 10px -5px rgb(151 143 143 / 50%),
+  5px 0 10px -5px rgb(151 143 143 / 50%);
+}
+
 .page-header {
   color: #000000;
   background-color: #FFFFFF;
@@ -128,10 +133,6 @@ img {
 .main-wrapper {
   flex-grow: 1;
   background-color: #FFFFFF;
-}
-
-.page-wrapper {
-  margin: 0 auto;
 }
 
 .main-logo {
@@ -208,7 +209,7 @@ img {
 .advantages-description,
 .advantages-description-2 {
   background-color: #82B3D3;
-  width: 400px;
+  min-width: 400px;
 }
 
 .advantages-description h3,
@@ -249,7 +250,8 @@ h3:after {
 
 .advantages-item {
   list-style-type: none;
-  width: 400px;
+  text-align: center;
+  padding: 112.5px 85px;
 }
 
 .advantages-item .advantages-name,
@@ -303,8 +305,6 @@ b:after  {
 /*УСЛУГИ*/
 .services-offer {
   margin: 0 auto;
-  width: 505px;
-  text-align: center;
   padding: 64px 347.5px;
 }
 
@@ -455,7 +455,7 @@ b:after  {
 .footer-address {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 25px 0;
   width: 100%;
 }
@@ -662,7 +662,6 @@ b:after  {
   justify-content: space-evenly;
   margin: 0 auto;
 }
-
 
 /*СЕКЦИЯ ПОДПИСКИ НА РАССЫЛКУ*/
 .newsletter-email-catalog h2 {
