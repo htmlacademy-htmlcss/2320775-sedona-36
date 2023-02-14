@@ -295,7 +295,7 @@ b:after  {
 
 .services-offer {
   margin: 0 auto;
-  padding: 64px 347.5px;
+
 }
 
 .services-offer h2 {
@@ -304,6 +304,9 @@ b:after  {
   line-height: 36px;
   text-align: center;
   text-transform: uppercase;
+  margin: 0;
+  padding-top: 64px;
+  padding-bottom: 20px;
 }
 
 .services-offer p {
@@ -312,6 +315,8 @@ b:after  {
   line-height: 26px;
   text-align: center;
   color: #333333;
+  margin: 0;
+  padding-bottom: 64px;
 }
 
 .services-advantages-list {
