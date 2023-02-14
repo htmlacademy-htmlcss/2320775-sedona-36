@@ -438,18 +438,15 @@ b:after  {
   margin-bottom: 96px;
 }
 
-
-.newsletter-flex {
-  text-align: center;
-  margin: 0 auto;
-  padding: 96px 258px 104px 258px;
-}
-
 .newsletter {
   background-image: url("../images/footer-background.jpg");
-  background-size: no-repeat;
+  background-color: #82B3D3;
+  background-repeat: no-repeat;
   width: 100%;
   color: #FFFFFF;
+  background-size: 100% auto;
+  min-height: 414.86px;
+  text-align: center;
 }
 
 .newsletter-sign-up h2 {
@@ -457,16 +454,43 @@ b:after  {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  padding-top: 96px;
+  padding-bottom: 20px;
 }
 
 .newsletter-sign-up p {
-  font-weight: 400;
-  font-size: 22px;
-  line-height: 26px;
+font-weight: 400;
+font-size: 22px;
+line-height: 26px;
+margin: 0;
+padding: 0;
+padding-bottom: 54px;
+}
+
+.newsletter-form {
+  display: flex;
+  justify-content: center;
 }
 
 .button.newsletter-button {
-  background: #82B3D3;
+background: #82B3D3;
+height: 52px;
+min-width: 232px;
+border-radius: 0 4px 4px 0;
+}
+
+.newsletter-form .field {
+min-width: 452px;
+height: 52px;
+background: #F2F2F2;
+border-radius: 4px 0 0 4px;
+border: 0;
+padding: 0;
+font-weight: 400;
+font-size: 18px;
+padding-left: 20px;
 }
 
 /*ПОДВАЛ ИНДЕКСА*/
@@ -706,7 +730,6 @@ b:after  {
 .button.newsletter-button {
   font-weight: 700;
   font-size: 20px;
-  line-height: 36px;
   text-transform: uppercase;
   border: 0;
 }
