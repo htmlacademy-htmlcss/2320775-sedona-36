@@ -161,12 +161,6 @@ img {
   bottom: -1px;
 }
 
-.main-page-title {
-  margin: 0 auto;
-  text-align: center;
-  padding: 69px 247.5px;
-}
-
 .main-page-title h2 {
   white-space: pre-line;
   font-weight: 700;
@@ -174,6 +168,9 @@ img {
   line-height: 36px;
   text-align: center;
   text-transform: uppercase;
+  margin: 0;
+  padding-top: 69px;
+  padding-bottom: 25px;
 }
 
 .main-page-title p {
@@ -183,7 +180,9 @@ img {
   line-height: 26px;
   text-align: center;
   color: #333333;
-  width: 651px;
+  margin: 0;
+  padding-bottom: 90px;
+
 }
 
 /*ПРЕИМУЩЕСТВА*/
@@ -284,20 +283,7 @@ b:after  {
   background: rgba(131, 179, 211, 0.12);
 }
 
-/*УСЛУГИ*/
-
-.services-advantages-item .services-advantages-review {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 21px;
-  color: #333333;
-}
-
-.services-offer {
-  margin: 0 auto;
-
-}
-
+/*ПРИЕЗЖАЙТЕ*/
 .services-offer h2 {
   font-weight: 700;
   font-size: 30px;
@@ -318,6 +304,16 @@ b:after  {
   margin: 0;
   padding-bottom: 64px;
 }
+
+/*УСЛУГИ*/
+
+.services-advantages-item .services-advantages-review {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+}
+
 
 .services-advantages-list {
   margin: 0;
@@ -391,8 +387,6 @@ b:after  {
 /*ЗАИНТЕРЕСОВАЛИСЬ?*/
 .services-order {
   text-align: center;
-  margin: 0 auto;
-  padding: 96px 304px;
 }
 
 .services-order h2 {
@@ -401,15 +395,28 @@ b:after  {
   line-height: 36px;
   text-align: center;
   text-transform: uppercase;
+  margin: 0;
+  padding-top: 96px;
+  padding-bottom: 20px;
 }
 
 .services-order p {
+  white-space: pre-line;
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
   text-align: center;
   color: #333333;
+  margin: 0;
+  padding-bottom: 54px;
 }
+
+.services-order a {
+  display: inline-block;
+  padding: 8px 50px;
+  margin-bottom: 96px;
+}
+
 
 .newsletter-flex {
   text-align: center;
