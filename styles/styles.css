@@ -340,6 +340,7 @@ b:after  {
   padding: 0;
   display: flex;
   list-style-type: none;
+
 }
 
 .services-advantages-item {
@@ -349,6 +350,8 @@ b:after  {
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  padding-bottom: 30px;
+
 }
 
 .services-advantages-name {
@@ -356,6 +359,8 @@ b:after  {
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
+  padding-bottom: 30px;
+  display: block;
 }
 
 .services-advantages-review {
@@ -364,6 +369,7 @@ b:after  {
   font-size: 18px;
   line-height: 21px;
   color: #333333;
+  margin: 0;
 }
 
 .services-advantages-list li:first-child {
@@ -382,27 +388,33 @@ b:after  {
   width: 75px;
   height: 72px;
   background-repeat: no-repeat;
-  position: absolute;
+  position: relative;
+  margin: 0 auto;
+  padding-bottom: 30px;
 }
 
-.services-advantages-item:nth-child(2)::before {
+.services-advantages-item:nth-child(2):before {
   content: "";
   display: block;
   background-image: url("../images/icons/food.svg");
   width: 75px;
   height: 70px;
   background-repeat: no-repeat;
-  position: absolute;
+  position: relative;
+  margin: 0 auto;
+  padding-bottom: 30px;
 }
 
-.services-advantages-item:last-child::before {
+.services-advantages-item:last-child:before {
   content: "";
   display: block;
   background-image: url("../images/icons/souvenir.svg");
   width: 75px;
   height: 76px;
   background-repeat: no-repeat;
-  position: absolute;
+  position: relative;
+  margin: 0 auto;
+  padding-bottom: 30px;
 }
 
 /*ЗАИНТЕРЕСОВАЛИСЬ?*/
@@ -441,7 +453,6 @@ b:after  {
   font-size: 20px;
   line-height: 36px;
 }
-
 
 .newsletter {
   background-image: url("../images/footer-background.jpg");
