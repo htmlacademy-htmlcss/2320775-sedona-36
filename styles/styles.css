@@ -443,7 +443,6 @@ b:after  {
 }
 
 
-
 .newsletter {
   background-image: url("../images/footer-background.jpg");
   background-color: #82B3D3;
@@ -509,17 +508,23 @@ padding-left: 20px;
   display: flex;
   align-items: center;
   justify-content: space-around;
-  padding: 25px 0;
+  padding-top: 45px;
+  padding-bottom: 35px;
   width: 100%;
+  margin: 0;
 }
 
 .footer-address-social-list {
   padding: 0;
+  display: flex;
+  justify-content: space-around;
+  min-width: 142px;
 }
 
 .footer-social-item {
   list-style-type: none;
-  display: inline;
+  display: block;
+  padding: 0 10px;
 }
 
 /*ПРОЗРАЧНЫЕ КНОПКИ СОЦСЕТЕЙ*/
