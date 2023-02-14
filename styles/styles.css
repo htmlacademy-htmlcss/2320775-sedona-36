@@ -232,7 +232,8 @@ position: relative;
 }
 
 .advantages-item-image {
-  display: contents;
+  display: flex;
+  align-items: flex-end;
 }
 
 .advantages-item h3 {
