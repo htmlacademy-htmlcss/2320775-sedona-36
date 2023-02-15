@@ -532,6 +532,7 @@ padding-left: 20px;
 .footer-address-social-list {
   margin: 0;
   padding: 0;
+  width: 142px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -540,15 +541,19 @@ padding-left: 20px;
   list-style-type: none;
   display: block;
   padding: 0 10px;
+  width: 47.33px;
+  height: 40px;
+  box-sizing: border-box;
+
 }
 
-.footer-social-item:first-child {
+.footer-social-item:nth-child(1) {
   padding: 13px 11.67px;
 }
 .footer-social-item:nth-child(2) {
   padding: 12px 14.67px;
 }
-.footer-social-item:last-child {
+.footer-social-item:nth-child(3) {
   padding: 11.5px 12.67px;
 }
 
