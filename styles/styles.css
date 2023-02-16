@@ -680,7 +680,6 @@ b:after  {
   border: 0;
 }
 
-
 .catalog-price-box-input {
   display: flex;
   width: 288px;
@@ -764,12 +763,34 @@ b:after  {
   margin: 0;
 }
 
-.
+.hamburgers {
+  display: flex;
+  width: 160px;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
 
-/*Боковые кнопки вида, временное отключение наследуемого стиля*/
+.hamburgers a {
+  display: block;
+  width: 48px;
+  height: 48px;
+  margin-right: 8px;
+  box-sizing: border-box;
+}
+
+.hamburgers a:last-child {
+  margin-right: 0;
+}
+
 .button.button-light {
-  background: rgba(5, 5, 5, 0);
-  color: #000000;
+  background-color:#FFFFFF;
+  border: 2px solid #000000;
+  border-radius: 4px;
+
+}
+
+.hamburgers svg {
+padding-top: 14px;
 }
 
 /*СНАЧАЛА ДЕШЕВЫЕ*/
