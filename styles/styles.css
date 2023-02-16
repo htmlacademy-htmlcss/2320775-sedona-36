@@ -857,14 +857,51 @@ padding-top: 14px;
 }
 
 .pagination {
+  padding: 0;
+  margin: 0;
   display: flex;
   list-style-type: none;
-  justify-content: space-evenly;
-  margin: 0 auto;
+  margin-left: 70px;
 }
 
+.pagination-item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.pagination-link {
+  display: block;
+  box-sizing: border-box;
+  width: 60px;
+  height: 60px;
+  color: #ffffff;
+  background-color: #82B3D3;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.pagination-item a {
+display: block;
+text-align: center;
+padding-top: 11px;
+}
+
+.pagination-link.pagination-current,
+.pagination-link .pagination-dots {
+  background: #F2F2F2;
+  color: #000000;
+}
+
+
 /*СЕКЦИЯ ПОДПИСКИ НА РАССЫЛКУ*/
-.newsletter-email-catalog h2 {
+.footer-newsletter-catalog {
+  min-height: 414.86px;
+  text-align: center;
+}
+
+.newsletter-sign-up h2 {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -872,7 +909,8 @@ padding-top: 14px;
   text-transform: uppercase;
 }
 
-.newsletter-email-catalog p {
+.newsletter-sign-up p {
+  white-space: pre-line;
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
