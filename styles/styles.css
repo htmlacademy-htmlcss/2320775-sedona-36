@@ -21,7 +21,7 @@ div, ul, li {
 */
 
 html {
-height: 100%;
+  height: 100%;
 }
 
 body {
@@ -72,7 +72,7 @@ img {
 
 .shadow {
   box-shadow: -5px 0 10px -5px rgb(151 143 143 / 50%),
-  5px 0 10px -5px rgb(151 143 143 / 50%);
+    5px 0 10px -5px rgb(151 143 143 / 50%);
 }
 
 .page-header {
@@ -148,7 +148,7 @@ img {
   color: #000000;
   display: block;
 
-  }
+}
 
 /*ВСЕ КОРИЧНЕВЫЕ КНОПКИ*/
 .button {
@@ -287,7 +287,7 @@ h3:after {
   color: #000000;
 }
 
-b:after  {
+b:after {
   content: "";
   width: 60px;
   height: 2px;
@@ -301,7 +301,7 @@ b:after  {
 
 .advantages-item-square p,
 .advantages-item-road p,
-.advantages-item-tourist p{
+.advantages-item-tourist p {
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
@@ -629,7 +629,8 @@ b:after  {
   min-height: 160px;
 }
 
-.catalog-select-title, .catalog-price-title {
+.catalog-select-title,
+.catalog-price-title {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
@@ -731,7 +732,6 @@ b:after  {
   background: #82B3D3;
   padding: 8px 50px;
   border: 0;
-
 }
 
 .button.button-reset {
@@ -783,14 +783,14 @@ b:after  {
 }
 
 .button.button-light {
-  background-color:#FFFFFF;
+  background-color: #FFFFFF;
   border: 2px solid #000000;
   border-radius: 4px;
 
 }
 
 .hamburgers svg {
-padding-top: 14px;
+  padding-top: 14px;
 }
 
 /*СНАЧАЛА ДЕШЕВЫЕ*/
@@ -856,6 +856,24 @@ padding-top: 14px;
   color: #333333;
 }
 
+.sorting-hotels {
+  width: 1060px;
+  min-height: 896px;
+  margin-bottom: 40px;
+}
+
+/*ЛИНИЯ МЕЖДУ ПАГИНАЦИЕЙ И КАТАДЛОГОМ*/
+.sorting-hotels:after {
+  content: "";
+  width: 1060px;
+  height: 1px;
+  background: #E6E6E6;
+  display: block;
+  margin-left: 70px;
+  margin-bottom: 40px;
+
+}
+
 .pagination {
   padding: 0;
   margin: 0;
@@ -883,13 +901,13 @@ padding-top: 14px;
 }
 
 .pagination-item a {
-display: block;
-text-align: center;
-padding-top: 11px;
+  display: block;
+  text-align: center;
+  padding-top: 11px;
 }
 
 .pagination-link.pagination-current,
-.pagination-link .pagination-dots {
+.pagination-link.pagination-dots {
   background: #F2F2F2;
   color: #000000;
 }
@@ -901,15 +919,7 @@ padding-top: 11px;
   text-align: center;
 }
 
-.newsletter-sign-up h2 {
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 36px;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.newsletter-sign-up p {
+.newsletter-sign-up.for-footer p {
   white-space: pre-line;
   font-weight: 400;
   font-size: 22px;
