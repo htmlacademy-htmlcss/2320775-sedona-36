@@ -14,12 +14,6 @@
   font-display: swap;
 }
 
-/* Временная подсветка
-div, ul, li {
-  outline: 1px solid red
-}
-*/
-
 html {
   height: 100%;
 }
@@ -86,6 +80,16 @@ img {
   margin-bottom: -3px;
 }
 
+.navigation-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-left: 30px;
+}
+
 /*ПОДЧЕРКИВАНИЕ*/
 .navigation-link.checked {
   display: block;
@@ -111,16 +115,6 @@ img {
   display: block;
   padding: 8px 50px;
   margin-left: 20px;
-}
-
-.navigation-list {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  padding-left: 30px;
 }
 
 .navigation-user {
@@ -192,7 +186,6 @@ img {
   position: relative;
   background-repeat: no-repeat;
   bottom: -25px;
-
 }
 
 .main-page-title h2 {
@@ -220,7 +213,6 @@ img {
 }
 
 /*ПРЕИМУЩЕСТВА*/
-
 .advantages-list {
   margin: 0;
   padding: 0;
@@ -388,7 +380,7 @@ b:after {
   background: rgba(131, 179, 211, 0.12);
 }
 
-/* КАРТИНКИ УСЛУГ */
+/*КАРТИНКИ УСЛУГ*/
 .services-advantages-item:first-child:before {
   content: "";
   background-image: url("../images/icons/housing.svg");
@@ -462,6 +454,7 @@ b:after {
   line-height: 36px;
 }
 
+/*ПОДПИСКА НА РАССЫЛКУ*/
 .newsletter {
   background-image: url("../images/footer-background.jpg");
   background-color: #82B3D3;
@@ -548,11 +541,6 @@ b:after {
 
 }
 
-/*ПРОЗРАЧНЫЕ КНОПКИ СОЦСЕТЕЙ*/
-.footer-social-item .button {
-  background-color: rgba(5, 5, 5, 0);
-}
-
 /*ТЕЛЕФОН*/
 .footer-address-phone-contact {
   font-weight: 400;
@@ -575,6 +563,7 @@ b:after {
   min-height: 412px;
 }
 
+/*ГОСТИНИЦЫ СЕДОНЫ*/
 .main-catalog-title {
   font-weight: 700;
   font-size: 60px;
@@ -608,7 +597,6 @@ b:after {
   justify-content: flex-start;
   flex-direction: row;
   margin-bottom: 40px;
-
 }
 
 .breadcrumbs-item {
@@ -620,6 +608,7 @@ b:after {
   display: block;
 }
 
+/*ФИЛЬТРЫ*/
 .catalog-select {
   margin: 0 auto;
   display: flex;
@@ -642,7 +631,6 @@ b:after {
   margin: 0;
   padding: 0;
   border: 0;
-
 }
 
 .catalog-select-box.infrastructure {
@@ -675,6 +663,7 @@ b:after {
   margin-right: 16px;
 }
 
+/*СТОИМОСТЬ*/
 .catalog-price-box {
   padding: 0;
   margin-left: 140px;
@@ -871,7 +860,6 @@ b:after {
   display: block;
   margin-left: 70px;
   margin-bottom: 40px;
-
 }
 
 .pagination {
@@ -882,6 +870,7 @@ b:after {
   margin-left: 70px;
 }
 
+/*ОТСТУПЫ МЕЖДУ КНОПКАМИ ПАГИНАЦИИ*/
 .pagination-item:not(:last-child) {
   margin-right: 8px;
 }
@@ -911,7 +900,6 @@ b:after {
   background: #F2F2F2;
   color: #000000;
 }
-
 
 /*СЕКЦИЯ ПОДПИСКИ НА РАССЫЛКУ*/
 .footer-newsletter-catalog {
@@ -958,5 +946,4 @@ b:after {
   color: #000000;
   text-transform: uppercase;
   text-decoration: none;
-
 }
