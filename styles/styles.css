@@ -98,6 +98,10 @@ img {
   position: relative;
 }
 
+.navigation-link svg {
+  display: block;
+}
+
 .navigation-item a {
   display: block;
   padding: 20px 16px;
@@ -538,12 +542,10 @@ b:after  {
   list-style-type: none;
 }
 
-.footer-social-item a {
+.footer-social-item svg {
   display: block;
-  width: 47.33px;
-  height: 40px;
-  box-sizing: border-box;
   padding: 13px 12px;
+
 }
 
 /*ПРОЗРАЧНЫЕ КНОПКИ СОЦСЕТЕЙ*/
@@ -578,8 +580,10 @@ b:after  {
   font-size: 60px;
   line-height: 78px;
   margin: 0;
+  padding: 0;
   padding-top: 35px;
   padding-left: 70px;
+  margin-bottom: 8px;
 }
 
 .catalog-select-list,
@@ -603,6 +607,7 @@ b:after  {
   align-items: center;
   justify-content: flex-start;
   flex-direction: row;
+  margin-bottom: 40px;
 
 }
 
@@ -616,24 +621,97 @@ b:after  {
 }
 
 .catalog-select {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  width: 1060px;
   margin: 0 auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  min-width: 1060px;
+  min-height: 160px;
 }
 
-.catalog-select-title {
+.catalog-select-title, .catalog-price-title {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
   text-transform: capitalize;
+  margin-bottom: 32px;
+}
+
+.catalog-select-box {
+  margin: 0;
+  padding: 0;
+  border: 0;
+
+}
+
+.catalog-select-box.infrastructure {
+  margin-left: 70px;
+  width: 150.43px;
+}
+
+.catalog-select-box.home-type {
+  width: 150.43px;
+  margin-left: 70px;
+}
+
+.catalog-select-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  flex-wrap: wrap;
 }
 
 .catalog-select-item {
   font-weight: 400;
   font-size: 18px;
   line-height: 23px;
+  padding-bottom: 16px;
+}
+
+.select input.select-input {
+  margin-right: 16px;
+}
+
+.catalog-price-box {
+  padding: 0;
+  margin-left: 140px;
+  border: 0;
+}
+
+
+.catalog-price-box-input {
+  display: flex;
+  width: 288px;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-items: center;
+}
+
+.catalog-price-box-input input {
+  margin: 0;
+  width: 143px;
+  height: 48px;
+  font-weight: 700;
+  font-size: 18px;
+  background: #F2F2F2;
+  border-radius: 0 4px 4px 0;
+}
+
+.catalog-price-box-input input:nth-child(2) {
+  border-radius: 4px 0 0 4px;
+}
+
+.catalog-buttons {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  width: 191px;
+  height: 104px;
+  justify-content: space-between;
+  margin-top: 56px;
+  margin-left: 70px;
 }
 
 .catalog-price-title {
@@ -652,6 +730,9 @@ b:after  {
   text-transform: uppercase;
   color: #FFFFFF;
   background: #82B3D3;
+  padding: 8px 50px;
+  border: 0;
+
 }
 
 .button.button-reset {
@@ -682,6 +763,8 @@ b:after  {
   padding: 6.5px;
   margin: 0;
 }
+
+.
 
 /*Боковые кнопки вида, временное отключение наследуемого стиля*/
 .button.button-light {
