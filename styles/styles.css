@@ -821,7 +821,14 @@ b:after {
   text-decoration: none;
   margin: 0;
   padding: 0;
+  color: #000000;
 }
+
+.hotel-item-link h3 {
+  margin: 0;
+
+}
+
 
 /*НАЗВАНИЯ ОТЕЛЕЙ*/
 .hotel-item-title h3 {
@@ -829,8 +836,7 @@ b:after {
   font-size: 24px;
   line-height: 28px;
   color: #000000;
-  margin: 0;
-  padding: 0;
+
 }
 
 .hotel-item-type {
