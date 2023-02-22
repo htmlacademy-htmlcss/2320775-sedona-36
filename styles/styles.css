@@ -771,12 +771,18 @@ b:after {
   margin-right: 0;
 }
 
-.button.button-light {
+.button.button-light.checked{
   background-color: #FFFFFF;
   border: 2px solid #000000;
   border-radius: 4px;
-
 }
+
+.button.button-light {
+  background-color: #FFFFFF;
+  border: 2px solid #E5E5E5;
+  border-radius: 4px;
+}
+
 
 .hamburgers svg {
   padding-top: 14px;
