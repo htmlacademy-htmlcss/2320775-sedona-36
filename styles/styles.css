@@ -247,7 +247,7 @@ img {
   margin: 0;
 }
 
-h3:after {
+.advantages-item h3:after {
   content: "";
   width: 60px;
   height: 2px;
@@ -792,24 +792,45 @@ b:after {
   height: 49px;
 }
 
+/*СОРТИОРОВКА ОТЕЛЕЙ*/
 .hotel-list {
   list-style-type: none;
-  display: flex;
-  flex-direction: column;
+  padding: 0;
+  margin: 40px 70px;
+  width: 1060px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+
+}
+
+.hotel-item {
+  display: block;
   margin: 0;
-  padding: 40px 70px;
+  width: 340px;
+  min-height: 438px;
+  padding: 20px;
+  border: 1px solid #E6E6E6;
+  border-radius: 4px;
+  box-sizing: border-box;
+
 }
 
 .hotel-item-link {
+  display: block;
   text-decoration: none;
+  margin: 0;
+  padding: 0;
 }
 
 /*НАЗВАНИЯ ОТЕЛЕЙ*/
-.hotel-item-title {
+.hotel-item-title h3 {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
   color: #000000;
+  margin: 0;
+  padding: 0;
 }
 
 .hotel-item-type {
@@ -817,6 +838,8 @@ b:after {
   font-size: 18px;
   line-height: 21px;
   color: #333333;
+  margin: 0;
+  padding: 0;
 }
 
 .hotel-item-price {
@@ -825,6 +848,8 @@ b:after {
   line-height: 21px;
   text-align: right;
   color: #333333;
+  margin: 0;
+  padding: 0;
 }
 
 .hotel-item-select-button {
@@ -835,15 +860,21 @@ b:after {
   background: #7DB54F;
 }
 
-/*РЕЙТИНГ*/
-.rating-result-amara {
+/*РЕЙТИНГ ЗВЕЗДЫ*/
+.rating-result-amara,
+.rating-result-diablo,
+.rating-result-desert,
+.rating-result-greentree {
   display: block;
   margin: 0;
   width: 140px;
   min-height: 37px;
 }
 
-.rating-result-amara span {
+.rating-result-amara span,
+.rating-result-diablo span,
+.rating-result-desert span,
+.rating-result-greentree span {
   margin: 0;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -853,8 +884,15 @@ b:after {
 .rating-result-amara > span::before {
   content: url("../images/icons/star.svg");
 }
-
-
+.rating-result-diablo > span::before {
+  content: url("../images/icons/star.svg");
+}
+.rating-result-desert > span::before {
+  content: url("../images/icons/star.svg");
+}
+.rating-result-greentree > span::before {
+  content: url("../images/icons/star.svg");
+}
 
 .hotel-item-rating {
   font-weight: 400;
@@ -865,11 +903,6 @@ b:after {
   color: #333333;
 }
 
-.sorting-hotels {
-  width: 1060px;
-  min-height: 896px;
-  margin-bottom: 40px;
-}
 
 /*ЛИНИЯ МЕЖДУ ПАГИНАЦИЕЙ И КАТАДЛОГОМ*/
 .sorting-hotels:after {
