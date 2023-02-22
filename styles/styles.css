@@ -836,6 +836,26 @@ b:after {
 }
 
 /*РЕЙТИНГ*/
+.rating-result-amara {
+  display: block;
+  margin: 0;
+  width: 140px;
+  min-height: 37px;
+}
+
+.rating-result-amara span {
+  margin: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 6px;
+}
+
+.rating-result-amara > span::before {
+  content: url("../images/icons/star.svg");
+}
+
+
+
 .hotel-item-rating {
   font-weight: 400;
   font-size: 16px;
