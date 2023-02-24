@@ -113,7 +113,7 @@ img {
 
 .navigation-item .button {
   display: block;
-  padding: 8px 50px;
+  padding: 8px 34px;
   margin-left: 20px;
 }
 
@@ -257,7 +257,6 @@ img {
   margin-top: 30px;
   margin-bottom: 30px;
   margin-left: 170px;
-
 }
 
 .advantages-item p {
@@ -452,6 +451,7 @@ b:after {
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
+
 }
 
 /*ПОДПИСКА НА РАССЫЛКУ*/
@@ -489,12 +489,16 @@ b:after {
 .newsletter-form {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .button.newsletter-button {
   background: #82B3D3;
-  height: 52px;
-  min-width: 232px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  width: 232px;
+  min-height: 52px;
   border-radius: 0 4px 4px 0;
 }
 
@@ -783,7 +787,6 @@ b:after {
   border-radius: 4px;
 }
 
-
 .hamburgers svg {
   padding-top: 14px;
 }
@@ -874,7 +877,6 @@ b:after {
   padding-top: 8px;
   padding-bottom: 8px;
   text-align: center;
-
 }
 
 .hotel-item-select-button {
@@ -896,10 +898,7 @@ b:after {
 }
 
 /*РЕЙТИНГ ЗВЕЗДЫ*/
-.rating-result-amara,
-.rating-result-diablo,
-.rating-result-desert,
-.rating-result-greentree {
+.rating-result {
   display: flex;
   align-items: center;
   margin: 0;
@@ -907,26 +906,15 @@ b:after {
   min-height: 37px;
 }
 
-.rating-result-amara span,
-.rating-result-diablo span,
-.rating-result-desert span,
-.rating-result-greentree span {
+.rating-result span {
   margin: 0;
   padding-right: 6px;
 }
 
-.rating-result-amara > span::before {
+.rating-result > span::before {
   content: url("../images/icons/star.svg");
 }
-.rating-result-diablo > span::before {
-  content: url("../images/icons/star.svg");
-}
-.rating-result-desert > span::before {
-  content: url("../images/icons/star.svg");
-}
-.rating-result-greentree > span::before {
-  content: url("../images/icons/star.svg");
-}
+
 
 .hotel-item-rating {
   display: block;
@@ -938,12 +926,11 @@ b:after {
   text-transform: uppercase;
   color: #333333;
   background-color: #F2F2F2;
-  border-radius: 4px;;
+  border-radius: 4px;
   padding-top: 9px;
   padding-bottom: 8px;
 
 }
-
 
 /*ЛИНИЯ МЕЖДУ ПАГИНАЦИЕЙ И КАТАДЛОГОМ*/
 .sorting-hotels:after {
@@ -1013,6 +1000,7 @@ b:after {
 .button.newsletter-button {
   font-weight: 700;
   font-size: 20px;
+  line-height: 36px;
   text-transform: uppercase;
   border: 0;
 }
