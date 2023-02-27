@@ -92,8 +92,17 @@ img {
 
 /*ПОДЧЕРКИВАНИЕ*/
 .navigation-link.checked {
-  display: block;
-  border-bottom: 2px solid #756257;
+position: relative;
+}
+
+.navigation-link.checked::before {
+content: "";
+position: absolute;
+height: 2px;
+background-color: #756257;
+bottom: 1px;
+left: 16px;
+right: 16px;
 }
 
 .navigation-logo {
@@ -128,28 +137,33 @@ img {
   padding-right: 70px;
 }
 
-
+/*КРУЖОК ИЗБРАННОЕ*/
 .navigation-item-user {
 position: relative;
 }
-/*КРУЖОК ИЗБРАННОЕ*/
-.navigation-user li:nth-child(2)::after {
-  content: "12";
+
+.navigation-user li:nth-child(2)::before {
+  content: attr(data-count) "";
+  color: #FFFFFF;
   font-weight: 400;
   font-size: 10px;
   line-height: 10px;
-  color: #FFFFFF;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  z-index: 1;
+  transform: translate(4px, 5px);
+}
+
+.navigation-user li:nth-child(2)::after {
+  content: "";
   background-color: #7DB54F;
   width: 20px;
   height: 20px;
   border-radius: 50%;
   position: absolute;
-  top: 12px;
-  left: 22px;
-  display: flex;
-  align-content: flex-end;
-  align-items: center;
-  justify-content: center;
+  top: 20%;
+  left: 50%;
 }
 
 .navigation-item-user a {
@@ -589,6 +603,7 @@ b::after {
   background-repeat: no-repeat;
   background-size: 100% 100%;
   min-height: 412px;
+  margin-top: -5px;
 }
 
 /*ГОСТИНИЦЫ СЕДОНЫ*/
