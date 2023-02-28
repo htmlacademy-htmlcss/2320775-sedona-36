@@ -140,6 +140,20 @@ right: 16px;
   align-items: center;
   margin-left: auto;
   padding-right: 70px;
+  color: #000000;
+}
+
+.navigation-link svg:hover {
+  color: #615048;
+}
+.navigation-link svg:focus {
+  color: #615048;
+}
+.navigation-link svg:active {
+  color: rgba(143, 136, 136, 0.3);
+}
+.navigation-link svg:disabled {
+  color: #ddd4d4;
 }
 
 /*КРУЖОК ИЗБРАННОЕ*/
@@ -603,8 +617,19 @@ b::after {
 .footer-social-item a {
   display: block;
   padding: 12px 14px;
+  color: #83B3D3
 }
 
+.button-social:hover {
+  color: #68A2CA;
+}
+.button-social:focus {
+  outline: none;
+  color: #68A2CA;
+}
+.button-social:active {
+  color: rgba(104, 162, 202, 0.3);
+}
 
 /*ТЕЛЕФОН*/
 .footer-address-phone-contact {
@@ -616,6 +641,31 @@ b::after {
   text-transform: uppercase;
   text-decoration: none;
 }
+
+.footer-address-phone-contact:hover {
+  color: #756157;
+}
+.footer-address-phone-contact:focus {
+  outline: none;
+  color: #756157;
+}
+.footer-address-phone-contact:active {
+  color: rgba(117, 97, 87, 0.3);
+}
+
+/*.html academy*/
+
+.htmlacademy-link:hover {
+  filter: invert(37%) sepia(13%) saturate(714%) hue-rotate(335deg) brightness(97%) contrast(81%);
+}
+.htmlacademy-link:focus {
+  outline: none;
+  filter: invert(37%) sepia(13%) saturate(714%) hue-rotate(335deg) brightness(97%) contrast(81%);
+}
+.htmlacademy-link:active {
+  filter: invert(99%) sepia(0%) saturate(2927%) hue-rotate(326deg) brightness(81%) contrast(106%);
+}
+
 
 /*КАТАЛОГ*/
 .main-catalog {
