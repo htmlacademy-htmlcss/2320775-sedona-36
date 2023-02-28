@@ -118,7 +118,12 @@ right: 16px;
 .navigation-item a {
   display: block;
   padding: 20px 16px;
+  }
+
+  .navigation-link:focus {
+  outline-color: #83B3D3;
 }
+
 
 .navigation-item .button {
   display: block;
@@ -194,6 +199,24 @@ position: relative;
   background-color: #756157;
   border-radius: 4px;
 }
+
+.button:hover {
+  background: #615048;
+}
+.button:focus {
+  outline: 0;
+  background: #615048;
+
+}
+.button:active {
+  color: rgba(255, 255, 255, 0.3);
+  background: #756157;
+}
+.button:disabled {
+  color: #ffffff;
+  background: #E5E5E5;
+}
+
 
 .main-wrapper {
   flex-grow: 1;
@@ -571,17 +594,17 @@ b::after {
 .footer-address-social-list {
   margin: 0;
   padding: 0;
-  width: 142px;
+  min-width: 142px;
   display: flex;
   flex-wrap: wrap;
   list-style-type: none;
 }
 
-.footer-social-item svg {
+.footer-social-item a {
   display: block;
-  padding: 13px 12px;
-
+  padding: 12px 14px;
 }
+
 
 /*ТЕЛЕФОН*/
 .footer-address-phone-contact {
