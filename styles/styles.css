@@ -633,18 +633,28 @@ b::after {
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
-  list-style-type: none;
   display: flex;
   margin-left: 70px;
-  align-items: center;
-  justify-content: flex-start;
-  flex-direction: row;
   margin-bottom: 40px;
+  list-style-type: none;
 }
 
 .breadcrumbs-item {
-  display: block;
+  display: flex;
   padding-right: 10px;
+}
+
+.breadcrumbs-link {
+  padding-right: 10px;
+}
+
+.breadcrumbs li:first-child::after {
+  content: "";
+  background-image: url("../images/icons/breadcrumbs.svg");
+  background-repeat: no-repeat;
+  width: 8px;
+  height: 21px;
+  display: block;
 }
 
 .breadcrumbs-item svg {
