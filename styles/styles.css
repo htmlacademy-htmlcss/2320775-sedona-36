@@ -228,7 +228,6 @@ position: relative;
 }
 
 /*MAIN*/
-
 .main-wrapper {
   flex-grow: 1;
   background-color: #FFFFFF;
@@ -769,6 +768,19 @@ b::after {
   display: block;
 }
 
+.breadcrumbs-link:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.breadcrumbs-link:focus {
+  color: #ffffff;
+}
+
+.breadcrumbs-link:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+
 /*ФИЛЬТРЫ*/
 .catalog-select {
   margin: 0 auto;
@@ -819,6 +831,19 @@ b::after {
   line-height: 23px;
   padding-bottom: 16px;
 }
+
+.catalog-select-item:hover {
+  opacity: 0.6;
+}
+
+.catalog-select-item:focus {
+  color: #ffffff;
+}
+
+.catalog-select-item:active {
+  opacity: 0.3;
+}
+
 
 .select input.select-input {
   margin-right: 16px;
