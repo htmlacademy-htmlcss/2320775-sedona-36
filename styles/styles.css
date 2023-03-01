@@ -601,6 +601,7 @@ b::after {
   padding-left: 20px;
   padding-right: 20px;
   outline: none;
+  box-sizing: border-box;
 }
 
 .newsletter-form .field:hover {
@@ -613,11 +614,12 @@ b::after {
 
 .newsletter-form .field:focus {
   outline: 3px solid #83B3D3;
+  box-sizing: border-box;
 }
 
 .newsletter-form .field:not(:placeholder-shown) {
-  outline: 3px solid black;
-  z-index: 1;
+  border: 2px solid black;
+
 }
 
 /*ПОДВАЛ ИНДЕКСА*/
@@ -1156,7 +1158,6 @@ b::after {
   line-height: 36px;
   text-transform: uppercase;
   border: 0;
-
 }
 
 /*ПОДВАЛ КАТАЛОГА*/
