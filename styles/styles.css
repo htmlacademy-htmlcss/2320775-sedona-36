@@ -213,7 +213,6 @@ position: relative;
   background: #615048;
 }
 .button:focus {
-  outline: 0;
   background: #615048;
 
 }
@@ -577,7 +576,6 @@ b::after {
 }
 
 .button.newsletter-button:focus {
-  outline: none;
   background: #68A2CA;;
 }
 
@@ -587,7 +585,7 @@ b::after {
 }
 
 .newsletter-form .field {
-  min-width: 452px;
+  width: 412px;
   height: 52px;
   background: #F2F2F2;
   color: #000000;
@@ -597,13 +595,11 @@ b::after {
   font-weight: 400;
   font-size: 18px;
   padding-left: 20px;
+  padding-right: 20px;
   outline: none;
 }
 
 .newsletter-form .field:hover {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 24px;
   background: #E6E6E6;
 }
 
@@ -612,9 +608,6 @@ b::after {
 }
 
 .newsletter-form .field:focus {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 24px;
   outline: 3px solid #83B3D3;
 }
 
@@ -622,7 +615,6 @@ b::after {
   outline: 3px solid black;
   z-index: 1;
 }
-
 
 /*ПОДВАЛ ИНДЕКСА*/
 .footer-page {
@@ -687,16 +679,19 @@ b::after {
 }
 
 /*.html academy*/
-.htmlacademy-link:hover {
-  filter: invert(37%) sepia(13%) saturate(714%) hue-rotate(335deg) brightness(97%) contrast(81%);
-}
-.htmlacademy-link:focus {
-  filter: invert(37%) sepia(13%) saturate(714%) hue-rotate(335deg) brightness(97%) contrast(81%);
-}
-.htmlacademy-link:active {
-  filter: invert(99%) sepia(0%) saturate(2927%) hue-rotate(326deg) brightness(81%) contrast(106%);
+.htmlacademy-link {
+  color: #000000;
 }
 
+.htmlacademy-link:hover {
+  color: #756157;
+}
+.htmlacademy-link:focus {
+  color: #756157;
+}
+.htmlacademy-link:active {
+  color: rgba(117, 97, 87, 0.3);
+}
 
 /*КАТАЛОГ*/
 .main-catalog {
