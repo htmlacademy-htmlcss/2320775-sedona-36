@@ -71,14 +71,13 @@ img {
 .page-header {
   color: #000000;
   background-color: #FFFFFF;
+  margin-bottom: 3px;
 }
 
 .navigation {
   display: flex;
   flex-wrap: wrap;
   min-height: 64px;
-  margin-bottom: 3px;
-  margin-top: -1px;
 }
 
 .navigation-list {
@@ -535,6 +534,7 @@ b::after {
   background-size: 100% auto;
   min-height: 414.86px;
   text-align: center;
+  margin-top: 1px;
 }
 
 .newsletter-sign-up h2 {
@@ -561,6 +561,7 @@ b::after {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 104px;
 }
 
 .button.newsletter-button {
@@ -1155,6 +1156,7 @@ b::after {
   line-height: 36px;
   text-transform: uppercase;
   border: 0;
+
 }
 
 /*ПОДВАЛ КАТАЛОГА*/
