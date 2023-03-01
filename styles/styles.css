@@ -24,12 +24,10 @@ body {
   font-size: 18px;
   line-height: 21px;
   color: #000000;
-  background-color: #ffffff;
+  background-color: #F2F2F2;
   position: relative;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  min-height: 100%;
+  margin: 0 auto;
+  width: 1200px;
 }
 
 /*НОРМАЛИЗАЦИЯ ТЕГА IMG*/
@@ -57,16 +55,17 @@ img {
 }
 
 .page-container {
-  width: 1280px;
-  margin: 0 auto;
-  padding: 0 40px;
+  width: 100%;
   box-sizing: border-box;
   background-color: #F2F2F2;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
 }
 
-.shadow {
+.page-container.shadow {
   box-shadow: -5px 0 10px -5px rgb(151 143 143 / 50%),
-    5px 0 10px -5px rgb(151 143 143 / 50%);
+  5px 0 10px -5px rgb(151 143 143 / 50%);
 }
 
 .page-header {
@@ -228,6 +227,8 @@ position: relative;
   color: #ffffff;
   background: #E5E5E5;
 }
+
+/*MAIN*/
 
 .main-wrapper {
   flex-grow: 1;
