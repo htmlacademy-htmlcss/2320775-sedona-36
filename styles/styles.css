@@ -126,7 +126,6 @@ img {
 }
 
 .navigation-item a {
-  display: block;
   padding: 20px 16px;
 }
 
@@ -136,18 +135,17 @@ img {
   margin-left: 20px;
 }
 
-.navigation-list .navigation-link:hover {
+.navigation-item .navigation-link:not(.checked):not(.reserved):hover {
   color: #615048;
 }
 
-.navigation-list .navigation-link:focus {
+.navigation-item .navigation-link:not(.checked):not(.reserved):focus {
   color: #615048;
 }
 
-.navigation-list .navigation-link:active {
+.navigation-item .navigation-link:not(.checked):not(.reserved):active {
   color: rgba(143, 136, 136, 0.3);
 }
-
 
 .navigation-user {
   padding: 0;
@@ -296,7 +294,6 @@ img {
   color: #333333;
   margin: 0;
   padding-bottom: 90px;
-
 }
 
 /*ПРЕИМУЩЕСТВА*/
@@ -380,9 +377,6 @@ b::after {
 .advantages-item-square p,
 .advantages-item-road p,
 .advantages-item-tourist p {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 21px;
   color: #333333;
   text-align: center;
 }
@@ -571,7 +565,6 @@ b::after {
   margin: 0;
   padding: 0;
   padding-bottom: 54px;
-
 }
 
 .newsletter-form {
