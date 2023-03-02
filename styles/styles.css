@@ -65,7 +65,7 @@ img {
 
 .page-container.shadow {
   box-shadow: -5px 0 10px -5px rgb(151 143 143 / 50%),
-  5px 0 10px -5px rgb(151 143 143 / 50%);
+    5px 0 10px -5px rgb(151 143 143 / 50%);
 }
 
 .page-header {
@@ -128,7 +128,7 @@ img {
 .navigation-item a {
   display: block;
   padding: 20px 16px;
-  }
+}
 
 .navigation-item .button {
   display: block;
@@ -139,9 +139,11 @@ img {
 .navigation-list .navigation-link:hover {
   color: #615048;
 }
+
 .navigation-list .navigation-link:focus {
   color: #615048;
 }
+
 .navigation-list .navigation-link:active {
   color: rgba(143, 136, 136, 0.3);
 }
@@ -162,12 +164,15 @@ img {
 .navigation-link svg:hover {
   color: #615048;
 }
+
 .navigation-link svg:focus {
   color: #615048;
 }
+
 .navigation-link svg:active {
   color: rgba(143, 136, 136, 0.3);
 }
+
 .navigation-link svg:disabled {
   color: #ddd4d4;
 }
@@ -590,11 +595,11 @@ b::after {
 }
 
 .button.newsletter-button:hover {
-  background: #68A2CA;;
+  background: #68A2CA;
 }
 
 .button.newsletter-button:focus {
-  background: #68A2CA;;
+  background: #68A2CA;
 }
 
 .button.newsletter-button:active {
@@ -663,9 +668,11 @@ b::after {
 .button-social:hover {
   color: #68A2CA;
 }
+
 .button-social:focus {
   color: #68A2CA;
 }
+
 .button-social:active {
   color: rgba(104, 162, 202, 0.3);
 }
@@ -687,9 +694,11 @@ b::after {
 .footer-address-phone-contact:hover {
   color: #756157;
 }
+
 .footer-address-phone-contact:focus {
   color: #756157;
 }
+
 .footer-address-phone-contact:active {
   color: rgba(117, 97, 87, 0.3);
 }
@@ -703,9 +712,11 @@ b::after {
 .htmlacademy-link:hover {
   color: #756157;
 }
+
 .htmlacademy-link:focus {
   color: #756157;
 }
+
 .htmlacademy-link:active {
   color: rgba(117, 97, 87, 0.3);
 }
@@ -788,7 +799,6 @@ b::after {
 .breadcrumbs-link:active {
   color: rgba(255, 255, 255, 0.3);
 }
-
 
 /*ФИЛЬТРЫ*/
 .catalog-select {
@@ -888,7 +898,7 @@ b::after {
   font-family: inherit;
   font-weight: 700;
   font-size: 18px;
-  padding-right: 24px;
+  padding-right: 45px;
   padding-left: 20px;
   background: #F2F2F2;
   border-radius: 4px 0 0 4px;
@@ -945,6 +955,21 @@ b::after {
   width: 288px;
   cursor: pointer;
 }
+
+.catalog-price-box-input input:hover {
+  background: #E6E6E6;
+}
+
+.catalog-price-box-input input:focus {
+  background: #E6E6E6;
+}
+
+/*УБРАТЬ СТРЕЛКИ В ПОЛЕ ФОРМЫ*/
+.catalog-price-box-input input[type="number"]::-webkit-outer-spin-button,
+.catalog-price-box-input input[type="number"]::-webkit-inner-spin-button {
+	display: none;
+}
+
 
 .catalog-buttons {
   display: flex;
@@ -1047,7 +1072,7 @@ b::after {
   padding-top: 14px;
 }
 
-.button.button-light.checked{
+.button.button-light.checked {
   background-color: #FFFFFF;
   border: 2px solid #000000;
   border-radius: 4px;
