@@ -1176,6 +1176,9 @@ b::after {
   background: #82B3D3;
 }
 
+.hotel-item-selected-button:disabled {
+  color: #ddd4d4;
+}
 
 .hotel-item-selected-button {
   background: #7DB54F;
@@ -1185,6 +1188,24 @@ b::after {
   padding-bottom: 8px;
   text-align: center;
 }
+
+.hotel-item-selected-button:hover {
+  background: #6C9E42;
+}
+
+.hotel-item-selected-button:focus {
+  background: #6C9E42;
+}
+
+.hotel-item-selected-button:active {
+  color: rgba(255, 255, 255, 0.3);
+  background: #6C9E42;
+}
+
+.hotel-item-selected-button:disabled {
+  color: #ddd4d4;
+}
+
 
 /*РЕЙТИНГ ЗВЕЗДЫ*/
 .rating-result {
@@ -1237,6 +1258,25 @@ b::after {
   list-style-type: none;
   margin-left: 70px;
 }
+
+.pagination-link {
+  border-radius: 4px;
+}
+
+.pagination-link:hover {
+  background: #68A2CA;
+  outline: 1px solid #82B3D3;
+}
+
+.pagination-link:focus {
+  background: #68A2CA;
+  outline: 1px solid #82B3D3;
+}
+
+.pagination-link:active {
+  background: #82B3D3;
+}
+
 
 /*ОТСТУПЫ МЕЖДУ КНОПКАМИ ПАГИНАЦИИ*/
 .pagination-item:not(:last-child) {
