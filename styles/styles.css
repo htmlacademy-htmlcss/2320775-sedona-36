@@ -97,6 +97,16 @@ img {
 }
 
 /*ПОДЧЕРКИВАНИЕ*/
+.navigation-link {
+  text-decoration: none;
+  text-align: center;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+  display: block;
+}
+
 .navigation-link.checked {
   position: relative;
 }
@@ -125,6 +135,17 @@ img {
   padding: 8px 34px;
   margin-left: 20px;
 }
+
+.navigation-list .navigation-link:hover {
+  color: #615048;
+}
+.navigation-list .navigation-link:focus {
+  color: #615048;
+}
+.navigation-list .navigation-link:active {
+  color: rgba(143, 136, 136, 0.3);
+}
+
 
 .navigation-user {
   padding: 0;
@@ -183,16 +204,6 @@ img {
 .navigation-item-user a {
   display: block;
   padding: 24px 13px 23px 13px;
-}
-
-.navigation-link {
-  text-decoration: none;
-  text-align: center;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 24px;
-  color: #000000;
-  display: block;
 }
 
 /*ВСЕ КОРИЧНЕВЫЕ КНОПКИ*/
