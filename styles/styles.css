@@ -615,20 +615,14 @@ b::after {
   padding-left: 20px;
   padding-right: 20px;
   box-sizing: border-box;
-  outline: none;
 }
 
 .newsletter-form .field:hover {
   background: #E6E6E6;
 }
 
-.newsletter-form .field:placeholder-shown {
-  box-sizing: border-box;
-}
-
 .newsletter-form .field:focus {
-  border: 2px solid #83B3D3;
-  box-sizing: border-box;
+  background: #E6E6E6;
 }
 
 .newsletter-form .field:not(:placeholder-shown) {
