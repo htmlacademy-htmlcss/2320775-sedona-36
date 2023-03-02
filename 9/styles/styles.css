@@ -970,6 +970,10 @@ b::after {
 	display: none;
 }
 
+.catalog-price-box-input input[type='number'] {
+  -moz-appearance: textfield;
+}
+
 
 .catalog-buttons {
   display: flex;
