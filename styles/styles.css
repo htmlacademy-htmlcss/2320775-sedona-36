@@ -97,18 +97,18 @@ img {
 }
 
 /*ПОДЧЕРКИВАНИЕ*/
-.navigation-link.checked {
+  .navigation-link.checked {
 position: relative;
 }
 
 .navigation-link.checked::before {
-content: "";
-position: absolute;
-height: 2px;
-background-color: #756257;
-bottom: 1px;
-left: 16px;
-right: 16px;
+  content: "";
+  position: absolute;
+  height: 2px;
+  background-color: #756257;
+  bottom: 1px;
+  left: 16px;
+  right: 16px;
 }
 
 .navigation-link svg {
@@ -554,6 +554,7 @@ b::after {
   margin: 0;
   padding: 0;
   padding-bottom: 54px;
+
 }
 
 .newsletter-form {
@@ -572,6 +573,7 @@ b::after {
   min-height: 52px;
   border-radius: 0 4px 4px 0;
   cursor: pointer;
+  overflow: hidden;
 }
 
 .button.newsletter-button:hover {
@@ -1015,6 +1017,7 @@ b::after {
   margin: 0;
 }
 
+/*КНОПКИ ВИДА*/
 .hamburgers {
   display: flex;
   width: 160px;
@@ -1034,6 +1037,10 @@ b::after {
   margin-right: 0;
 }
 
+.hamburgers svg {
+  padding-top: 14px;
+}
+
 .button.button-light.checked{
   background-color: #FFFFFF;
   border: 2px solid #000000;
@@ -1046,8 +1053,18 @@ b::after {
   border-radius: 4px;
 }
 
-.hamburgers svg {
-  padding-top: 14px;
+.button.button-light:hover {
+  background-color: #FFFFFF;
+  border: 2px solid #000000;
+  border-radius: 4px;
+}
+
+.button.button-light:focus-visible {
+  outline: 2px solid #68A2CA;
+}
+
+.button.button-light:active {
+  border: 2px solid #000000;
 }
 
 /*СНАЧАЛА ДЕШЕВЫЕ*/
@@ -1145,6 +1162,20 @@ b::after {
   padding-bottom: 8px;
   text-align: center;
 }
+
+.hotel-item-select-button:hover {
+  background: #68A2CA;
+}
+
+.hotel-item-select-button:focus {
+  background: #68A2CA;
+}
+
+.hotel-item-select-button:active {
+  color: rgba(255, 255, 255, 0.3);
+  background: #82B3D3;
+}
+
 
 .hotel-item-selected-button {
   background: #7DB54F;
