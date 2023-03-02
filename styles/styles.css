@@ -97,8 +97,8 @@ img {
 }
 
 /*ПОДЧЕРКИВАНИЕ*/
-  .navigation-link.checked {
-position: relative;
+.navigation-link.checked {
+  position: relative;
 }
 
 .navigation-link.checked::before {
@@ -153,7 +153,7 @@ position: relative;
 
 /*КРУЖОК ИЗБРАННОЕ*/
 .navigation-item-user {
-position: relative;
+  position: relative;
 }
 
 .navigation-user li:nth-child(2)::before {
@@ -193,11 +193,11 @@ position: relative;
   line-height: 24px;
   color: #000000;
   display: block;
-
 }
 
 /*ВСЕ КОРИЧНЕВЫЕ КНОПКИ*/
 .button {
+  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -514,6 +514,7 @@ b::after {
 }
 
 .services-order a {
+  font-family: inherit;
   display: inline-block;
   padding: 8px 50px;
   margin-bottom: 96px;
@@ -558,6 +559,7 @@ b::after {
 }
 
 .newsletter-form {
+  font-family: inherit;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -878,6 +880,7 @@ b::after {
   margin: 0;
   width: 143px;
   height: 48px;
+  font-family: inherit;
   font-weight: 700;
   font-size: 18px;
   padding-right: 24px;
@@ -896,6 +899,7 @@ b::after {
   padding-top: 12px;
   padding-left: 106px;
   opacity: 0.3;
+  font-family: inherit;
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
@@ -906,6 +910,7 @@ b::after {
   margin: 0;
   width: 143px;
   height: 48px;
+  font-family: inherit;
   font-weight: 700;
   font-size: 18px;
   padding-right: 24px;
@@ -924,6 +929,7 @@ b::after {
   padding-top: 12px;
   padding-left: 106px;
   opacity: 0.3;
+  font-family: inherit;
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
@@ -939,25 +945,19 @@ b::after {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  width: 191px;
-  height: 104px;
   justify-content: space-between;
   margin-top: 56px;
   margin-left: 70px;
+  border-radius: 4px;
 }
 
 /*КНОПКИ ПРИМЕНИТЬ-СБРОСИТЬ*/
 .button.button-apply {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
-  text-align: center;
-  text-transform: uppercase;
-  color: #FFFFFF;
   background: #82B3D3;
   padding: 8px 50px;
   border: 0;
   cursor: pointer;
+  margin-bottom: 32px;
 }
 
 .button.button-apply:hover {
@@ -980,6 +980,7 @@ b::after {
   text-align: center;
   text-transform: uppercase;
   color: #FFFFFF;
+  padding: 8px 50px;
   background: rgba(5, 5, 5, 0);
   border: 0;
   cursor: pointer;
@@ -1069,6 +1070,7 @@ b::after {
 
 /*СНАЧАЛА ДЕШЕВЫЕ*/
 .select-control {
+  font-family: inherit;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
@@ -1206,7 +1208,6 @@ b::after {
   color: #ddd4d4;
 }
 
-
 /*РЕЙТИНГ ЗВЕЗДЫ*/
 .rating-result {
   display: flex;
@@ -1259,21 +1260,22 @@ b::after {
   margin-left: 70px;
 }
 
-.pagination-link {
-  border-radius: 4px;
+.pagination-link.pagination-dots {
+  background: #ffffff;
+  color: #000000;
 }
 
-.pagination-link:hover {
+.pagination-link:not(.pagination-current, .pagination-dots):hover {
   background: #68A2CA;
   outline: 1px solid #82B3D3;
 }
 
-.pagination-link:focus {
+.pagination-link:not(.pagination-dots):focus {
   background: #68A2CA;
   outline: 1px solid #82B3D3;
 }
 
-.pagination-link:active {
+.pagination-link:not(.pagination-dots):active {
   background: #82B3D3;
 }
 
@@ -1286,8 +1288,8 @@ b::after {
 .pagination-link {
   display: block;
   box-sizing: border-box;
-  width: 60px;
-  height: 60px;
+  min-width: 60px;
+  min-height: 60px;
   color: #ffffff;
   background-color: #82B3D3;
   text-decoration: none;
@@ -1303,8 +1305,7 @@ b::after {
   padding-top: 11px;
 }
 
-.pagination-link.pagination-current,
-.pagination-link.pagination-dots {
+.pagination-link.pagination-current {
   background: #F2F2F2;
   color: #000000;
 }
