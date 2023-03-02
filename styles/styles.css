@@ -849,6 +849,13 @@ b::after {
 }
 
 /*СТОИМОСТЬ*/
+.catalog-price-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: capitalize;
+}
+
 .catalog-price-box {
   padding: 0;
   margin-left: 140px;
@@ -877,6 +884,7 @@ b::after {
   border-radius: 4px 0 0 4px;
   box-sizing: border-box;
   border: 2px solid rgba(80, 55, 80, 0);
+  cursor: pointer;
 }
 
 .catalog-price-box-input label:first-of-type {
@@ -904,6 +912,7 @@ b::after {
   border-radius: 0 4px 4px 0;
   box-sizing: border-box;
   border: 2px solid rgba(80, 55, 80, 0);
+  cursor: pointer;
 }
 
 .catalog-price-box-input label:nth-of-type(2) {
@@ -921,9 +930,8 @@ b::after {
 .catalog-price-box-input input:last-of-type {
   grid-column: 1 / -1;
   width: 288px;
+  cursor: pointer;
 }
-
-
 
 .catalog-buttons {
   display: flex;
@@ -934,13 +942,6 @@ b::after {
   justify-content: space-between;
   margin-top: 56px;
   margin-left: 70px;
-}
-
-.catalog-price-title {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 24px;
-  text-transform: capitalize;
 }
 
 /*КНОПКИ ПРИМЕНИТЬ-СБРОСИТЬ*/
@@ -954,6 +955,20 @@ b::after {
   background: #82B3D3;
   padding: 8px 50px;
   border: 0;
+  cursor: pointer;
+}
+
+.button.button-apply:hover {
+  background: #68A2CA;
+}
+
+.button.button-apply:focus {
+  background: #68A2CA;
+}
+
+.button.button-apply:active {
+  background: #82B3D3;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .button.button-reset {
@@ -965,7 +980,22 @@ b::after {
   color: #FFFFFF;
   background: rgba(5, 5, 5, 0);
   border: 0;
+  cursor: pointer;
 }
+
+.button.button-reset:hover {
+  opacity: 0.6;
+}
+
+.button.button-reset:focus-visible {
+  color: #FFFFFF;
+  outline: 3px solid #83B3D3;
+}
+
+.button.button-reset:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
 
 /*НАЙДЕНО ГОСТИНИЦ*/
 .find-hotels-search {
