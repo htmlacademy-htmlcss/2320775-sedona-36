@@ -1297,6 +1297,7 @@ b::after {
 .pagination-link {
   display: block;
   box-sizing: border-box;
+  border-radius: 4px;
   min-width: 60px;
   min-height: 60px;
   color: #ffffff;
@@ -1338,7 +1339,6 @@ b::after {
 .pagination-item:not(:last-child) {
   margin-right: 8px;
 }
-
 
 /*СЕКЦИЯ ПОДПИСКИ НА РАССЫЛКУ*/
 .footer-newsletter-catalog {
