@@ -964,6 +964,10 @@ b::after {
   -moz-appearance: textfield;
 }
 
+.catalog-price-box-input input::placeholder {
+  color:black;
+}
+
 
 .catalog-buttons {
   display: flex;
