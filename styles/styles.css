@@ -764,17 +764,14 @@ b::after {
   padding-right: 10px;
 }
 
-.breadcrumbs-link {
-  padding-right: 10px;
-}
-
-.breadcrumbs li:first-child::after {
+.breadcrumbs li:not(:first-child):nth-child(n+1)::before {
   content: "";
   background-image: url("../images/icons/breadcrumbs.svg");
   background-repeat: no-repeat;
   width: 8px;
   height: 21px;
   display: block;
+  padding-right: 10px;
 }
 
 .breadcrumbs-item svg {
