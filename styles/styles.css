@@ -135,17 +135,23 @@ img {
   margin-left: 20px;
 }
 
-.navigation-item .navigation-link:not(.checked):not(.reserved):hover {
+.navigation-item .navigation-link:hover {
   color: #615048;
 }
 
-.navigation-item .navigation-link:not(.checked):not(.reserved):focus {
+.navigation-item .navigation-link:focus {
   color: #615048;
 }
 
-.navigation-item .navigation-link:not(.checked):not(.reserved):active {
+.navigation-item .navigation-link:active {
   color: rgba(143, 136, 136, 0.3);
 }
+
+.navigation-item .navigation-link:not([href]) {
+  pointer-events: none;
+
+}
+
 
 .navigation-user {
   padding: 0;
