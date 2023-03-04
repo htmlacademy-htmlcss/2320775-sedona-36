@@ -135,17 +135,23 @@ img {
   margin-left: 20px;
 }
 
-.navigation-item .navigation-link:not(.checked):not(.reserved):hover {
+.navigation-item .navigation-link:hover {
   color: #615048;
 }
 
-.navigation-item .navigation-link:not(.checked):not(.reserved):focus {
+.navigation-item .navigation-link:focus {
   color: #615048;
 }
 
-.navigation-item .navigation-link:not(.checked):not(.reserved):active {
+.navigation-item .navigation-link:active {
   color: rgba(143, 136, 136, 0.3);
 }
+
+.navigation-item .navigation-link:not([href]) {
+  pointer-events: none;
+
+}
+
 
 .navigation-user {
   padding: 0;
@@ -764,17 +770,14 @@ b::after {
   padding-right: 10px;
 }
 
-.breadcrumbs-link {
-  padding-right: 10px;
-}
-
-.breadcrumbs li:first-child::after {
+.breadcrumbs li:not(:first-child):before {
   content: "";
   background-image: url("../images/icons/breadcrumbs.svg");
   background-repeat: no-repeat;
   width: 8px;
   height: 21px;
   display: block;
+  padding-right: 10px;
 }
 
 .breadcrumbs-item svg {
@@ -967,6 +970,9 @@ b::after {
   -moz-appearance: textfield;
 }
 
+.catalog-price-box-input input::placeholder {
+  color:black;
+}
 
 .catalog-buttons {
   display: flex;
@@ -1025,7 +1031,6 @@ b::after {
 .button.button-reset:active {
   color: rgba(255, 255, 255, 0.3);
 }
-
 
 /*НАЙДЕНО ГОСТИНИЦ*/
 .find-hotels-search {
@@ -1104,7 +1109,24 @@ b::after {
   color: #333333;
   width: 292px;
   height: 49px;
+  border: 2px solid #E5E5E5;
+  border-radius: 4px;
 }
+
+.select-control:hover {
+  border: 2px solid #68A2CA;
+}
+
+.select-control:hover:focus {
+  outline: 2px solid #68A2CA;
+}
+
+.select-control:hover:disabled {
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 0.3);
+  pointer-events: none;
+}
+
 
 /*СОРТИОРОВКА ОТЕЛЕЙ*/
 .hotel-list {
