@@ -764,7 +764,7 @@ b::after {
   padding-right: 10px;
 }
 
-.breadcrumbs li:not(:first-child):nth-child(n+1)::before {
+.breadcrumbs li:not(:first-child):before {
   content: "";
   background-image: url("../images/icons/breadcrumbs.svg");
   background-repeat: no-repeat;
