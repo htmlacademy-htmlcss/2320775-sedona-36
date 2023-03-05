@@ -898,9 +898,8 @@ b::after {
   pointer-events: none;
 }
 
-.select-input[type="radio"]:checked + .mark {
+.select-input[type="radio"] + .mark {
   border-radius: 50%;
-
 }
 
 .select-input[type="radio"]:checked + .mark::after {
