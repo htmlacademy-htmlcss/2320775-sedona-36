@@ -149,7 +149,6 @@ img {
 
 .navigation-item .navigation-link:not([href]) {
   pointer-events: none;
-
 }
 
 
@@ -245,6 +244,7 @@ img {
 .button:disabled {
   color: #ffffff;
   background: #E5E5E5;
+  pointer-events: none;
 }
 
 /*MAIN*/
@@ -590,7 +590,7 @@ b::after {
   min-height: 52px;
   border-radius: 0 4px 4px 0;
   cursor: pointer;
-  overflow: hidden;
+  overflow-wrap: break-word;;
 }
 
 .button.newsletter-button:hover {
@@ -604,6 +604,11 @@ b::after {
 .button.newsletter-button:active {
   color: rgba(255, 255, 255, 0.3);
   background: #82B3D3;
+}
+
+.button.newsletter-button:active:disabled {
+  color: #ddd4d4;
+  pointer-events: none;
 }
 
 .newsletter-form .field {
@@ -632,6 +637,12 @@ b::after {
 .newsletter-form .field:not(:placeholder-shown) {
   border: 2px solid black;
 }
+
+.newsletter-form .field:disabled {
+  color: #ddd4d4;
+  pointer-events: none;
+}
+
 
 /*ПОДВАЛ ИНДЕКСА*/
 .footer-page {
@@ -847,21 +858,50 @@ b::after {
   padding-bottom: 16px;
 }
 
-.catalog-select-item:hover {
+.catalog-select-item .select {
+  position: relative;
+  display: block;
+  padding-left: 36px;
+}
+
+.catalog-select-item .mark {
+  position: absolute;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background: #FFFFFF;
+  border-radius: 4px;
+  margin-right: 16px;
+}
+
+.select-input[type="checkbox"]:checked + .mark::before {
+  content: "";
+  background-image: url('../images/icons/checkpoint.svg');
+  background-repeat: no-repeat;
+  width: 13px;
+  height: 11px;
+  display: block;
+  transform: translate(5px, 5px);
+}
+
+.catalog-select-item:hover + .mark {
   opacity: 0.6;
 }
 
-.catalog-select-item:focus {
+.catalog-select-item:focus + .mark {
   color: #ffffff;
 }
 
-.catalog-select-item:active {
+.catalog-select-item:active + .mark{
   opacity: 0.3;
 }
 
-.select input.select-input {
-  margin-right: 16px;
+.catalog-select-item:disabled + .mark {
+  color: #ddd4d4;
+  pointer-events: none;
 }
+
+
 
 /*СТОИМОСТЬ*/
 .catalog-price-title {
@@ -1006,6 +1046,11 @@ b::after {
   color: rgba(255, 255, 255, 0.3);
 }
 
+.button.button-apply:disabled {
+  color: #ddd4d4;
+  pointer-events: none;
+}
+
 .button.button-reset {
   font-weight: 700;
   font-size: 16px;
@@ -1031,6 +1076,12 @@ b::after {
 .button.button-reset:active {
   color: rgba(255, 255, 255, 0.3);
 }
+
+.button.button-reset:disabled {
+  color: #ddd4d4;
+  pointer-events: none;
+}
+
 
 /*НАЙДЕНО ГОСТИНИЦ*/
 .find-hotels-search {
@@ -1100,6 +1151,11 @@ b::after {
   border: 2px solid #000000;
 }
 
+.button.button-light:disabled {
+  color: #ddd4d4;
+  pointer-events: none;
+}
+
 /*СНАЧАЛА ДЕШЕВЫЕ*/
 .select-control {
   font-family: inherit;
@@ -1126,7 +1182,6 @@ b::after {
   color: rgba(0, 0, 0, 0.3);
   pointer-events: none;
 }
-
 
 /*СОРТИОРОВКА ОТЕЛЕЙ*/
 .hotel-list {
@@ -1229,6 +1284,7 @@ b::after {
 
 .hotel-item-selected-button:disabled {
   color: #ddd4d4;
+  pointer-events: none;
 }
 
 .hotel-item-selected-button {
@@ -1255,6 +1311,7 @@ b::after {
 
 .hotel-item-selected-button:disabled {
   color: #ddd4d4;
+  pointer-events: none;
 }
 
 /*РЕЙТИНГ ЗВЕЗДЫ*/
