@@ -862,6 +862,7 @@ b::after {
   position: relative;
   display: block;
   padding-left: 36px;
+  cursor: pointer;
 }
 
 .catalog-select-item .mark {
@@ -885,19 +886,19 @@ b::after {
   transform: translate(5px, 5px);
 }
 
-.catalog-select-item:hover {
+.catalog-select-item .select:hover {
   opacity: 0.6;
 }
 
-.catalog-select-item:active {
+.catalog-select-item .select:active {
   opacity: 0.3;
 }
 
-.select:focus-within .mark {
+.select-input:focus-visible + .mark {
   outline: 3px solid #83B3D3;
 }
 
-.select-input:disabled .mark {
+.select-input:disabled {
   color: #ddd4d4;
   pointer-events: none;
 }
