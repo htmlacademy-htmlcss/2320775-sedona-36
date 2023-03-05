@@ -893,7 +893,11 @@ b::after {
   opacity: 0.3;
 }
 
-.catalog-select-item:disabled {
+.select:focus-within .mark {
+  outline: 3px solid #83B3D3;
+}
+
+.select-input:disabled .mark {
   color: #ddd4d4;
   pointer-events: none;
 }
@@ -911,7 +915,6 @@ b::after {
   background-color: #3F5E72;
   transform: translate(50%, 50%);
 }
-
 
 /*СТОИМОСТЬ*/
 .catalog-price-title {
@@ -1096,10 +1099,9 @@ b::after {
 /*НАЙДЕНО ГОСТИНИЦ*/
 .find-hotels-search {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   width: 1060px;
   margin: 50px 70px 40px 70px;
+  align-items: center;
 }
 
 .find-hotels-title {
@@ -1107,8 +1109,8 @@ b::after {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
-  padding: 6.5px;
   margin: 0;
+  margin-right: 200px;
 }
 
 /*КНОПКИ ВИДА*/
@@ -1169,7 +1171,6 @@ b::after {
 /*СНАЧАЛА ДЕШЕВЫЕ*/
 .select-control {
   font-family: inherit;
-  font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   color: #333333;
@@ -1177,6 +1178,14 @@ b::after {
   height: 49px;
   border: 2px solid #E5E5E5;
   border-radius: 4px;
+  margin-right: 70px;
+  padding-left: 20px;
+  padding-right: 20px;
+  appearance: none;
+  background-image: url("../images/icons/select-menu.svg");
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+
 }
 
 .select-control:hover {
@@ -1196,8 +1205,10 @@ b::after {
 /*СОРТИОРОВКА ОТЕЛЕЙ*/
 .hotel-list {
   list-style-type: none;
+  margin: 0;
   padding: 0;
-  margin: 40px 70px;
+  margin-bottom: 40px;
+  margin-left: 70px;
   width: 1060px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -1209,7 +1220,7 @@ b::after {
   grid-template-columns: 1fr 1fr;
   width: 300px;
   min-height: 398px;
-  padding: 20px;
+  padding: 19px;
   border: 1px solid #E6E6E6;
   border-radius: 4px;
   column-gap: 20px;
@@ -1229,6 +1240,11 @@ b::after {
 
 .hotel-item-link h3 {
   margin: 0;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
 }
 
 .hotel-item-link img {
@@ -1370,10 +1386,14 @@ b::after {
 
 .pagination {
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
   display: flex;
   list-style-type: none;
-  margin-left: 70px;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 1060px;
+  height: 60px;
+  margin-bottom: 60px;
 }
 
 .pagination-link {
