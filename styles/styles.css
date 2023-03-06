@@ -944,7 +944,6 @@ b::after {
   border-radius: 4px 0 0 4px;
   box-sizing: border-box;
   border: 2px solid rgba(80, 55, 80, 0);
-  cursor: pointer;
   position: relative;
 }
 
@@ -961,7 +960,6 @@ b::after {
   border-radius: 0 4px 4px 0;
   box-sizing: border-box;
   border: 2px solid rgba(80, 55, 80, 0);
-  cursor: pointer;
   position: relative;
 }
 
@@ -978,6 +976,31 @@ b::after {
   z-index: 1
 }
 
+.catalog-filter-label {
+  cursor: pointer;
+}
+
+.range-input:hover {
+  background: #E6E6E6;
+}
+
+.range-input:focus {
+  background: #E6E6E6;
+  outline: 3px solid #83B3D3;
+}
+
+.range-input:not(:placeholder-shown) {
+  outline: 2px solid black;
+}
+
+.catalog-filter-label .range-input:disabled {
+  background-color: gray;
+  color: gray;
+  pointer-events: none;
+}
+
+
+/*ПОЛЗУНОК*/
 .range-scale {
   width: 287px;
   height: 4px;
@@ -991,34 +1014,48 @@ b::after {
   height: 4px;
   margin-top: 48px;
   background-color: #ffffff;
-
-
 }
 
-
-/* .catalog-price-box-input {
-  display: grid;
-  width: 288px;
-  height: 104px;
+.range-toggle {
+  width: 20px;
+  height: 20px;
+  background: #FFFFFF;
+  border-radius: 5px;
   border: 0;
-  grid-template-columns: 1fr 1fr;
-  position: relative;
-}
-
-
-.catalog-price-box-input input:last-of-type {
-  grid-column: 1 / -1;
-  width: 288px;
+  position: absolute;
   cursor: pointer;
+  transform: translate(0, -8px);
 }
 
-.catalog-price-box-input input:hover {
-  background: #E6E6E6;
+.toggle-min {
+  left: 0;
 }
 
-.catalog-price-box-input input:focus {
-  background: #E6E6E6;
-} */
+.toggle-max {
+  left: 207px;
+}
+
+.range-toggle:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+}
+
+.range-toggle:focus-visible {
+  outline: 3px solid #83B3D3;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.range-toggle:active {
+  outline: 2px solid #83B3D3;
+  box-shadow: 0 7px 15px rgba(0, 0, 0, 0.4);
+}
+
+.range-toggle:disabled {
+  background-color: gray;
+  color: gray;
+  pointer-events: none;
+}
+
 
 /*УБРАТЬ СТРЕЛКИ В ПОЛЕ ФОРМЫ*/
 .catalog-price-box-input input[type="number"]::-webkit-outer-spin-button,
