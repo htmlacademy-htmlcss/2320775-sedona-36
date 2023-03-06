@@ -862,7 +862,6 @@ b::after {
   position: relative;
   display: block;
   padding-left: 36px;
-  cursor: pointer;
 }
 
 .catalog-select-item .mark {
@@ -886,20 +885,27 @@ b::after {
   transform: translate(5px, 5px);
 }
 
-.catalog-select-item .select:hover {
+.select:hover {
   opacity: 0.6;
+  cursor: pointer;
 }
 
-.catalog-select-item .select:active {
+.select:active {
   opacity: 0.3;
 }
 
-.select-input:focus-visible + .mark {
+.select .select-input:focus-visible + .mark {
   outline: 3px solid #83B3D3;
 }
 
-.select-input:disabled {
-  color: #ddd4d4;
+.select-input:disabled + .mark {
+  background-color: gray;
+  color: gray;
+  pointer-events: none;
+}
+
+.select-input:disabled ~ span {
+  color: gray;
   pointer-events: none;
 }
 
