@@ -209,19 +209,42 @@
         </footer>
         <div class="modal-container">
           <div class="modal-window">
-          <button class="modal-close-button">
-            <span class="visually-hidden">Закрыть</span>
-          </button>
-          <section class="modal-content">
-            <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
-
-          </section>
-
-
+            <button class="modal-close-button">
+              <span class="visually-hidden">Закрыть</span>
+              <span class="check"></span>
+            </button>
+            <section class="modal-content">
+              <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
+                <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+                <fieldset>
+                  <ul class="hotel-search">
+                    <li class="arrival-date">
+                      <label class="select">Дата заезда:
+                        <input class="field" type="date" name="arrival" placeholder="27 апреля 2020" required>
+                      </label>
+                      <p>Мы не можем отправить вас в прошлое.</p>
+                    </li>
+                    <li class="departure-date">
+                      <label class="select">Дата выезда::
+                        <input class="field" type="date" name="departure" placeholder="1 сентября 2021" required>
+                      </label>
+                      <p>На эти даты есть свободные номера. Пока есть.</p>
+                    </li>
+                    <li class="customers">
+                      <label class="select">Взрослые:
+                        <input class="field" type="number" name="adults" placeholder="2" required>
+                      </label>
+                      <label class="select">Дети:
+                        <input class="field" type="number" name="children" placeholder="2" required>
+                      </label>
+                    </li>
+                  </ul>
+                  <button class="button newsletter-button" type="submit">Найти</button>
+                </fieldset>
+              </form>
+            </section>
           </div>
         </div>
-
-
     </div>
   </body>
 </html>

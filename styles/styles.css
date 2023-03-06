@@ -759,7 +759,6 @@ b::after {
   margin: 64px 70px;
 }
 
-
 .modal-close-button {
   position: absolute;
   cursor: pointer;
@@ -772,7 +771,7 @@ b::after {
   transform: translate(-50px, 60px);
 }
 
-.modal-close-button:after {
+.modal-close-button .check:after {
   content: "";
   position: absolute;
   width: 15px;
@@ -784,6 +783,24 @@ b::after {
   transform: translate(13px, -7px);
 }
 
+.modal-close-button:hover {
+  background-color: #E6E6E6;
+}
+
+.modal-close-button:focus-visible {
+  background-color: #E6E6E6;
+  outline: 3px solid #83B3D3;
+}
+
+.modal-close-button:active {
+  background-color: #E6E6E6;
+}
+
+.modal-close-button .check:active  {
+  opacity: 0.3;
+}
+
+
 .modal-title {
   margin: 0;
   padding: 0;
@@ -794,9 +811,7 @@ b::after {
   line-height: 36px;
   text-transform: uppercase;
   color: #000000;
-
 }
-
 
 
 
