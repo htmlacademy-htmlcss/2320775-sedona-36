@@ -731,6 +731,65 @@ b::after {
   color: rgba(117, 97, 87, 0.3);
 }
 
+/*МОДАЛЬНОЕ ОКНО*/
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(242, 242, 242, 0.8);
+}
+
+.modal-window {
+  position: relative;
+  margin: auto;
+  width: 577px;
+  min-height: 448px;
+  padding: 64px 70px;
+  background-color: #ffffff;
+}
+
+.modal-close-button {
+  position: absolute;
+  cursor: pointer;
+  width: 52px;
+  height: 52px;
+  background: #F2F2F2;
+  border-radius: 50%;
+  border: 0;
+}
+
+.modal-close-button:after {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background-image: url("../images/icons/close-window.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.modal-title {
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #000000;
+
+}
+
+
+
+
+
+
+
 /*КАТАЛОГ*/
 .main-catalog {
   color: #FFFFFF;
@@ -899,13 +958,13 @@ b::after {
 }
 
 .select-input:disabled + .mark {
-  background-color: gray;
-  color: gray;
+  background-color: #808080;
+  color: #808080;
   pointer-events: none;
 }
 
 .select-input:disabled ~ span {
-  color: gray;
+  color: #808080;
   pointer-events: none;
 }
 
@@ -923,7 +982,7 @@ b::after {
   transform: translate(50%, 50%);
 }
 
-/*СЛАЙДЕР СТОИМОСТЬ*/
+/*СТОИМОСТЬ*/
 .catalog-price-title {
   font-weight: 700;
   font-size: 20px;
@@ -1000,8 +1059,8 @@ b::after {
 }
 
 .catalog-filter-label .range-input:disabled {
-  background-color: gray;
-  color: gray;
+  background-color: #808080;
+  color: #808080;
   pointer-events: none;
 }
 
@@ -1144,7 +1203,6 @@ b::after {
   color: #ddd4d4;
   pointer-events: none;
 }
-
 
 /*НАЙДЕНО ГОСТИНИЦ*/
 .find-hotels-search {
