@@ -907,7 +907,25 @@ b::after {
   transform: rotate(90deg);
 }
 
+.modal-window-small {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  width: 247px;
+  justify-content: space-between;
+}
 
+.customers {
+display: flex;
+flex-wrap: nowrap;
+flex-direction: row;
+justify-content: space-between;
+margin-bottom: 48px;
+}
+
+.customers-flex {
+  display: flex;
+}
 
 
 
