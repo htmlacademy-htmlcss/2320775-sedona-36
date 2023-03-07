@@ -930,8 +930,6 @@ margin-bottom: 48px;
 
 
 
-
-
 /* .newsletter-form .field:hover {
   background: #E6E6E6;
 }
@@ -977,6 +975,42 @@ margin-bottom: 48px;
   opacity: 0.3;
 }
 
+
+.button-modal {
+font-family: inherit;
+font-weight: 700;
+font-size: 20px;
+line-height: 24px;
+text-align: center;
+text-transform: uppercase;
+color: #FFFFFF;
+background: #82B3D3;
+cursor: pointer;
+overflow-wrap: break-word;
+border: 0;
+border-radius: 10px;
+width: 577px;
+min-height: 60px;
+}
+
+
+/* .button.newsletter-button:hover {
+  background: #68A2CA;
+}
+
+.button.newsletter-button:focus {
+  background: #68A2CA;
+}
+
+.button.newsletter-button:active {
+  color: rgba(255, 255, 255, 0.3);
+  background: #82B3D3;
+}
+
+.button.newsletter-button:active:disabled {
+  color: #ddd4d4;
+  pointer-events: none;
+} */
 
 
 
