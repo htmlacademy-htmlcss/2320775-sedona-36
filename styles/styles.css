@@ -742,6 +742,10 @@ b::after {
   background-color: rgba(242, 242, 242, 0.8);
 }
 
+.modal-container-close {
+  display: none;
+}
+
 .modal-window {
   position: relative;
   margin: auto;
@@ -975,7 +979,6 @@ margin-bottom: 48px;
   opacity: 0.3;
 }
 
-
 .button-modal {
 font-family: inherit;
 font-weight: 700;
@@ -993,24 +996,23 @@ width: 577px;
 min-height: 60px;
 }
 
-
-/* .button.newsletter-button:hover {
+.button-modal:hover {
   background: #68A2CA;
 }
 
-.button.newsletter-button:focus {
+.button-modal:focus {
   background: #68A2CA;
 }
 
-.button.newsletter-button:active {
+.button-modal:active {
   color: rgba(255, 255, 255, 0.3);
   background: #82B3D3;
 }
 
-.button.newsletter-button:active:disabled {
+.button-modal :disabled {
   color: #ddd4d4;
   pointer-events: none;
-} */
+}
 
 
 
