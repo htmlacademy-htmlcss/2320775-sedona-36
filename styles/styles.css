@@ -832,6 +832,9 @@ b::after {
   line-height: 24px;
   list-style-type: none;
   position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 88px;
 }
 
 .modal-select {
@@ -841,7 +844,6 @@ b::after {
   align-content: flex-start;
   align-items: center;
   justify-content: space-between;
-
 }
 
 .modal-select .field {
@@ -887,7 +889,27 @@ b::after {
   pointer-events: none;
 }
 
-.modal-window-small .field-small {
+/*ДЕТИ, ВЗРОСЛЫЕ*/
+.customers-adults {
+  display: flex;
+  width: 247px;
+  grid-column: 1 / 2;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.customers-children {
+  display: flex;
+  width: 242px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.toggle-flex {
+  display: flex;
+}
+
+.field-small {
   border: 0;
   padding: 0;
   width: 31px;
@@ -898,14 +920,6 @@ b::after {
   font-size: 18px;
   line-height: 24px;
   outline: none;
-}
-
-.modal-window-small {
-  display: flex;
-  flex-wrap: nowrap;
-  align-items: center;
-  width: 243px;
-  justify-content: space-between;
 }
 
 .modal-toggle-min {
@@ -954,30 +968,22 @@ b::after {
   pointer-events: none;
 }
 
-.customers-flex input[type="number"]::-webkit-outer-spin-button,
-.customers-flex input[type="number"]::-webkit-inner-spin-button {
+.number-of-customers input[type="number"]::-webkit-outer-spin-button,
+.number-of-customers input[type="number"]::-webkit-inner-spin-button {
   display: none;
 }
 
-.customers-flex input[type='number'] {
+.number-of-customers input[type='number'] {
   -moz-appearance: textfield;
 }
 
-.customers {
-  display: flex;
-  flex-wrap: nowrap;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-bottom: 48px;
-}
-
-.customers-flex {
-  display: flex;
-}
-
-.customers-flex .field-small::placeholder {
+.field-small::placeholder {
   color: black;
   text-align: center;
+}
+
+.arrival-date {
+  grid-column: 1 / -1;
 }
 
 .arrival-date p,
@@ -989,6 +995,10 @@ b::after {
   color: #FF5757;
   margin-left: 157px;
   margin-bottom: 23px;
+}
+
+.departure-date {
+  grid-column: 1 / -1;
 }
 
 .departure-date p {
@@ -1006,6 +1016,10 @@ b::after {
   opacity: 0.3;
 }
 
+.modal-result {
+  grid-column: 1 / -1;
+}
+
 .button-modal {
   font-family: inherit;
   font-weight: 700;
@@ -1021,6 +1035,7 @@ b::after {
   border-radius: 10px;
   width: 577px;
   min-height: 60px;
+  margin-top: 48px;
 }
 
 .button-modal:hover {
@@ -1099,6 +1114,7 @@ b::after {
   margin-left: auto;
   margin-right: auto;
 }
+
 
 /*КАТАЛОГ*/
 .main-catalog {
