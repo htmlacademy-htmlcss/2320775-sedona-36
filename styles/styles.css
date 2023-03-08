@@ -743,7 +743,7 @@ b::after {
 }
 
 .modal-container-close {
-  /* display: none; */
+  display: none;
 }
 
 .modal-window {
