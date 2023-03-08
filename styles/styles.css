@@ -831,9 +831,6 @@ b::after {
   font-size: 20px;
   line-height: 24px;
   list-style-type: none;
-}
-
-.hotel-search li {
   position: relative;
 }
 
@@ -841,11 +838,10 @@ b::after {
   text-transform: capitalize;
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
   align-content: flex-start;
   align-items: center;
   justify-content: space-between;
-  position: relative;
+
 }
 
 .modal-select .field {
@@ -864,6 +860,7 @@ b::after {
 .modal-select .field[type="text"] {
   padding: 0;
   padding-left: 20px;
+  padding-right: 50px;
 }
 
 .modal-select .field::placeholder {
@@ -1004,9 +1001,8 @@ b::after {
   width: 16px;
   height: 16px;
   border: 0;
-  right: 0;
-  top: 0;
-  transform: translate(-25px, 15px);
+  right: 4%;
+  transform: translateY(-32px);
   opacity: 0.3;
 }
 
@@ -1045,7 +1041,45 @@ b::after {
   pointer-events: none;
 }
 
+/*TOOLTIP*/
+.tooltip-toggle {
+  border: 0;
+  padding: 0;
+  background: #83B3D3;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
 
+.tooltip-text {
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+  background: #333333;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  display: block;
+  width: 216px;
+  padding: 15px 18px 18px 22px;
+  position: absolute;
+  top: 100%;
+  margin-top: 15px;
+  transform: translateX(calc(-50% + 22px));
+}
+
+.tooltip {
+  width: 26px;
+  height: 26px;
+  position: absolute;
+  margin-left: 10px;
+  transform: translate(46px, -37px);
+}
 
 /*КАТАЛОГ*/
 .main-catalog {
