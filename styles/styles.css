@@ -783,7 +783,8 @@ b::after {
   background-repeat: no-repeat;
   background-position: center;
   display: block;
-  transform: translate(13px, -7px);
+  transform: translate(2px, -17px);
+  padding: 10px;
 }
 
 .modal-close-button:hover {
@@ -813,7 +814,7 @@ b::after {
   line-height: 36px;
   text-transform: uppercase;
   color: #000000;
-  margin-bottom: 64px;
+  margin-bottom: 65px;
 }
 
 .modal-fieldset {
@@ -1075,6 +1076,7 @@ b::after {
   display: block;
 }
 
+/*ВКЛЮЧИТЬ-ОТКЛЮЧИТЬ ТУЛТИП*/
 .tooltip-text {
   font-family: inherit;
   font-weight: 400;
@@ -1099,7 +1101,7 @@ b::after {
   height: 26px;
   position: absolute;
   padding-left: 10px;
-  transform: translate(50px, 12px);
+  transform: translate(-41px, -13px);
 }
 
 .tooltip-text:before {
