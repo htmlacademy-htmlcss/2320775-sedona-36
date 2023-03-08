@@ -904,7 +904,7 @@ b::after {
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
-  width: 247px;
+  width: 243px;
   justify-content: space-between;
 }
 
@@ -1041,7 +1041,7 @@ b::after {
   pointer-events: none;
 }
 
-/*TOOLTIP*/
+/*TOOLTIP ТУЛТИП*/
 .tooltip-toggle {
   border: 0;
   padding: 0;
@@ -1071,35 +1071,34 @@ b::after {
   border-radius: 10px;
   display: block;
   width: 216px;
-  padding: 15px 18px 18px 22px;
+  min-height: 110px;
+  padding: 21px 18px 14px 22px;
   position: absolute;
-  top: 100%;
-  margin-top: 15px;
-  transform: translateX(calc(-50% + 22px));
-  /* display: none; */
+  margin-top: 16px;
+  transform: translateX(calc(-50% + 13px));
+  display: none;
 }
 
 .tooltip {
   width: 26px;
   height: 26px;
   position: absolute;
-  margin-left: 10px;
-  transform: translate(46px, -37px);
+  padding-left: 10px;
+  transform: translate(50px, 12px);
 }
 
 .tooltip-text:before {
-  content:"";
+  content: "";
   background-image: url("../images/icons/tooltip-arrow.svg");
   width: 19px;
   height: 9px;
-  position:absolute;
+  position: absolute;
   bottom: 99%;
-  left:0;
-  right:0;
+  left: 0;
+  right: 0;
   margin-left: auto;
   margin-right: auto;
 }
-
 
 /*КАТАЛОГ*/
 .main-catalog {
@@ -1375,7 +1374,6 @@ b::after {
   pointer-events: none;
 }
 
-
 /*ПОЛЗУНОК*/
 .range-scale {
   width: 287px;
@@ -1431,7 +1429,6 @@ b::after {
   color: gray;
   pointer-events: none;
 }
-
 
 /*УБРАТЬ СТРЕЛКИ В ПОЛЕ ФОРМЫ*/
 .catalog-price-box-input input[type="number"]::-webkit-outer-spin-button,
@@ -1604,7 +1601,6 @@ b::after {
   background-image: url("../images/icons/select-menu.svg");
   background-repeat: no-repeat;
   background-position: right 16px center;
-
 }
 
 .select-control:hover {
