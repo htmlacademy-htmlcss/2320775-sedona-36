@@ -1055,6 +1055,11 @@ b::after {
   cursor: pointer;
 }
 
+.tooltip-toggle:hover + .tooltip-text,
+.tooltip-toggle:focus + .tooltip-text {
+  display: block;
+}
+
 .tooltip-text {
   font-family: inherit;
   font-weight: 400;
@@ -1071,6 +1076,7 @@ b::after {
   top: 100%;
   margin-top: 15px;
   transform: translateX(calc(-50% + 22px));
+  /* display: none; */
 }
 
 .tooltip {
@@ -1080,6 +1086,20 @@ b::after {
   margin-left: 10px;
   transform: translate(46px, -37px);
 }
+
+.tooltip-text:before {
+  content:"";
+  background-image: url("../images/icons/tooltip-arrow.svg");
+  width: 19px;
+  height: 9px;
+  position:absolute;
+  bottom: 99%;
+  left:0;
+  right:0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 
 /*КАТАЛОГ*/
 .main-catalog {
