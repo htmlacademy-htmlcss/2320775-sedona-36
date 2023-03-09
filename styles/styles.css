@@ -1199,10 +1199,10 @@ img {
 /*ФИЛЬТРЫ*/
 .catalog-select {
   margin: 0 auto;
-  display: flex;
-  justify-content: flex-start;
+  display: grid;
+  grid-template-columns: min-content min-content min-content min-content min-content;
   align-items: flex-start;
-  min-width: 1060px;
+  width: 1060px;
   min-height: 160px;
 }
 
@@ -1221,14 +1221,9 @@ img {
   border: 0;
 }
 
-.catalog-select-box.infrastructure {
-  margin-left: 70px;
-  width: 150.43px;
-}
-
 .catalog-select-box.home-type {
-  margin-left: 70px;
-  width: 150.43px;
+  margin-right: 8px;
+  margin-left: -4px;
 }
 
 .catalog-select-list {
@@ -1313,17 +1308,15 @@ img {
 }
 
 /*СТОИМОСТЬ*/
-.catalog-price-title {
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 24px;
-  text-transform: capitalize;
+.catalog-price-box {
+  grid-column: 4 / 5;
+  padding: 0;
+  border: 0;
 }
 
-.catalog-price-box {
-  padding: 0;
-  margin-left: 140px;
-  border: 0;
+.catalog-price-box-input {
+  display: flex;
+  justify-content: space-between;
 }
 
 .catalog-price-box-input label:first-of-type > input {
@@ -1395,6 +1388,10 @@ img {
 }
 
 /*ПОЛЗУНОК*/
+.range {
+  margin-top: -4px;
+}
+
 .range-scale {
   position: relative;
   margin-top: 48px;
@@ -1466,12 +1463,12 @@ img {
 }
 
 .catalog-buttons {
+  grid-column: 5 / -1;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: space-between;
   margin-top: 56px;
-  margin-left: 70px;
   border-radius: 4px;
 }
 
@@ -1812,10 +1809,10 @@ img {
 /*ЛИНИЯ МЕЖДУ ПАГИНАЦИЕЙ И КАТАДЛОГОМ*/
 .sorting-hotels::after {
   display: block;
-  margin-left: 70px;
-  margin-bottom: 40px;
   width: 1060px;
   height: 1px;
+  margin-left: 70px;
+  margin-bottom: 40px;
   background: #E6E6E6;
   content: "";
 }
@@ -1827,9 +1824,10 @@ img {
   justify-content: flex-start;
   width: 1060px;
   height: 60px;
-  margin-bottom: 60px;
   margin: 0 auto;
   padding: 0;
+  margin-bottom: 60px;
+
 }
 
 .pagination-link {
