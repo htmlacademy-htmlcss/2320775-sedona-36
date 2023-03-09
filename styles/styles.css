@@ -742,6 +742,7 @@ b::after {
   background-color: rgba(242, 242, 242, 0.8);
 }
 
+/*ВКЛЮЧИТЬ=ВЫКЛЮЧИТЬ МОДАЛЬНОЕ ОКНО*/
 .modal-container-close {
   display: none;
 }
@@ -921,6 +922,7 @@ b::after {
   font-size: 18px;
   line-height: 24px;
   outline: none;
+  text-align: center;
 }
 
 .modal-toggle-min {
@@ -975,6 +977,7 @@ b::after {
 }
 
 .number-of-customers input[type='number'] {
+  appearance: none;
   -moz-appearance: textfield;
 }
 
@@ -1093,7 +1096,7 @@ b::after {
   position: absolute;
   margin-top: 16px;
   transform: translateX(calc(-50% + 13px));
-  display: none;
+  /* display: none; */
 }
 
 .tooltip {
@@ -1116,7 +1119,6 @@ b::after {
   margin-left: auto;
   margin-right: auto;
 }
-
 
 /*КАТАЛОГ*/
 .main-catalog {
@@ -1456,6 +1458,7 @@ b::after {
 
 .catalog-price-box-input input[type='number'] {
   -moz-appearance: textfield;
+  appearance: none;
 }
 
 .catalog-price-box-input input::placeholder {
