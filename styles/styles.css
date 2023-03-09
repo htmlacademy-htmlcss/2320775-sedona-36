@@ -631,6 +631,7 @@ img {
 
 .newsletter-form .field:focus {
   background: #E6E6E6;
+  outline: 3px solid #83B3D3;
 }
 
 .newsletter-form .field:not(:placeholder-shown) {
@@ -641,7 +642,6 @@ img {
   color: #ddd4d4;
   pointer-events: none;
 }
-
 
 /*ПОДВАЛ ИНДЕКСА*/
 .footer-page {
@@ -1200,7 +1200,8 @@ img {
 .catalog-select {
   margin: 0 auto;
   display: grid;
-  grid-template-columns: min-content min-content min-content min-content min-content;
+  grid-template-columns: repeat(5, min-content);
+  column-gap: 70px;
   align-items: flex-start;
   width: 1060px;
   min-height: 160px;
