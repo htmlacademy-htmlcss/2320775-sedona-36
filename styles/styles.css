@@ -1626,7 +1626,7 @@ img {
   border: 2px solid #68A2CA;
 }
 
-.select-control:hover:focus {
+.select-control:focus {
   outline: 2px solid #68A2CA;
 }
 
