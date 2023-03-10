@@ -665,7 +665,7 @@ img {
 .footer-address-social-list {
   display: flex;
   flex-wrap: wrap;
-  min-width: 142px;
+  width: 240px;
   margin: 0;
   padding: 0;
   list-style-type: none;
