@@ -46,7 +46,7 @@ img {
   padding: 0;
   white-space: nowrap;
   -webkit-clip-path: inset(100%);
-          clip-path: inset(100%);
+  clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
@@ -86,7 +86,6 @@ img {
   margin: 0;
   padding: 0;
   margin-left: 238px;
-
 }
 
 .navigation-logo {
@@ -163,19 +162,19 @@ img {
   color: #000000;
 }
 
-.navigation-link svg:hover {
+.navigation-item-user .navigation-link:hover {
   color: #615048;
 }
 
-.navigation-link svg:focus {
+.navigation-item-user .navigation-link:focus {
   color: #615048;
 }
 
-.navigation-link svg:active {
+.navigation-item-user .navigation-link:active {
   color: rgba(143, 136, 136, 0.3);
 }
 
-.navigation-link svg:disabled {
+.navigation-item-user .navigation-link:disabled {
   color: #ddd4d4;
 }
 
@@ -1698,6 +1697,7 @@ img {
 
 .hotel-item-link img {
   margin-bottom: 16px;
+  display: block;
 }
 
 /*НАЗВАНИЯ ОТЕЛЕЙ*/
@@ -1844,7 +1844,7 @@ img {
   display: block;
   min-width: 60px;
   min-height: 60px;
-  padding-top: 11px;
+  padding: 10px;
   font-size: 20px;
   font-weight: 700;
   line-height: 36px;
