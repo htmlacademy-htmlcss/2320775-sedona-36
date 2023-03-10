@@ -1665,6 +1665,7 @@ img {
 .hotel-item {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  align-content: space-between;
   column-gap: 20px;
   row-gap: 16px;
   width: 300px;
