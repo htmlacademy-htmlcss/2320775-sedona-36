@@ -33,13 +33,8 @@ body {
 /*НОРМАЛИЗАЦИЯ ТЕГА IMG*/
 img {
   max-width: 100%;
-  display: block;
   height: auto;
-  overflow: hidden;
-  -webkit-user-select: none;
-          user-select: none;
   object-fit: contain;
-  object-position: center;
 }
 
 .visually-hidden {
@@ -1334,7 +1329,7 @@ img {
   justify-content: space-between;
 }
 
-.catalog-price-box-input label:first-of-type > input {
+.catalog-filter-label.from > input {
   position: relative;
   width: 143px;
   height: 48px;
@@ -1350,7 +1345,7 @@ img {
   box-sizing: border-box;
 }
 
-.catalog-price-box-input label:last-of-type > input {
+.catalog-filter-label.to > input {
   position: relative;
   width: 143px;
   height: 48px;
