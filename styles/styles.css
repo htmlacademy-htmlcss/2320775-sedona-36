@@ -312,7 +312,6 @@ img {
 .advantages-item {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   width: 400px;
   min-height: 385px;
   list-style-type: none;
@@ -330,7 +329,7 @@ img {
 
 .advantages-item h3 {
   margin: 0;
-  padding: 0 20px;
+  padding: 102px 20px 0;
   font-size: 24px;
   font-weight: 700;
   line-height: 28px;
@@ -353,7 +352,7 @@ img {
 
 .advantages-item p {
   margin: 0;
-  padding: 0 20px;
+  padding: 0 20px 20px;
   font-size: 18px;
   font-weight: 400;
   line-height: 21px;
@@ -362,7 +361,7 @@ img {
 }
 
 .advantages-item b {
-  padding: 0 20px;
+  padding: 102px 20px 0;
   font-size: 24px;
   font-weight: 700;
   line-height: 28px;
