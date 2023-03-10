@@ -565,9 +565,7 @@ img {
 
 .newsletter-sign-up h2 {
   margin: 0;
-  padding: 0;
-  padding-top: 96px;
-  padding-bottom: 20px;
+  padding: 96px 20px 20px;
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
@@ -915,7 +913,12 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 242px;
+  min-width: 242px;
+}
+
+.customers-children span:first-child {
+  padding-right: 50px;
+  word-break: break-all;
 }
 
 .toggle-flex {
@@ -989,7 +992,7 @@ img {
 
 .number-of-customers input[type="number"] {
   -webkit-appearance: none;
-          appearance: none;
+  appearance: none;
 }
 
 .field-small::placeholder {
@@ -1107,12 +1110,12 @@ img {
   background: #333333;
   border-radius: 10px;
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
-  /* display: none; */
+  display: none;
 }
 
 .tooltip {
   position: absolute;
-  transform: translate(-41px, -13px);
+  transform: translate(-65px, -13px);
   width: 26px;
   height: 26px;
   padding-left: 10px;
@@ -1563,8 +1566,8 @@ img {
 .hamburgers {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
-  width: 160px;
+  flex-wrap: wrap;
+  min-width: 160px;
 }
 
 .hamburgers a {
