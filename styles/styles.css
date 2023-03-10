@@ -36,7 +36,8 @@ img {
   display: block;
   height: auto;
   overflow: hidden;
-  user-select: none;
+  -webkit-user-select: none;
+          user-select: none;
   object-fit: contain;
   object-position: center;
 }
@@ -49,7 +50,8 @@ img {
   border: 0;
   padding: 0;
   white-space: nowrap;
-  clip-path: inset(100%);
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
@@ -81,13 +83,15 @@ img {
 }
 
 .navigation-list {
-  margin: 0;
-  padding: 0;
-  margin-left: 238px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   list-style-type: none;
+  width: 440px;
+  margin: 0;
+  padding: 0;
+  margin-left: 238px;
+
 }
 
 .navigation-logo {
@@ -131,6 +135,7 @@ img {
 
 .navigation-item .button {
   display: block;
+  width: 92px;
   margin-left: 20px;
   padding: 8px 34px;
 }
@@ -269,7 +274,7 @@ img {
 /*ЛЕСЕНКА*/
 .page-hero-logo::after {
   position: relative;
-  bottom: -25px;
+  transform: translateY(46%);
   display: block;
   width: 100%;
   height: 57px;
@@ -280,8 +285,7 @@ img {
 
 .main-page-title h2 {
   margin: 0;
-  padding-top: 69px;
-  padding-bottom: 25px;
+  padding: 69px 20px 25px 20px;
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
@@ -292,7 +296,7 @@ img {
 
 .main-page-title p {
   margin: 0;
-  padding-bottom: 90px;
+  padding: 0 20px 90px 20px;
   font-size: 22px;
   font-weight: 400;
   line-height: 26px;
@@ -323,24 +327,29 @@ img {
 
 .advantages-item-image {
   display: flex;
-  align-items: flex-end;
+  align-items: stretch;
+}
+
+.advantages-item-image img {
+  object-fit: cover;
 }
 
 .advantages-item h3 {
   margin: 0;
+  padding: 0 20px;
   font-size: 24px;
   font-weight: 700;
   line-height: 28px;
   color: #ffffff;
   white-space: pre-line;
   text-transform: uppercase;
-}
+  }
 
 .advantages-item h3::after {
   position: relative;
   margin-top: 30px;
   margin-bottom: 30px;
-  margin-left: 170px;
+  margin-left: 150px;
   display: block;
   width: 60px;
   height: 2px;
@@ -350,6 +359,7 @@ img {
 
 .advantages-item p {
   margin: 0;
+  padding: 0 20px;
   font-size: 18px;
   font-weight: 400;
   line-height: 21px;
@@ -358,6 +368,7 @@ img {
 }
 
 .advantages-item b {
+  padding: 0 20px;
   font-size: 24px;
   font-weight: 700;
   line-height: 28px;
@@ -371,7 +382,7 @@ img {
   position: relative;
   margin-top: 30px;
   margin-bottom: 30px;
-  margin-left: 170px;
+  margin-left: 150px;
   display: block;
   width: 60px;
   height: 2px;
@@ -402,8 +413,7 @@ img {
 /*ПРИЕЗЖАЙТЕ*/
 .services-offer h2 {
   margin: 0;
-  padding-top: 64px;
-  padding-bottom: 20px;
+  padding: 64px 20px 20px;
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
@@ -413,7 +423,7 @@ img {
 
 .services-offer p {
   margin: 0;
-  padding-bottom: 64px;
+  padding: 0 20px 64px 20px;
   font-size: 22px;
   font-weight: 400;
   line-height: 26px;
@@ -449,6 +459,7 @@ img {
 
 .services-advantages-review {
   margin: 0;
+  padding: 20px;
   font-size: 18px;
   font-weight: 400;
   line-height: 21px;
@@ -519,7 +530,7 @@ img {
 
 .services-order p {
   margin: 0;
-  padding-bottom: 54px;
+  padding: 0 20px 54px 20px;
   font-size: 22px;
   font-weight: 400;
   line-height: 26px;
@@ -543,7 +554,7 @@ img {
 .newsletter {
   margin-top: 1px;
   width: 100%;
-  background-size: 100% auto;
+  background-size: 100% 100%;
   min-height: 414.86px;
   text-align: center;
   color: #ffffff;
@@ -565,8 +576,7 @@ img {
 
 .newsletter-sign-up p {
   margin: 0;
-  padding: 0;
-  padding-bottom: 54px;
+  padding: 0 20px 54px 20px;
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
@@ -978,8 +988,8 @@ img {
 }
 
 .number-of-customers input[type="number"] {
-  -moz-appearance: textfield;
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
 }
 
 .field-small::placeholder {
@@ -1080,7 +1090,7 @@ img {
   display: block;
 }
 
-/*ВКЛЮЧИТЬ-ОТКЛЮЧИТЬ ТУЛТИП*/
+/*ВКЛЮЧИТЬ-ВЫКЛЮЧИТЬ ТУЛТИП*/
 .tooltip-text {
   position: absolute;
   margin-top: 16px;
@@ -1456,8 +1466,8 @@ img {
 }
 
 .catalog-price-box-input input[type="number"] {
-  -moz-appearance: textfield;
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
 }
 
 .catalog-price-box-input input::placeholder {
@@ -1574,12 +1584,17 @@ img {
 }
 
 .button.button-light.checked {
+  font-size: 10px;
+  color: #000000;
   background-color: #ffffff;
   border: 2px solid #000000;
   border-radius: 4px;
+
 }
 
 .button.button-light {
+  font-size: 10px;
+  color: #000000;
   background-color: #ffffff;
   border: 2px solid #e5e5e5;
   border-radius: 4px;
@@ -1620,7 +1635,8 @@ img {
   background-position: right 16px center;
   border: 2px solid #e5e5e5;
   border-radius: 4px;
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
 }
 
 .select-control:hover {
