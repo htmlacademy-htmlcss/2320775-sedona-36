@@ -768,7 +768,6 @@ img {
 }
 
 .modal-close-button {
-
   position: absolute;
   right: 0;
   transform: translate(-52px, 64px);
@@ -988,7 +987,7 @@ img {
 
 .number-of-customers input[type="number"] {
   -webkit-appearance: none;
-  appearance: none;
+  -moz-appearance: textfield;
 }
 
 .field-small::placeholder {
@@ -1466,7 +1465,8 @@ img {
 
 .catalog-price-box-input input[type="number"] {
   -webkit-appearance: none;
-          appearance: none;
+  appearance: none;
+  -moz-appearance: textfield;
 }
 
 .catalog-price-box-input input::placeholder {
@@ -1545,7 +1545,7 @@ img {
 .find-hotels-search {
   display: flex;
   align-items: center;
-  width: 1060px;
+  width: 1070px;
   margin: 50px 70px 40px 70px;
 }
 
@@ -1563,7 +1563,7 @@ img {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  min-width: 160px;
+  min-width: 170px;
 }
 
 .hamburgers a {
@@ -1632,10 +1632,11 @@ img {
   background-image: url("../images/icons/select-menu.svg");
   background-repeat: no-repeat;
   background-position: right 16px center;
+  background-color: #ffffff;
   border: 2px solid #e5e5e5;
   border-radius: 4px;
   -webkit-appearance: none;
-          appearance: none;
+  appearance: none;
 }
 
 .select-control:hover {
