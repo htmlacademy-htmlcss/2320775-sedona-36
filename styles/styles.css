@@ -361,7 +361,7 @@ img {
 }
 
 .advantages-item b {
-  padding: 102px 20px 0;
+  padding: 114px 20px 0;
   font-size: 24px;
   font-weight: 700;
   line-height: 28px;
@@ -437,13 +437,12 @@ img {
   min-height: 385px;
   width: 400px;
   flex-direction: column;
-  justify-content: center;
   text-align: center;
 }
 
 .services-advantages-name {
   display: block;
-  padding-bottom: 30px;
+  padding: 0 20px 30px;
   font-size: 24px;
   font-weight: 700;
   line-height: 28px;
@@ -452,7 +451,7 @@ img {
 
 .services-advantages-review {
   margin: 0;
-  padding: 20px;
+  padding: 0 20px 20px;
   font-size: 18px;
   font-weight: 400;
   line-height: 21px;
@@ -473,6 +472,7 @@ img {
   position: relative;
   display: block;
   margin: 0 auto;
+  margin-top: 81px;
   padding-bottom: 30px;
   width: 75px;
   height: 72px;
@@ -483,9 +483,10 @@ img {
 
 .services-advantages-item:nth-child(2)::before {
   position: relative;
-  margin: 0 auto;
-  padding-bottom: 30px;
   display: block;
+  margin: 0 auto;
+  margin-top: 81px;
+  padding-bottom: 34px;
   width: 75px;
   height: 70px;
   background-image: url("../images/icons/food.svg");
@@ -496,7 +497,8 @@ img {
 .services-advantages-item:last-child::before {
   position: relative;
   margin: 0 auto;
-  padding-bottom: 30px;
+  margin-top: 81px;
+  padding-bottom: 28px;
   display: block;
   width: 67px;
   height: 76px;
@@ -690,9 +692,10 @@ img {
 
 /*ТЕЛЕФОН*/
 .footer-address-phone-contact {
+  display: block;
   margin: 0;
   padding: 0;
-  min-width: 331px;
+  margin-right: 90px;
   font-size: 40px;
   font-weight: 400;
   line-height: 40px;
