@@ -75,7 +75,7 @@
             </li>
           </ol>
           <form class="catalog-select" action="https://echo.htmlacademy.ru/" method="get">
-            <fieldset class="catalog-select-box infrastructure">
+            <fieldset class="catalog-select-box">
               <legend class="catalog-select-title">Инфраструктура:</legend>
               <ul class="catalog-select-list">
                 <li class="catalog-select-item">
@@ -144,10 +144,10 @@
                 <div class="range-scale">
                   <div class="bar">
                     <button class="range-toggle toggle-min">
-                      <span class="visually-hidden">Изменить минимальную цену.</span>
+                      <span class="visually-hidden">Изменить минимальную цену</span>
                     </button>
                     <button class="range-toggle toggle-max">
-                      <span class="visually-hidden">Изменить максимальную цену.</span>
+                      <span class="visually-hidden">Изменить максимальную цену</span>
                     </button>
                   </div>
                 </div>
@@ -165,12 +165,14 @@
               <span>38</span>
             </h2>
             <select class="select-control" aria-label="Сортировка">
-              <option value="cheap">Сначала дешевые</option>
+              <option value="cheap">Сначала дешёвые</option>
+              <option value="popular">Сначала популярные</option>
+              <option value="expensive">Сначала дорогие</option>
             </select>
             <div class="hamburgers">
               <a class="button button-light checked" href="#">
-                <span class="visually-hidden">Показать список</span>
-                <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <span class="visually-hidden">Показать в виде списка</span>
+                <svg width="16" height="14" role="img" aria-label="Показать в виде списка" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M4 0H0V6H4V0Z" fill="black" />
                   <path d="M16 0H12V6H16V0Z" fill="black" />
                   <path d="M10 0H6V6H10V0Z" fill="black" />
@@ -180,15 +182,15 @@
                 </svg>
               </a>
               <a class="button button-light" href="#">
-                <span class="visually-hidden">Показать выбранный элемент с описанием'</span>
-                <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <span class="visually-hidden">Показать выбранный элемент</span>
+                <svg width="16" height="14" role="img" aria-label="Показать выбранный элемент" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M16 12H0V14H16V12Z" fill="black" />
                   <path d="M14 2V8H2V2H14ZM16 0H0V10H16V0Z" fill="black" />
                 </svg>
               </a>
               <a class="button button-light" href="#">
-                <span class="visually-hidden">Показать карточки</span>
-                <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <span class="visually-hidden">Показать в виде карточек</span>
+                <svg width="16" height="14"  role="img" aria-label="Показать в виде карточек" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M2 0H0V2H2V0Z" fill="black" />
                   <path d="M16 0H4V2H16V0Z" fill="black" />
                   <path d="M2 4H0V6H2V4Z" fill="black" />
@@ -212,9 +214,9 @@
               </a>
               <p class="hotel-item-type">Гостиница</p>
               <span class="hotel-item-price">От 4000 ₽</span>
-              <a class="button hotel-item-about-button" href="#">Подробнее</a>
-              <a class="button hotel-item-select-button" href="#">В избранное</a>
-              <div class="rating-result" role="img" aria-label="Рейтинг 4 звезды из 5.">
+              <a class="button hotel-item-about" href="#">Подробнее</a>
+              <a class="button hotel-item-select" href="#">В избранное</a>
+              <div class="rating-result" role="img" aria-label="Рейтинг 4 звезды из 5-ти.">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -229,9 +231,9 @@
               </a>
               <p class="hotel-item-type">Гостиница</p>
               <span class="hotel-item-price">От 5000 ₽</span>
-              <a class="button hotel-item-about-button" href="#">Подробнее</a>
-              <a class="button hotel-item-selected-button" href="#">В избранном</a>
-              <div class="rating-result" role="img" aria-label="Рейтинг 4 звезды из 5.">
+              <a class="button hotel-item-about" href="#">Подробнее</a>
+              <a class="button hotel-item-selected" href="#">В избранном</a>
+              <div class="rating-result" role="img" aria-label="Рейтинг 4 звезды из 5-ти.">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -246,9 +248,9 @@
               </a>
               <p class="hotel-item-type">Гостиница</p>
               <span class="hotel-item-price">От 2500 ₽</span>
-              <a class="button hotel-item-about-button" href="#">Подробнее</a>
-              <a class="button hotel-item-select-button" href="#">В избранное</a>
-              <div class="rating-result" role="img" aria-label="Рейтинг 3 звезды из 5.">
+              <a class="button hotel-item-about" href="#">Подробнее</a>
+              <a class="button hotel-item-select" href="#">В избранное</a>
+              <div class="rating-result" role="img" aria-label="Рейтинг 3 звезды из 5-ти.">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -262,9 +264,9 @@
               </a>
               <p class="hotel-item-type">Гостиница</p>
               <span class="hotel-item-price">От 1500 ₽</span>
-              <a class="button hotel-item-about-button" href="#">Подробнее</a>
-              <a class="button hotel-item-select-button" href="#">В избранное</a>
-              <div class="rating-result" role="img" aria-label="Рейтинг 2 звезды из 5.">
+              <a class="button hotel-item-about" href="#">Подробнее</a>
+              <a class="button hotel-item-select" href="#">В избранное</a>
+              <div class="rating-result" role="img" aria-label="Рейтинг 2 звезды из 5-ти.">
                 <span></span>
                 <span></span>
               </div>
@@ -301,9 +303,9 @@
             </li>
           </ul>
         </section>
-        <section class="footer-newsletter-catalog">
+        <section class="newsletter-catalog">
           <h2 class="visually-hidden">Форма для подписки на рассылку</h2>
-          <div class="newsletter-sign-up for-footer">
+          <div class="newsletter-sign-up footer">
             <h2>Подпишитесь на рассылку</h2>
             <p>Только полезная информация и никакого спама,
               честное бойскаутское!</p>
@@ -319,7 +321,7 @@
       <footer class="footer-page">
         <section class="footer-address">
           <h2 class="visually-hidden">Контактные данные для связи</h2>
-          <ul class="footer-address-social-list">
+          <ul class="footer-address-social">
             <li class="footer-social-item">
               <a class="button-social" href="https://vk.com/htmlacademy" rel="nofollow noreferer">
                 <span class="visually-hidden">ВКонтакте</span>
@@ -351,8 +353,8 @@
               </a>
             </li>
           </ul>
-          <address class="footer-address-phone">
-            <a class="footer-address-phone-contact" href="tel:+78128121212">+7 (812) 812-12-12</a>
+          <address class="footer-contacts">
+            <a class="footer-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
           </address>
           <a class="htmlacademy-link" href="https://htmlacademy.ru">
             <span class="visually-hidden">.html academy</span>
