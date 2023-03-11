@@ -383,9 +383,7 @@ img {
   content: "";
 }
 
-.advantages-item-square p,
-.advantages-item-road p,
-.advantages-item-tourist p {
+.advantages-item.middle-row p {
   color: #333333;
   text-align: center;
 }
@@ -425,14 +423,14 @@ img {
 }
 
 /*УСЛУГИ*/
-.services-advantages-list {
+.services-list {
   display: flex;
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
 
-.services-advantages-item {
+.services-item {
   display: flex;
   min-height: 385px;
   width: 400px;
@@ -440,7 +438,7 @@ img {
   text-align: center;
 }
 
-.services-advantages-name {
+.services-title {
   display: block;
   padding: 0 20px 30px;
   font-size: 24px;
@@ -449,7 +447,7 @@ img {
   text-transform: uppercase;
 }
 
-.services-advantages-review {
+.services-review {
   margin: 0;
   padding: 0 20px 20px;
   font-size: 18px;
@@ -459,16 +457,16 @@ img {
   white-space: pre-line;
 }
 
-.services-advantages-list li:first-child {
+.services-list li:first-child {
   background: rgba(131, 179, 211, 0.12);
 }
 
-.services-advantages-list li:last-child {
+.services-list li:last-child {
   background: rgba(131, 179, 211, 0.12);
 }
 
 /*КАРТИНКИ УСЛУГ*/
-.services-advantages-item:first-child::before {
+.services-item:first-child::before {
   position: relative;
   display: block;
   margin: 0 auto;
@@ -481,7 +479,7 @@ img {
   content: "";
 }
 
-.services-advantages-item:nth-child(2)::before {
+.services-item:nth-child(2)::before {
   position: relative;
   display: block;
   margin: 0 auto;
@@ -494,7 +492,7 @@ img {
   content: "";
 }
 
-.services-advantages-item:last-child::before {
+.services-item:last-child::before {
   position: relative;
   margin: 0 auto;
   margin-top: 81px;
@@ -691,7 +689,7 @@ img {
 }
 
 /*ТЕЛЕФОН*/
-.footer-address-phone-contact {
+.footer-phone{
   display: block;
   margin: 0;
   padding: 0;
@@ -705,15 +703,15 @@ img {
   text-decoration: none;
 }
 
-.footer-address-phone-contact:hover {
+.footer-phone:hover {
   color: #756157;
 }
 
-.footer-address-phone-contact:focus {
+.footer-phone:focus {
   color: #756157;
 }
 
-.footer-address-phone-contact:active {
+.footer-phone:active {
   color: rgba(117, 97, 87, 0.3);
 }
 
@@ -1725,7 +1723,7 @@ img {
   color: #333333;
 }
 
-.hotel-item-about-button {
+.hotel-item-about {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1734,7 +1732,7 @@ img {
   padding-bottom: 8px;
 }
 
-.hotel-item-select-button {
+.hotel-item-select {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1744,25 +1742,25 @@ img {
   background: #82b3d3;
 }
 
-.hotel-item-select-button:hover {
+.hotel-item-select:hover {
   background: #68a2ca;
 }
 
-.hotel-item-select-button:focus {
+.hotel-item-select:focus {
   background: #68a2ca;
 }
 
-.hotel-item-select-button:active {
+.hotel-item-select:active {
   color: rgba(255, 255, 255, 0.3);
   background: #82b3d3;
 }
 
-.hotel-item-selected-button:disabled {
+.hotel-item-selected:disabled {
   color: #ddd4d4;
   pointer-events: none;
 }
 
-.hotel-item-selected-button {
+.hotel-item-selected {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1772,15 +1770,15 @@ img {
   background: #7db54f;
 }
 
-.hotel-item-selected-button:hover {
+.hotel-item-selected:hover {
   background: #6c9e42;
 }
 
-.hotel-item-selected-button:focus {
+.hotel-item-selected:focus {
   background: #6c9e42;
 }
 
-.hotel-item-selected-button:active {
+.hotel-item-selected:active {
   color: rgba(255, 255, 255, 0.3);
   background: #6c9e42;
 }
@@ -1888,12 +1886,12 @@ img {
 }
 
 /*СЕКЦИЯ ПОДПИСКИ НА РАССЫЛКУ*/
-.footer-newsletter-catalog {
+.newsletter-catalog {
   min-height: 414.86px;
   text-align: center;
 }
 
-.newsletter-sign-up p {
+.newsletter-sign-up.footer p {
   font-size: 22px;
   font-weight: 400;
   line-height: 26px;
