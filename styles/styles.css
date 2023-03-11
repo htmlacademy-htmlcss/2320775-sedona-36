@@ -746,7 +746,7 @@ img {
 
 /*ВКЛЮЧИТЬ=ВЫКЛЮЧИТЬ МОДАЛЬНОЕ ОКНО*/
 .modal-container-close {
-  /* display: none; */
+  display: none;
 }
 
 .modal-window {
