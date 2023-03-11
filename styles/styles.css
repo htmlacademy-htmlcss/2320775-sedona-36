@@ -663,7 +663,7 @@ img {
   padding: 40px 70px 30px 70px;
 }
 
-.footer-address-social-list {
+.footer-address-social {
   display: flex;
   flex-wrap: wrap;
   width: 240px;
@@ -1893,7 +1893,7 @@ img {
   text-align: center;
 }
 
-.newsletter-sign-up.for-footer p {
+.newsletter-sign-up p {
   font-size: 22px;
   font-weight: 400;
   line-height: 26px;
