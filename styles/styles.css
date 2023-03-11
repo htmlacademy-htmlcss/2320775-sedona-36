@@ -1560,22 +1560,17 @@ img {
 
 /*КНОПКИ ВИДА*/
 .hamburgers {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  min-width: 170px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-row-gap: 5px;
+  width: 170px;
 }
 
 .hamburgers a {
   display: block;
   width: 48px;
   height: 48px;
-  margin-right: 8px;
   box-sizing: border-box;
-}
-
-.hamburgers a:last-child {
-  margin-right: 0;
 }
 
 .hamburgers svg {
@@ -1588,7 +1583,6 @@ img {
   background-color: #ffffff;
   border: 2px solid #000000;
   border-radius: 4px;
-
 }
 
 .button.button-light {
@@ -1732,19 +1726,21 @@ img {
 }
 
 .hotel-item-about-button {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 140px;
   padding-top: 8px;
   padding-bottom: 8px;
-  text-align: center;
 }
 
 .hotel-item-select-button {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 140px;
   padding-top: 8px;
   padding-bottom: 8px;
-  text-align: center;
   background: #82b3d3;
 }
 
@@ -1767,11 +1763,12 @@ img {
 }
 
 .hotel-item-selected-button {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 140px;
   padding-top: 8px;
   padding-bottom: 8px;
-  text-align: center;
   background: #7db54f;
 }
 
