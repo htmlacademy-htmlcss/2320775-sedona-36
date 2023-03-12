@@ -30,10 +30,8 @@ body {
   background-color: #f2f2f2;
 }
 
-/*НОРМАЛИЗАЦИЯ ТЕГА IMG*/
 img {
   max-width: 100%;
-  height: auto;
   object-fit: contain;
 }
 
@@ -323,6 +321,7 @@ img {
 }
 
 .advantages-item-image img {
+  height: auto;
   -o-object-fit: cover;
   object-fit: cover;
 }
@@ -1719,6 +1718,7 @@ img {
 }
 
 .hotel-item-link img {
+  height: auto;
   margin-bottom: 16px;
   display: block;
 }
