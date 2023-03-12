@@ -35,7 +35,7 @@ img {
   max-width: 100%;
   height: auto;
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 
 .visually-hidden {
@@ -325,7 +325,7 @@ img {
 
 .advantages-item-image img {
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .advantages-item h3 {
@@ -337,7 +337,7 @@ img {
   color: #ffffff;
   white-space: pre-line;
   text-transform: uppercase;
-  }
+}
 
 .advantages-item h3::after {
   position: relative;
@@ -694,7 +694,7 @@ img {
 }
 
 /*ТЕЛЕФОН*/
-.footer-phone{
+.footer-phone {
   display: block;
   margin: 0;
   padding: 0;
@@ -751,7 +751,7 @@ img {
 
 /*ВКЛЮЧИТЬ=ВЫКЛЮЧИТЬ МОДАЛЬНОЕ ОКНО*/
 .modal-container-close {
-  /* display: none; */
+  display: none;
 }
 
 .modal-window {
@@ -836,7 +836,7 @@ img {
   display: grid;
   grid-template-columns: 247px 242px;
   -moz-column-gap: 88px;
-       column-gap: 88px;
+  column-gap: 88px;
   margin: 0;
   padding: 0;
   width: 577px;
@@ -860,7 +860,7 @@ img {
   display: grid;
   grid-template-columns: 127px 440px;
   -moz-column-gap: 10px;
-       column-gap: 10px;
+  column-gap: 10px;
   width: 577px;
   align-items: baseline;
 }
@@ -1226,7 +1226,7 @@ img {
   grid-template-columns: repeat(5, -webkit-min-content);
   grid-template-columns: repeat(5, min-content);
   -moz-column-gap: 70px;
-       column-gap: 70px;
+  column-gap: 70px;
   align-items: flex-start;
   width: 1060px;
   min-height: 160px;
@@ -1655,7 +1655,7 @@ img {
   border-radius: 4px;
   -webkit-appearance: none;
   -moz-appearance: none;
-       appearance: none;
+  appearance: none;
 }
 
 .select-control:hover {
@@ -1690,7 +1690,7 @@ img {
   grid-template-columns: 1fr 1fr;
   align-content: space-between;
   -moz-column-gap: 20px;
-       column-gap: 20px;
+  column-gap: 20px;
   row-gap: 16px;
   width: 300px;
   min-height: 398px;
