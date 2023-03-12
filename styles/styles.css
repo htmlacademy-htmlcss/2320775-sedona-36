@@ -757,7 +757,7 @@ img {
 
 /*ВКЛЮЧИТЬ=ВЫКЛЮЧИТЬ МОДАЛЬНОЕ ОКНО*/
 .modal-container-close {
-  display: none;
+  /* display: none; */
 }
 
 .modal-window {
@@ -1113,6 +1113,7 @@ img {
 
 /*ВКЛЮЧИТЬ-ВЫКЛЮЧИТЬ ТУЛТИП*/
 .tooltip-text {
+  position: absolute;
   margin-top: 16px;
   transform: translateX(-115px);
   display: block;
