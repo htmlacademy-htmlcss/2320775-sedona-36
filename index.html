@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ru">
-
   <head>
     <meta charset="UTF-8">
     <meta name="keywords" content="Седона, гостиница, комфорт, Аризона">
@@ -9,7 +8,6 @@
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
     <title>HTML Academy: Седона</title>
   </head>
-
   <body>
     <div class="page-container shadow">
       <header class="page-header">
@@ -270,6 +268,20 @@
                   </li>
                   <li class="customers-children order-date">
                     <span>Дети:</span>
+                    <div class="tooltip">
+                      <button class="tooltip-toggle" type="button" aria-label="Всплывающая подсказка.">
+                        <svg class="tooltip-icon" width="20" height="20" role="img"
+                          aria-label="Всплывающая подсказка." viewBox="0 0 20 20" fill="none"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M9 4H11V6H9V4ZM11 16H9V7H11V16Z"
+                            fill="white" />
+                        </svg>
+                      </button>
+                      <div class="tooltip-text">
+                        Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет
+                        размещаются бесплатно.
+                      </div>
+                    </div>
                     <div class="toggle-flex">
                       <button class="modal-toggle-min" type="button" >
                         <svg width="20" height="20" role="img" aria-label="Уменьшить количество." viewBox="0 0 20 20"
@@ -288,22 +300,6 @@
                         <span class="visually-hidden">Увеличить</span>
                       </button>
                     </div>
-                    <div class="form-label">
-                      <div class="tooltip">
-                        <button class="tooltip-toggle" type="button" aria-label="Всплывающая подсказка.">
-                          <svg class="tooltip-icon" width="20" height="20" role="img"
-                            aria-label="Всплывающая подсказка." viewBox="0 0 20 20" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M9 4H11V6H9V4ZM11 16H9V7H11V16Z"
-                              fill="white" />
-                          </svg>
-                        </button>
-                        <div class="tooltip-text">
-                          Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет
-                          размещаются бесплатно.
-                        </div>
-                      </div>
-                    </div>
                   </li>
                   <li class="modal-result">
                     <button class="button-modal" type="submit">Найти</button>
@@ -316,5 +312,4 @@
       </div>
     </div>
   </body>
-
 </html>
