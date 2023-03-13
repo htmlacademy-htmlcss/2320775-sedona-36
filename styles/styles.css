@@ -298,32 +298,48 @@ img {
 
 /*ПРЕИМУЩЕСТВА*/
 .advantages-list {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 400px 400px 400px;
+  width: 1200px;
   margin: 0;
   padding: 0;
   text-align: center;
   list-style-type: none;
 }
 
-.advantages-item {
+.advantages-item.first-item,
+.advantages-item.last-item {
+  grid-column: 1/ -1;
+  display: flex;
+  background: #82b3d3;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 1200px;
+}
+
+.advantages-item,
+.first-block,
+.last-block {
   display: flex;
   flex-direction: column;
   width: 400px;
   min-height: 385px;
   list-style-type: none;
-  background: #82b3d3;
 }
 
-.advantages-item-image {
-  display: flex;
-  align-items: stretch;
-}
-
-.advantages-item-image img {
+.advantages-item img {
   height: auto;
   -o-object-fit: cover;
   object-fit: cover;
+  background: rgba(131, 179, 211, 0.12);
+}
+
+.advantages-item.middle-row {
+  background: rgba(131, 179, 211, 0.12);
+}
+
+.advantages-item.middle-element {
+  background: rgba(131, 179, 211, 0.2);
 }
 
 .advantages-item h3 {
@@ -387,19 +403,6 @@ img {
   text-align: center;
 }
 
-/* НАСЛЕДОВАНИЕ ФОНОВ ДЛЯ БЛОКОВ*/
-.advantages-list li:nth-child(3) {
-  background: rgba(131, 179, 211, 0.12);
-}
-
-.advantages-list li:nth-child(4) {
-  background: rgba(131, 179, 211, 0.2);
-}
-
-.advantages-list li:nth-child(5) {
-  background: rgba(131, 179, 211, 0.12);
-}
-
 /*ПРИЕЗЖАЙТЕ*/
 .services-offer h2 {
   margin: 0;
@@ -423,13 +426,15 @@ img {
 
 /*УСЛУГИ*/
 .services-list {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
 
 .services-item {
+  position: relative;
   display: flex;
   min-height: 385px;
   width: 400px;
@@ -439,7 +444,7 @@ img {
 
 .services-title {
   display: block;
-  padding: 0 20px 30px;
+  padding: 183px 20px 30px;
   font-size: 24px;
   font-weight: 700;
   line-height: 28px;
@@ -465,10 +470,11 @@ img {
 }
 
 /*КАРТИНКИ УСЛУГ*/
-.services-item:first-child::before {
-  position: relative;
+.services-title.first-element::before {
+  position: absolute;
   display: block;
-  margin: 0 auto;
+  top: 0;
+  right: 41%;
   margin-top: 81px;
   padding-bottom: 30px;
   width: 75px;
@@ -478,10 +484,11 @@ img {
   content: "";
 }
 
-.services-item:nth-child(2)::before {
-  position: relative;
+.services-title.second-element::before {
+  position: absolute;
   display: block;
-  margin: 0 auto;
+  top: 0;
+  right: 41%;
   margin-top: 81px;
   padding-bottom: 34px;
   width: 75px;
@@ -491,9 +498,10 @@ img {
   content: "";
 }
 
-.services-item:last-child::before {
-  position: relative;
-  margin: 0 auto;
+.services-title.third-element::before {
+  position: absolute;
+  top: 0;
+  right: 41%;
   margin-top: 81px;
   padding-bottom: 28px;
   display: block;
@@ -1105,6 +1113,7 @@ img {
 
 /*ВКЛЮЧИТЬ-ВЫКЛЮЧИТЬ ТУЛТИП*/
 .tooltip-text {
+  position: absolute;
   margin-top: 16px;
   transform: translateX(-115px);
   display: block;
