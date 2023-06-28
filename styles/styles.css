@@ -317,6 +317,12 @@ img {
   width: 1200px;
 }
 
+.advantages-item.first-item:hover,
+.advantages-item.last-item:hover {
+  transition: 0.5s ease;
+  background: linear-gradient(15deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+}
+
 .advantages-item,
 .first-block,
 .last-block {
@@ -403,6 +409,11 @@ img {
   text-align: center;
 }
 
+.advantages-item.middle-row:hover {
+  transition: 0.5s ease;
+  background-color: #dbebf1;
+}
+
 /*ПРИЕЗЖАЙТЕ*/
 .services-offer h2 {
   margin: 0;
@@ -442,6 +453,11 @@ img {
   text-align: center;
 }
 
+.services-item:hover {
+  transition: 0.5s ease;
+  background-color: #dbebf1;;
+}
+
 .services-title {
   display: block;
   padding: 183px 20px 30px;
@@ -467,6 +483,12 @@ img {
 
 .services-list li:last-child {
   background: rgba(131, 179, 211, 0.12);
+}
+
+.services-list li:first-child:hover,
+.services-list li:last-child:hover {
+  transition: 0.5s ease;
+  background-color: #dbebf1;
 }
 
 /*КАРТИНКИ УСЛУГ*/
@@ -753,6 +775,7 @@ img {
   width: 100%;
   height: 100%;
   background-color: rgba(242, 242, 242, 0.8);
+  z-index: 1;
 }
 
 /*ВКЛЮЧИТЬ=ВЫКЛЮЧИТЬ МОДАЛЬНОЕ ОКНО*/
