@@ -49,7 +49,7 @@
               </a>
             </li>
             <li class="navigation-item">
-              <a class="button" href="#">Хочу сюда!</a>
+              <a class="button modal-open-button" href="#">Хочу сюда!</a>
             </li>
           </ul>
         </nav>
@@ -364,6 +364,102 @@
           </a>
         </section>
       </footer>
+      <div class="modal-container modal-container-close">
+        <div class="modal-window">
+          <button class="modal-close-button" type="button">
+            <span class="visually-hidden">Закрыть</span>
+            <span class="check"></span>
+          </button>
+          <section class="modal-content">
+            <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
+              <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+              <fieldset class="modal-fieldset">
+                <legend class="visually-hidden">Форма поиска гостиниц.</legend>
+                <ul class="hotel-search">
+                  <li class="arrival-date order-date">
+                    <span>Дата заезда:</span>
+                    <label class="visually-hidden" for="arrival">Дата заезда</label>
+                    <input class="field" type="text" name="arrival" id="arrival" placeholder="27 апреля 2020" required>
+                    <button class="button" name="calender" type="submit">
+                      <span class="visually-hidden">Выбрать дату</span>
+                    </button>
+                    <p>Мы не можем отправить вас в прошлое.</p>
+                  </li>
+                  <li class="departure-date order-date">
+                    <span>Дата выезда:</span>
+                    <label class="visually-hidden" for="departure">Дата выезда</label>
+                    <input class="field" type="text" name="departure" id="departure" placeholder="1 сентября 2021"
+                      required>
+                    <button class="button" name="calender" type="submit">
+                      <span class="visually-hidden">Выбрать дату</span>
+                    </button>
+                    <p>На эти даты есть свободные номера. Пока есть.</p>
+                  </li>
+                  <li class="customers-adults order-date">
+                    <span>Взрослые:</span>
+                    <div class="toggle-flex">
+                      <button class="modal-toggle-min" type="button">
+                        <svg width="20" height="20" role="img" aria-label="Уменьшить количество." viewBox="0 0 20 20"
+                          fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M3 9V11H17V9H3Z" fill="currentColor" />
+                        </svg>
+                        <span class="visually-hidden">Уменьшить</span>
+                      </button>
+                      <label class="visually-hidden" for="adults">Количество взрослых</label>
+                      <input class="field-small" type="number" name="adults" id="adults" placeholder="2" required>
+                      <button class="modal-toggle-max" type="button">
+                        <svg width="20" height="20" role="img" aria-label="Добавить количество." viewBox="0 0 20 20"
+                          fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z" fill="currentColor" />
+                        </svg>
+                        <span class="visually-hidden">Увеличить</span>
+                      </button>
+                    </div>
+                  </li>
+                  <li class="customers-children order-date">
+                    <span>Дети:</span>
+                    <div class="tooltip">
+                      <button class="tooltip-toggle" type="button" aria-label="Всплывающая подсказка.">
+                        <svg class="tooltip-icon" width="20" height="20" role="img" aria-label="Всплывающая подсказка."
+                          viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M9 4H11V6H9V4ZM11 16H9V7H11V16Z"
+                            fill="white" />
+                        </svg>
+                      </button>
+                      <div class="tooltip-text">
+                        Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет
+                        размещаются бесплатно.
+                      </div>
+                    </div>
+                    <div class="toggle-flex">
+                      <button class="modal-toggle-min" type="button">
+                        <svg width="20" height="20" role="img" aria-label="Уменьшить количество." viewBox="0 0 20 20"
+                          fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M3 9V11H17V9H3Z" fill="currentColor" />
+                        </svg>
+                        <span class="visually-hidden">Уменьшить</span>
+                      </button>
+                      <label class="visually-hidden" for="children">Количество детей</label>
+                      <input class="field-small" type="number" name="children" id="children" placeholder="2">
+                      <button class="modal-toggle-max" type="button">
+                        <svg width="20" height="20" role="img" aria-label="Добавить количество." viewBox="0 0 20 20"
+                          fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z" fill="currentColor" />
+                        </svg>
+                        <span class="visually-hidden">Увеличить</span>
+                      </button>
+                    </div>
+                  </li>
+                  <li class="modal-result">
+                    <button class="button-modal" type="submit">Найти</button>
+                  </li>
+                </ul>
+              </fieldset>
+            </form>
+          </section>
+        </div>
+      </div>
     </div>
+    <script src="./js/script.js"></script>
   </body>
 </html>

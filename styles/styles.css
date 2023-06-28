@@ -790,7 +790,8 @@ img {
 
 .modal-close-button .check::after {
   position: absolute;
-  transform: translate(10%, -45%);
+  transform: translate(3px, -17px);
+  -moz-transform: translate(4px, -17px);
   display: block;
   width: 15px;
   height: 15px;
