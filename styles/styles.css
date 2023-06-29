@@ -319,8 +319,16 @@ img {
 
 .advantages-item.first-item:hover,
 .advantages-item.last-item:hover {
-  transition: 0.5s ease;
-  background: linear-gradient(15deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  animation: name 4s infinite;
+}
+
+@keyframes name {
+  from {
+    background: linear-gradient(25deg, #ec5959, #a22cf1, #05e6ee, #e152ee);
+  }
+  to {
+    background: linear-gradient(-35deg, #4d1200, #eb85ac, #22c2fc, #cdf050);
+  }
 }
 
 .advantages-item,
@@ -331,7 +339,9 @@ img {
   width: 400px;
   min-height: 385px;
   list-style-type: none;
+  transition: 3s linear;
 }
+
 
 .advantages-item img {
   height: auto;
@@ -411,7 +421,10 @@ img {
 
 .advantages-item.middle-row:hover {
   transition: 0.5s ease;
+  opacity: 0.6;
   background-color: #dbebf1;
+  transform: rotate(360deg) scale(0.8);
+  border-radius: 50%;
 }
 
 /*ПРИЕЗЖАЙТЕ*/
@@ -451,11 +464,15 @@ img {
   width: 400px;
   flex-direction: column;
   text-align: center;
+  transition: 3s linear;
 }
 
 .services-item:hover {
   transition: 0.5s ease;
-  background-color: #dbebf1;;
+  opacity: 0.6;
+  background-color: #dbebf1;
+  transform: rotate(360deg) scale(0.8);
+  border-radius: 50%;
 }
 
 .services-title {
